@@ -103,3 +103,5 @@ packages/**
 !packages/repositories.config
 !packages.config
 
+/BetterCms.Demo.Web/App_Data/CmsData_log.ldf
+/BetterCms.Demo.Web/App_Data/CmsData.mdf
