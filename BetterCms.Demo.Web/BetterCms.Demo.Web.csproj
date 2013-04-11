@@ -164,6 +164,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Migrations\InitialSetup.cs" />
+    <Compile Include="Models\Migrations\MigrationRunner.cs" />
+    <Compile Include="Models\Migrations\MigrationVersionMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -175,7 +178,25 @@
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Pages.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Root.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Templates.dll" />
+    <Content Include="App_Data\CmsData.mdf" />
+    <Content Include="App_Data\CmsData_log.ldf">
+      <DependentUpon>CmsData.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\bcms.light.content.css" />
+    <Content Include="Content\Styles\bcms.light.layout.css" />
+    <Content Include="Content\Styles\images\bg-active-menu.png" />
+    <Content Include="Content\Styles\images\bg-header.png" />
+    <Content Include="Content\Styles\images\icn-author.png" />
+    <Content Include="Content\Styles\images\icn-banner-arrow.png" />
+    <Content Include="Content\Styles\images\icn-btn-arrow.png" />
+    <Content Include="Content\Styles\images\icn-tag.png" />
+    <Content Include="Content\Styles\images\social-icons.png" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\coverflow.js" />
+    <Content Include="Scripts\gallery.js" />
+    <Content Include="Scripts\jquery.accordion.js" />
+    <Content Include="Scripts\modernizr.js" />
+    <Content Include="Scripts\slides.min.jquery.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -187,7 +208,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -197,6 +217,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_BaseLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\CmsTemplates\_MainPageTemplate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\nlog.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -228,7 +263,9 @@
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if not exist "$(ProjectDir)App_Data\CmsData.mdf" (echo f | xcopy "$(ProjectDir)App_Data\Default.mdf" "$(ProjectDir)App_Data\CmsData.mdf" /Y /Q)
+    <PostBuildEvent>REM if exist "$(ProjectDir)App_Data\CmsData.mdf" (del "$(ProjectDir)App_Data\CmsData.mdf" /Q)
+REM if exist "$(ProjectDir)App_Data\CmsData_log.ldf" (del "$(ProjectDir)App_Data\CmsData_log.ldf" /Q)
+if not exist "$(ProjectDir)App_Data\CmsData.mdf" (echo f | xcopy "$(ProjectDir)App_Data\Default.mdf" "$(ProjectDir)App_Data\CmsData.mdf" /Y /Q)
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

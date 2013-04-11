@@ -5,6 +5,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using BetterCms.Core;
 using BetterCms.Core.Environment.Host;
+using BetterCms.Demo.Web.Models.Migrations;
 
 namespace BetterCms.Demo.Web
 {
@@ -22,6 +23,8 @@ namespace BetterCms.Demo.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             //RouteConfig.RegisterRoutes(RouteTable.Routes);
             cmsHost.OnApplicationStart(this);
+
+            new MigrationRunner().AddDemoDataToDB();
         }
 
         protected void Application_BeginRequest()
