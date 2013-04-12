@@ -9,78 +9,14 @@
 <section class="home-banner" id="home-slides">
 @RenderSection("Top", false)
 @*
-    <div class="banner-image">
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 1" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Esse molestie consequa</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 2" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Congue nihil imperdiet</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 3" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi enim ad minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
-        </div>
-    </div>
-    <div class="banner-nav" id="home-banner">
-        <a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <p>
-                <br />
-                You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.
-            </p>
-        </div>
-        <a href="#2" class="banner-link link">Esse molestie consequa</a>
-        <div class="block">
-            <p>your bear, you have to admit it! No, we aren't selling bears.</p>
-        </div>
-        <a href="#3" class="banner-link link">Congue nihil imperdiet</a>
-        <div class="block">
-            <p>And now, for something completely different. And now, for something completely different. Period.</p>
-        </div>
-        <a href="#4" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <br />
-            <p>And now, for something completely different. And now.</p>
-        </div>
-    </div>
 *@
 </section>
 <div class="home-bottom clearfix">
     <article>
         @RenderSection("Main", false)
-        @*
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href="/AboutUs">Read more About Us</a></p>
-        *@
     </article>
     <section class="home-gallery">
         @RenderSection("RightSide", false)
-        @*
-        <h1>Gallery</h1>
-        *@
     </section>
 </div>
 @RenderBody()
@@ -103,7 +39,7 @@
                 header: 'a',
             });
 
-            $(".gallery-slider").draggable({ axis: "x", containment: "parent" });
+//            $(".gallery-slider").draggable({ axis: "x", containment: "parent" });
         });
     </script>
     @RenderSection("Scripts", false) 

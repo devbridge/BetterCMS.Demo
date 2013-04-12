@@ -22,15 +22,22 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public const string Contents = "Contents";
             public const string HtmlContents = "HtmlContents";
             public const string PageContents = "PageContents";
+            public const string Widgets = "Widgets";
+            public const string HtmlContentWidgets = "HtmlContentWidgets";
         }
 
         private static class Ids
         {
+            // Templates
             public static Guid MainPageTemplateId = new Guid("52EFCC37-5583-46D9-AE06-FA15CA84F286");
             public static Guid MainPageTopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
             public static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
             public static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
 
+            // Widgets
+            // TODO
+
+            // Pages
             public static Guid MainPageId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
         }
 
@@ -61,6 +68,16 @@ namespace BetterCms.Demo.Web.Models.Migrations
                                 RegionIdentifier = "RightSide"
                             },
                     });
+        }
+
+        private void CreateHtmlWidgets()
+        {
+            // TODO
+        }
+
+        private void CreateServerWidgets()
+        {
+            // TODO
         }
 
         private void RemoveDefaultRootPage()
@@ -98,6 +115,12 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             Url = "/"
                         });
 
+            AddContent(Ids.MainPageId, Ids.MainPageTopRegionId, 0, new HtmlContent
+                {
+                    Name = "Banner",
+                    Html = @"<div class='banner-image'> <div> <hgroup class='banner-text'> <h1>Ut wisi minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 1' /> </div> <div> <hgroup class='banner-text'> <h1>Esse molestie consequa</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 2' /> </div> <div> <hgroup class='banner-text'> <h1>Congue nihil imperdiet</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 3' /> </div> <div> <hgroup class='banner-text'> <h1>Ut wisi enim ad minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 4' /> </div> </div> <div class='banner-nav' id='home-banner'> <a href='#1' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <p> <br /> You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it. </p> </div> <a href='#2' class='banner-link link'>Esse molestie consequa</a> <div class='block'> <p>your bear, you have to admit it! No, we aren't selling bears.</p> </div> <a href='#3' class='banner-link link'>Congue nihil imperdiet</a> <div class='block'> <p>And now, for something completely different. And now, for something completely different. Period.</p> </div> <a href='#4' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <br /> <p>And now, for something completely different. And now.</p> </div> </div> ",
+                });
+
             AddContent(Ids.MainPageId, Ids.MainPageMainRegionId, 0, new HtmlContent
                 {
                     Name = "About Us",
@@ -116,8 +139,8 @@ namespace BetterCms.Demo.Web.Models.Migrations
         public override void Up()
         {
             CreateTemplates();
-//            CreateHtmlWidgets();
-//            CreateServerWidgets();
+            CreateHtmlWidgets();
+            CreateServerWidgets();
             RemoveDefaultRootPage();
             CreatePages();
         }
@@ -153,6 +176,11 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     .InSchema(RootSchemaName)
                     .Row(layoutRegion);
             }
+        }
+
+        private void AddHtmlWidget(HtmlWidget widget)
+        {
+            // TODO
         }
 
         private void AddPage(Page page, SitemapNode node = null)
@@ -261,6 +289,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                         Order = order
                     });
         }
+
 
         private abstract class BaseModel
         {
@@ -378,6 +407,29 @@ namespace BetterCms.Demo.Web.Models.Migrations
             }
         }
 
+        private class HtmlWidget : BaseModel
+        {
+            public string Name { get; set; }
+            public int Status { get; set; }
+            public DateTime PublishedOn { get; set; }
+            public string PublishedByUser { get; set; }
+
+            public bool UseCustomCss { get; set; }
+            public bool UseCustomJs { get; set; }
+            public bool UseHtml { get; set; }
+            public string Html { get; set; }
+
+            public HtmlWidget()
+            {
+                Status = (int)ContentStatus.Published;
+                PublishedOn = DateTime.Now;
+                PublishedByUser = demoDataCreationUser;
+
+                UseCustomCss = false;
+                UseCustomJs = false;
+                UseHtml = true;
+            }
+        }
         #endregion
     }
 }
