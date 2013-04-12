@@ -233,6 +233,9 @@
   <ItemGroup>
     <Content Include="Config\nlog.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\CmsTemplates\_ThreeColumnsTemplate.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -34,11 +34,17 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
             public static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
 
+            public static Guid ThreeColumnsTemplateId = new Guid("3621324F-1835-48B4-9E11-CF525B5264A7");
+            public static Guid ThreeColumnsTemplateLeftRegionId = new Guid("F5194EF0-33DD-43C0-8650-E0DB88482CE4");
+            public static Guid ThreeColumnsTemplateMiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
+            public static Guid ThreeColumnsTemplateRightRegionId = new Guid("427436F2-C7D2-4FAA-8AF4-95768DE50EC6");
+
             // Widgets
             // TODO
 
             // Pages
-            public static Guid MainPageId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
+            public static Guid PageHomeId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
+            public static Guid PageAboutUsId = new Guid("B26A10C6-DF0C-48C2-8E3F-2798E928DDC0");
         }
 
         private void CreateTemplates()
@@ -66,6 +72,32 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             {
                                 Id = Ids.MainPageRightSideRegionId,
                                 RegionIdentifier = "RightSide"
+                            },
+                    });
+
+            AddTemplate(
+                new Template
+                    {
+                        Id = Ids.ThreeColumnsTemplateId,
+                        Name = "Three Columns Template",
+                        LayoutPath = "~/Views/Shared/CmsTemplates/_ThreeColumnsTemplate.cshtml"
+                    },
+                new[]
+                    {
+                        new Region
+                            {
+                                Id = Ids.ThreeColumnsTemplateLeftRegionId,
+                                RegionIdentifier = "Left"
+                            },
+                        new Region
+                            {
+                                Id = Ids.ThreeColumnsTemplateMiddleRegionId,
+                                RegionIdentifier = "Middle"
+                            },
+                        new Region
+                            {
+                                Id = Ids.ThreeColumnsTemplateRightRegionId,
+                                RegionIdentifier = "Right"
                             },
                     });
         }
@@ -97,13 +129,14 @@ namespace BetterCms.Demo.Web.Models.Migrations
         private void CreatePages()
         {
             AddMainPage();
+            AddAboutUsPage();
         }
 
         private void AddMainPage()
         {
             AddPage(new Page
                         {
-                            Id = Ids.MainPageId,
+                            Id = Ids.PageHomeId,
                             LayoutId = Ids.MainPageTemplateId,
                             PageUrl = "/",
                             Title = "Home",
@@ -115,22 +148,69 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             Url = "/"
                         });
 
-            AddContent(Ids.MainPageId, Ids.MainPageTopRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.MainPageTopRegionId, 0, new HtmlContent
                 {
                     Name = "Banner",
                     Html = @"<div class='banner-image'> <div> <hgroup class='banner-text'> <h1>Ut wisi minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 1' /> </div> <div> <hgroup class='banner-text'> <h1>Esse molestie consequa</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 2' /> </div> <div> <hgroup class='banner-text'> <h1>Congue nihil imperdiet</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 3' /> </div> <div> <hgroup class='banner-text'> <h1>Ut wisi enim ad minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 4' /> </div> </div> <div class='banner-nav' id='home-banner'> <a href='#1' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <p> <br /> You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it. </p> </div> <a href='#2' class='banner-link link'>Esse molestie consequa</a> <div class='block'> <p>your bear, you have to admit it! No, we aren't selling bears.</p> </div> <a href='#3' class='banner-link link'>Congue nihil imperdiet</a> <div class='block'> <p>And now, for something completely different. And now, for something completely different. Period.</p> </div> <a href='#4' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <br /> <p>And now, for something completely different. And now.</p> </div> </div> ",
                 });
 
-            AddContent(Ids.MainPageId, Ids.MainPageMainRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.MainPageMainRegionId, 0, new HtmlContent
                 {
                     Name = "About Us",
                     Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>",
                 });
 
-            AddContent(Ids.MainPageId, Ids.MainPageRightSideRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.MainPageRightSideRegionId, 0, new HtmlContent
                 {
                     Name = "Gallery",
                     Html = @"<h1>Gallery</h1>",
+                });
+        }
+
+        private void AddAboutUsPage()
+        {
+            AddPage(new Page
+                        {
+                            Id = Ids.PageAboutUsId,
+                            LayoutId = Ids.ThreeColumnsTemplateId,
+                            PageUrl = "/aboutus/",
+                            Title = "About Us",
+                            Description = "About Us demo page.",
+                        },
+                    new SitemapNode
+                        {
+                            Title = "About Us",
+                            Url = "/aboutus/"
+                        });
+
+            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateLeftRegionId, 0, new HtmlContent
+                {
+                    Name = "Lorem ipsum",
+                    Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup> <section class='content-image-1'> <img src='/Content/images/sample-45.jpg' alt='Sample 45'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section> <article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article> <article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
+                });
+
+//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateLeftRegionId, 0, new HtmlContent
+//                {
+//                    Name = "Lorem ipsum",
+//                    Html = @"",
+//                });
+// TODO: add server widget
+//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 0, new HtmlContent
+//                {
+//                    Name = "Lorem ipsum",
+//                    Html = @"",
+//                });
+// TODO: add html widget
+//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 1, new HtmlContent
+//                {
+//                    Name = "Lorem ipsum",
+//                    Html = @"",
+//                });
+
+            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 2, new HtmlContent
+                {
+                    Name = "Lorem ipsum",
+                    Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
                 });
         }
 
