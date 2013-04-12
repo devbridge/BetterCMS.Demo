@@ -5,7 +5,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
     [VersionTableMetaData]
     public class MigrationVersionMetaData : IVersionTableMetaData
     {
-        private const string Name = "root"; // "templates"; TODO: where to store version info?
+        private const string Name = "templates"; // "root"; TODO: where to store version info?
 
         public string SchemaName
         {
