@@ -40,7 +40,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public static Guid ThreeColumnsTemplateRightRegionId = new Guid("427436F2-C7D2-4FAA-8AF4-95768DE50EC6");
 
             // Widgets
-            // TODO
+            public static Guid WidgetSocialId = new Guid("7F393810-3771-48AD-BD02-A9D1A56B267E");
 
             // Pages
             public static Guid PageHomeId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
@@ -104,7 +104,11 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private void CreateHtmlWidgets()
         {
-            // TODO
+            AddHtmlWidget(new HtmlWidget
+                {
+                    Id = Ids.WidgetSocialId,
+                    Html = @"<div class='side-box'> <h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div> </div>"
+                });
         }
 
         private void CreateServerWidgets()
@@ -200,12 +204,8 @@ namespace BetterCms.Demo.Web.Models.Migrations
 //                    Name = "Lorem ipsum",
 //                    Html = @"",
 //                });
-// TODO: add html widget
-//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 1, new HtmlContent
-//                {
-//                    Name = "Lorem ipsum",
-//                    Html = @"",
-//                });
+
+            AddWidget(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 1, Ids.WidgetSocialId);
 
             AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 2, new HtmlContent
                 {
@@ -260,7 +260,24 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private void AddHtmlWidget(HtmlWidget widget)
         {
-            // TODO
+// TODO: check for error.
+//            Insert
+//                .IntoTable(TableNames.Widgets)
+//                .InSchema(RootSchemaName)
+//                .Row(new {widget.Id});
+//
+//            Insert
+//                .IntoTable(TableNames.HtmlContentWidgets)
+//                .InSchema(PagesSchemaName)
+//                .Row(new
+//                    {
+//                        widget.Id,
+//                        widget.UseCustomCss,
+//                        widget.UseCustomJs,
+//                        widget.UseHtml,
+//                        widget.Html,
+//                        widget.EditInSourceMode
+//                    });
         }
 
         private void AddPage(Page page, SitemapNode node = null)
@@ -370,6 +387,10 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     });
         }
 
+        private void AddWidget(Guid pageId, Guid regionId, int order, Guid widgetId)
+        {
+            // TODO: add widget to page.
+        }
 
         private abstract class BaseModel
         {
@@ -498,6 +519,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public bool UseCustomJs { get; set; }
             public bool UseHtml { get; set; }
             public string Html { get; set; }
+            public bool EditInSourceMode { get; set; }
 
             public HtmlWidget()
             {
@@ -508,6 +530,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                 UseCustomCss = false;
                 UseCustomJs = false;
                 UseHtml = true;
+                EditInSourceMode = false;
             }
         }
         #endregion
