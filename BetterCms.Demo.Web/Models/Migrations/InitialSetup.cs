@@ -12,35 +12,26 @@ namespace BetterCms.Demo.Web.Models.Migrations
         private const string RootSchemaName = "bcms_root";
         private const string PagesSchemaName = "bcms_pages";
 
-        private const string LayoutsTableName = "Layouts";
-        private const string RegionsTableName = "Regions";
-        private const string LayoutRegionsTableName = "LayoutRegions";
-        private const string PagesTableName = "Pages";
-        private const string SitemapNodesTableName = "SitemapNodes";
-        private const string ContentsTableName = "Contents";
-        private const string HtmlContentsTableName = "HtmlContents";
-        private const string PageContentsTableName = "PageContents";
-
-        private static Guid MainPageTemplateId = new Guid("52EFCC37-5583-46D9-AE06-FA15CA84F286");
-        private static Guid MainPageTopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
-        private static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
-        private static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
-
-        private static Guid MainPageId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
-
-        public override void Up()
+        private static class TableNames
         {
-            CreateTemplates();
-//            CreateHtmlWidgets();
-//            CreateServerWidgets();
-            RemoveDefaultRootPage();
-            CreatePages();
-            CreateContent();
+            public const string Layouts = "Layouts";
+            public const string Regions = "Regions";
+            public const string LayoutRegions = "LayoutRegions";
+            public const string Pages = "Pages";
+            public const string SitemapNodes = "SitemapNodes";
+            public const string Contents = "Contents";
+            public const string HtmlContents = "HtmlContents";
+            public const string PageContents = "PageContents";
         }
 
-        public override void Down()
+        private static class Ids
         {
-            throw new NotImplementedException();
+            public static Guid MainPageTemplateId = new Guid("52EFCC37-5583-46D9-AE06-FA15CA84F286");
+            public static Guid MainPageTopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
+            public static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
+            public static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
+
+            public static Guid MainPageId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
         }
 
         private void CreateTemplates()
@@ -48,7 +39,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             AddTemplate(
                 new Template
                     {
-                        Id = MainPageTemplateId,
+                        Id = Ids.MainPageTemplateId,
                         Name = "Main Page Template",
                         LayoutPath = "~/Views/Shared/CmsTemplates/_MainPageTemplate.cshtml"
                     },
@@ -56,17 +47,17 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     {
                         new Region
                             {
-                                Id = MainPageTopRegionId,
+                                Id = Ids.MainPageTopRegionId,
                                 RegionIdentifier = "Top"
                             },
                         new Region
                             {
-                                Id = MainPageMainRegionId,
+                                Id = Ids.MainPageMainRegionId,
                                 RegionIdentifier = "Main"
                             },
                         new Region
                             {
-                                Id = MainPageRightSideRegionId,
+                                Id = Ids.MainPageRightSideRegionId,
                                 RegionIdentifier = "RightSide"
                             },
                     });
@@ -75,7 +66,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
         private void RemoveDefaultRootPage()
         {
             Update
-                .Table(PagesTableName)
+                .Table(TableNames.Pages)
                 .InSchema(RootSchemaName)
                 .Set(new
                     {
@@ -88,50 +79,65 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private void CreatePages()
         {
-            AddPage(new Page
-                {
-                    Id = MainPageId,
-                    LayoutId = MainPageTemplateId,
-                    PageUrl = "/",
-                    Title = "Home",
-                    Description = "Better CMS main demo page.",
-                    MetaTitle = "Ut wisi minim veniam.",
-                    MetaKeywords = "doming id quod mazim placerat facer possim assum",
-                    MetaDescription = "doming id quod mazim placerat facer possim assum"
-                },
-                new SitemapNode
-                    {
-                        Title = "Home",
-                        Url = "/"
-                    });
+            AddMainPage();
         }
 
-        private void CreateContent()
+        private void AddMainPage()
         {
-            AddContent(MainPageId, MainPageMainRegionId, 0, new HtmlContent
+            AddPage(new Page
+                        {
+                            Id = Ids.MainPageId,
+                            LayoutId = Ids.MainPageTemplateId,
+                            PageUrl = "/",
+                            Title = "Home",
+                            Description = "Better CMS main demo page.",
+                        },
+                    new SitemapNode
+                        {
+                            Title = "Home",
+                            Url = "/"
+                        });
+
+            AddContent(Ids.MainPageId, Ids.MainPageMainRegionId, 0, new HtmlContent
                 {
                     Name = "About Us",
                     Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>",
                 });
 
-            AddContent(MainPageId, MainPageMainRegionId, 0, new HtmlContent
+            AddContent(Ids.MainPageId, Ids.MainPageRightSideRegionId, 0, new HtmlContent
                 {
-                    Name = "About Us",
-                    Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>",
+                    Name = "Gallery",
+                    Html = @"<h1>Gallery</h1>",
                 });
+        }
+
+        #region Infrastructure
+
+        public override void Up()
+        {
+            CreateTemplates();
+//            CreateHtmlWidgets();
+//            CreateServerWidgets();
+            RemoveDefaultRootPage();
+            CreatePages();
+        }
+
+        public override void Down()
+        {
+            throw new NotImplementedException();
         }
 
         private void AddTemplate(Template template, IEnumerable<Region> regions)
         {
             Insert
-                .IntoTable(LayoutsTableName)
+                .IntoTable(TableNames.Layouts)
                 .InSchema(RootSchemaName)
                 .Row(template);
 
             foreach (var region in regions)
             {
                 Insert
-                    .IntoTable(RegionsTableName)
+                    .IntoTable(TableNames.Regions)
                     .InSchema(RootSchemaName)
                     .Row(region);
 
@@ -143,7 +149,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     };
 
                 Insert
-                    .IntoTable(LayoutRegionsTableName)
+                    .IntoTable(TableNames.LayoutRegions)
                     .InSchema(RootSchemaName)
                     .Row(layoutRegion);
             }
@@ -154,7 +160,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             page.NodeCountInSitemap += node != null ? 1 : 0;
 
             Insert
-                .IntoTable(PagesTableName)
+                .IntoTable(TableNames.Pages)
                 .InSchema(RootSchemaName)
                 .Row(new
                     {
@@ -177,7 +183,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     });
 
             Insert
-                .IntoTable(PagesTableName)
+                .IntoTable(TableNames.Pages)
                 .InSchema(PagesSchemaName)
                 .Row(new
                     {
@@ -198,7 +204,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             if (node != null)
             {
                 Insert
-                    .IntoTable(SitemapNodesTableName)
+                    .IntoTable(TableNames.SitemapNodes)
                     .InSchema(PagesSchemaName)
                     .Row(node);
             }
@@ -207,7 +213,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
         private void AddContent(Guid pageId, Guid regionId, int order, HtmlContent content)
         {
             Insert
-                .IntoTable(ContentsTableName)
+                .IntoTable(TableNames.Contents)
                 .InSchema(RootSchemaName)
                 .Row(new
                     {
@@ -225,7 +231,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     });
 
             Insert
-                .IntoTable(HtmlContentsTableName)
+                .IntoTable(TableNames.HtmlContents)
                 .InSchema(PagesSchemaName)
                 .Row(new
                     {
@@ -238,7 +244,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     });
 
             Insert
-                .IntoTable(PageContentsTableName)
+                .IntoTable(TableNames.PageContents)
                 .InSchema(RootSchemaName)
                 .Row(new
                     {
@@ -326,6 +332,9 @@ namespace BetterCms.Demo.Web.Models.Migrations
                 UseNoFollow = false;
                 UseNoIndex = false;
                 NodeCountInSitemap = 0;
+                MetaTitle = "Ut wisi minim veniam.";
+                MetaKeywords = "doming id quod mazim placerat facer possim assum";
+                MetaDescription = "doming id quod mazim placerat facer possim assum";
             }
         }
 
@@ -368,5 +377,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                 EditInSourceMode = false;
             }
         }
+
+        #endregion
     }
 }
