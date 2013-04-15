@@ -28,18 +28,17 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private static class Ids
         {
+            // Regions
+            public static Guid TopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
+            public static Guid MainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
+            public static Guid RightRegionId = new Guid("D0E17CE8-4FB7-45EA-A2C6-F0957EC2E875");
+            public static Guid LeftRegionId = new Guid("E79C245D-103E-4517-AACB-3707814C425C");
+            public static Guid MiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
+
             // Templates
             public static Guid MainPageTemplateId = new Guid("52EFCC37-5583-46D9-AE06-FA15CA84F286");
-            public static Guid MainPageTopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
-            public static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
-            public static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
-
             public static Guid TwoColumnsTemplateId = new Guid("40EFD7C1-18B3-456A-A2F2-3479C8C9960E");
-            public static Guid LeftRegionId = new Guid("E79C245D-103E-4517-AACB-3707814C425C");
-            public static Guid RightRegionId = new Guid("D0E17CE8-4FB7-45EA-A2C6-F0957EC2E875");
-
             public static Guid ThreeColumnsTemplateId = new Guid("3621324F-1835-48B4-9E11-CF525B5264A7");
-            public static Guid MiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
 
             // Widgets
             public static Guid WidgetSocialId = new Guid("7F393810-3771-48AD-BD02-A9D1A56B267E");
@@ -48,6 +47,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public static Guid PageHomeId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
             public static Guid PageAboutUsId = new Guid("B26A10C6-DF0C-48C2-8E3F-2798E928DDC0");
             public static Guid PageBlogId = new Guid("7709C3E9-7C4D-46EB-ABA6-58FB2C150918");
+            public static Guid PageNewsId = new Guid("102E602B-F718-4A07-815B-2DD530BE472F");
         }
 
         private void CreateTemplates()
@@ -63,18 +63,18 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     {
                         new Region
                             {
-                                Id = Ids.MainPageTopRegionId,
+                                Id = Ids.TopRegionId,
                                 RegionIdentifier = "Top"
                             },
                         new Region
                             {
-                                Id = Ids.MainPageMainRegionId,
+                                Id = Ids.MainRegionId,
                                 RegionIdentifier = "Main"
                             },
                         new Region
                             {
-                                Id = Ids.MainPageRightSideRegionId,
-                                RegionIdentifier = "RightSide"
+                                Id = Ids.RightRegionId,
+                                RegionIdentifier = "Right"
                             },
                     });
 
@@ -95,7 +95,6 @@ namespace BetterCms.Demo.Web.Models.Migrations
                         new Region
                             {
                                 Id = Ids.RightRegionId,
-                                RegionIdentifier = "Right"
                             },
                     });
 
@@ -158,6 +157,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             AddMainPage();
             AddAboutUsPage();
             AddBlogPage();
+            AddNewsPage();
         }
 
         private void AddMainPage()
@@ -176,19 +176,19 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             Url = "/"
                         });
 
-            AddContent(Ids.PageHomeId, Ids.MainPageTopRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.TopRegionId, 0, new HtmlContent
                 {
                     Name = "Banner",
                     Html = @"<div class='banner-image'> <div> <hgroup class='banner-text'> <h1>Ut wisi minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 1' /> </div> <div> <hgroup class='banner-text'> <h1>Esse molestie consequa</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 2' /> </div> <div> <hgroup class='banner-text'> <h1>Congue nihil imperdiet</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 3' /> </div> <div> <hgroup class='banner-text'> <h1>Ut wisi enim ad minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 4' /> </div> </div> <div class='banner-nav' id='home-banner'> <a href='#1' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <p> <br /> You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it. </p> </div> <a href='#2' class='banner-link link'>Esse molestie consequa</a> <div class='block'> <p>your bear, you have to admit it! No, we aren't selling bears.</p> </div> <a href='#3' class='banner-link link'>Congue nihil imperdiet</a> <div class='block'> <p>And now, for something completely different. And now, for something completely different. Period.</p> </div> <a href='#4' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <br /> <p>And now, for something completely different. And now.</p> </div> </div> ",
                 });
 
-            AddContent(Ids.PageHomeId, Ids.MainPageMainRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.MainRegionId, 0, new HtmlContent
                 {
                     Name = "About Us",
                     Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>",
                 });
 
-            AddContent(Ids.PageHomeId, Ids.MainPageRightSideRegionId, 0, new HtmlContent
+            AddContent(Ids.PageHomeId, Ids.RightRegionId, 0, new HtmlContent
                 {
                     Name = "Gallery",
                     Html = @"<h1>Gallery</h1>",
@@ -256,6 +256,66 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
             AddWidget(Ids.PageBlogId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
             AddContent(Ids.PageBlogId, Ids.RightRegionId, 2, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
+            });
+        }
+
+        private void AddNewsPage()
+        {
+            AddPage(new Page
+                        {
+                            Id = Ids.PageNewsId,
+                            LayoutId = Ids.TwoColumnsTemplateId,
+                            PageUrl = "/news/",
+                            Title = "News",
+                            Description = "News page.",
+                        },
+                    new SitemapNode
+                        {
+                            Title = "News",
+                            Url = "/news/"
+                        });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 1, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup>",
+            });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 2, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<section class='content-image-2'> <img src='/Content/images/sample-32.jpg' alt='Sample 32'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section>",
+            });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 3, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
+            });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 4, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
+            });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 5, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p> <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p> </article>",
+            });
+
+            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 6, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<section class='quotation'> <h2>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat:</h2> <dl> <dd><span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</dd> <dd><span></span>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </dd> <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd> </dl> </section>",
+            });
+
+            AddWidget(Ids.PageNewsId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
+            AddContent(Ids.PageNewsId, Ids.RightRegionId, 2, new HtmlContent
             {
                 Name = "Lorem ipsum",
                 Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
