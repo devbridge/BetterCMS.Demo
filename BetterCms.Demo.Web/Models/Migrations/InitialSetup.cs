@@ -107,6 +107,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             AddHtmlWidget(new HtmlWidget
                 {
                     Id = Ids.WidgetSocialId,
+                    Name = "Social Media Links",
                     Html = @"<div class='side-box'> <h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div> </div>"
                 });
         }
@@ -260,24 +261,41 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private void AddHtmlWidget(HtmlWidget widget)
         {
-// TODO: check for error.
-//            Insert
-//                .IntoTable(TableNames.Widgets)
-//                .InSchema(RootSchemaName)
-//                .Row(new {widget.Id});
-//
-//            Insert
-//                .IntoTable(TableNames.HtmlContentWidgets)
-//                .InSchema(PagesSchemaName)
-//                .Row(new
-//                    {
-//                        widget.Id,
-//                        widget.UseCustomCss,
-//                        widget.UseCustomJs,
-//                        widget.UseHtml,
-//                        widget.Html,
-//                        widget.EditInSourceMode
-//                    });
+            Insert
+                .IntoTable(TableNames.Contents)
+                .InSchema(RootSchemaName)
+                .Row(new
+                {
+                    widget.Id,
+                    widget.Version,
+                    widget.IsDeleted,
+                    widget.CreatedOn,
+                    widget.CreatedByUser,
+                    widget.ModifiedOn,
+                    widget.ModifiedByUser,
+                    widget.Name,
+                    widget.Status,
+                    widget.PublishedOn,
+                    widget.PublishedByUser
+                });
+
+            Insert
+                .IntoTable(TableNames.Widgets)
+                .InSchema(RootSchemaName)
+                .Row(new { widget.Id });
+
+            Insert
+                .IntoTable(TableNames.HtmlContentWidgets)
+                .InSchema(PagesSchemaName)
+                .Row(new
+                    {
+                        widget.Id,
+                        widget.UseCustomCss,
+                        widget.UseCustomJs,
+                        widget.UseHtml,
+                        widget.Html,
+                        widget.EditInSourceMode
+                    });
         }
 
         private void AddPage(Page page, SitemapNode node = null)
@@ -389,7 +407,23 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
         private void AddWidget(Guid pageId, Guid regionId, int order, Guid widgetId)
         {
-            // TODO: add widget to page.
+            Insert
+                .IntoTable(TableNames.PageContents)
+                .InSchema(RootSchemaName)
+                .Row(new
+                {
+                    Id = Guid.NewGuid(),
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = DateTime.Now,
+                    CreatedByUser = demoDataCreationUser,
+                    ModifiedOn = DateTime.Now,
+                    ModifiedByUser = demoDataCreationUser,
+                    PageId = pageId,
+                    ContentId = widgetId,
+                    RegionId = regionId,
+                    Order = order
+                });
         }
 
         private abstract class BaseModel
