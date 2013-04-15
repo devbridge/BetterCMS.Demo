@@ -8,329 +8,17 @@ namespace BetterCms.Demo.Web.Models.Migrations
     [Migration(201304110949)]
     public class InitialSetup : Migration
     {
-        private const string demoDataCreationUser = "Admin";
-        private const string RootSchemaName = "bcms_root";
-        private const string PagesSchemaName = "bcms_pages";
+        public const string UpdatedBy = "Admin";
+        public readonly DateTime UpdatedOn = DateTime.Now;
 
-        private static class TableNames
-        {
-            public const string Layouts = "Layouts";
-            public const string Regions = "Regions";
-            public const string LayoutRegions = "LayoutRegions";
-            public const string Pages = "Pages";
-            public const string SitemapNodes = "SitemapNodes";
-            public const string Contents = "Contents";
-            public const string HtmlContents = "HtmlContents";
-            public const string PageContents = "PageContents";
-            public const string Widgets = "Widgets";
-            public const string HtmlContentWidgets = "HtmlContentWidgets";
-        }
-
-        private static class Ids
-        {
-            // Regions
-            public static Guid TopRegionId = new Guid("F83A3130-3CC8-4FE1-8585-09969BAA9CDE");
-            public static Guid MainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
-            public static Guid RightRegionId = new Guid("D0E17CE8-4FB7-45EA-A2C6-F0957EC2E875");
-            public static Guid LeftRegionId = new Guid("E79C245D-103E-4517-AACB-3707814C425C");
-            public static Guid MiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
-
-            // Templates
-            public static Guid MainPageTemplateId = new Guid("52EFCC37-5583-46D9-AE06-FA15CA84F286");
-            public static Guid TwoColumnsTemplateId = new Guid("40EFD7C1-18B3-456A-A2F2-3479C8C9960E");
-            public static Guid ThreeColumnsTemplateId = new Guid("3621324F-1835-48B4-9E11-CF525B5264A7");
-
-            // Widgets
-            public static Guid WidgetSocialId = new Guid("7F393810-3771-48AD-BD02-A9D1A56B267E");
-
-            // Pages
-            public static Guid PageHomeId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
-            public static Guid PageAboutUsId = new Guid("B26A10C6-DF0C-48C2-8E3F-2798E928DDC0");
-            public static Guid PageBlogId = new Guid("7709C3E9-7C4D-46EB-ABA6-58FB2C150918");
-            public static Guid PageNewsId = new Guid("102E602B-F718-4A07-815B-2DD530BE472F");
-        }
-
-        private void CreateTemplates()
-        {
-            AddTemplate(
-                new Template
-                    {
-                        Id = Ids.MainPageTemplateId,
-                        Name = "Main Page Template",
-                        LayoutPath = "~/Views/Shared/CmsTemplates/_MainPageTemplate.cshtml"
-                    },
-                new[]
-                    {
-                        new Region
-                            {
-                                Id = Ids.TopRegionId,
-                                RegionIdentifier = "Top"
-                            },
-                        new Region
-                            {
-                                Id = Ids.MainRegionId,
-                                RegionIdentifier = "Main"
-                            },
-                        new Region
-                            {
-                                Id = Ids.RightRegionId,
-                                RegionIdentifier = "Right"
-                            },
-                    });
-
-            AddTemplate(
-                new Template
-                    {
-                        Id = Ids.TwoColumnsTemplateId,
-                        Name = "Two Columns Template",
-                        LayoutPath = "~/Views/Shared/CmsTemplates/_TwoColumnsTemplate.cshtml"
-                    },
-                new[]
-                    {
-                        new Region
-                            {
-                                Id = Ids.LeftRegionId,
-                                RegionIdentifier = "Left"
-                            },
-                        new Region
-                            {
-                                Id = Ids.RightRegionId,
-                            },
-                    });
-
-            AddTemplate(
-                new Template
-                    {
-                        Id = Ids.ThreeColumnsTemplateId,
-                        Name = "Three Columns Template",
-                        LayoutPath = "~/Views/Shared/CmsTemplates/_ThreeColumnsTemplate.cshtml"
-                    },
-                new[]
-                    {
-                        new Region
-                            {
-                                Id = Ids.LeftRegionId,
-                            },
-                        new Region
-                            {
-                                Id = Ids.MiddleRegionId,
-                                RegionIdentifier = "Middle"
-                            },
-                        new Region
-                            {
-                                Id = Ids.RightRegionId,
-                            },
-                    });
-        }
-
-        private void CreateHtmlWidgets()
-        {
-            AddHtmlWidget(new HtmlWidget
-                {
-                    Id = Ids.WidgetSocialId,
-                    Name = "Social Media Links",
-                    Html = @"<div class='side-box'> <h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div> </div>"
-                });
-        }
-
-        private void CreateServerWidgets()
-        {
-            // TODO
-        }
-
-        private void RemoveDefaultRootPage()
-        {
-            Update
-                .Table(TableNames.Pages)
-                .InSchema(RootSchemaName)
-                .Set(new
-                    {
-                        PageUrl = "/default/",
-                        ModifiedOn = DateTime.Now,
-                        ModifiedByUser = demoDataCreationUser
-                    })
-                .Where(new { PageUrl = "/" });
-        }
-
-        private void CreatePages()
-        {
-            AddMainPage();
-            AddAboutUsPage();
-            AddBlogPage();
-            AddNewsPage();
-        }
-
-        private void AddMainPage()
-        {
-            AddPage(new Page
-                        {
-                            Id = Ids.PageHomeId,
-                            LayoutId = Ids.MainPageTemplateId,
-                            PageUrl = "/",
-                            Title = "Home",
-                            Description = "Better CMS main demo page.",
-                        },
-                    new SitemapNode
-                        {
-                            Title = "Home",
-                            Url = "/"
-                        });
-
-            AddContent(Ids.PageHomeId, Ids.TopRegionId, 0, new HtmlContent
-                {
-                    Name = "Banner",
-                    Html = @"<div class='banner-image'> <div> <hgroup class='banner-text'> <h1>Ut wisi minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 1' /> </div> <div> <hgroup class='banner-text'> <h1>Esse molestie consequa</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 2' /> </div> <div> <hgroup class='banner-text'> <h1>Congue nihil imperdiet</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 3' /> </div> <div> <hgroup class='banner-text'> <h1>Ut wisi enim ad minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 4' /> </div> </div> <div class='banner-nav' id='home-banner'> <a href='#1' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <p> <br /> You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it. </p> </div> <a href='#2' class='banner-link link'>Esse molestie consequa</a> <div class='block'> <p>your bear, you have to admit it! No, we aren't selling bears.</p> </div> <a href='#3' class='banner-link link'>Congue nihil imperdiet</a> <div class='block'> <p>And now, for something completely different. And now, for something completely different. Period.</p> </div> <a href='#4' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <br /> <p>And now, for something completely different. And now.</p> </div> </div> ",
-                });
-
-            AddContent(Ids.PageHomeId, Ids.MainRegionId, 0, new HtmlContent
-                {
-                    Name = "About Us",
-                    Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>",
-                });
-
-            AddContent(Ids.PageHomeId, Ids.RightRegionId, 0, new HtmlContent
-                {
-                    Name = "Gallery",
-                    Html = @"<h1>Gallery</h1>",
-                });
-        }
-
-        private void AddAboutUsPage()
-        {
-            AddPage(new Page
-                        {
-                            Id = Ids.PageAboutUsId,
-                            LayoutId = Ids.ThreeColumnsTemplateId,
-                            PageUrl = "/aboutus/",
-                            Title = "About Us",
-                            Description = "About Us page.",
-                        },
-                    new SitemapNode
-                        {
-                            Title = "About Us",
-                            Url = "/aboutus/"
-                        });
-
-            AddContent(Ids.PageAboutUsId, Ids.LeftRegionId, 0, new HtmlContent
-                {
-                    Name = "Lorem ipsum",
-                    Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup> <section class='content-image-1'> <img src='/Content/images/sample-45.jpg' alt='Sample 45'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section> <article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article> <article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
-                });
-
-//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateLeftRegionId, 0, new HtmlContent
-//                {
-//                    Name = "Lorem ipsum",
-//                    Html = @"",
-//                });
-// TODO: add server widget
-//            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 0, new HtmlContent
-//                {
-//                    Name = "Lorem ipsum",
-//                    Html = @"",
-//                });
-
-            AddWidget(Ids.PageAboutUsId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
-
-            AddContent(Ids.PageAboutUsId, Ids.RightRegionId, 2, new HtmlContent
-                {
-                    Name = "Lorem ipsum",
-                    Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
-                });
-        }
-
-        private void AddBlogPage()
-        {
-            AddPage(new Page
-                        {
-                            Id = Ids.PageBlogId,
-                            LayoutId = Ids.TwoColumnsTemplateId,
-                            PageUrl = "/blog/",
-                            Title = "Blog",
-                            Description = "Blog landing page.",
-                        },
-                    new SitemapNode
-                        {
-                            Title = "Blog",
-                            Url = "/blog/"
-                        });
-
-            AddWidget(Ids.PageBlogId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
-            AddContent(Ids.PageBlogId, Ids.RightRegionId, 2, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
-            });
-        }
-
-        private void AddNewsPage()
-        {
-            AddPage(new Page
-                        {
-                            Id = Ids.PageNewsId,
-                            LayoutId = Ids.TwoColumnsTemplateId,
-                            PageUrl = "/news/",
-                            Title = "News",
-                            Description = "News page.",
-                        },
-                    new SitemapNode
-                        {
-                            Title = "News",
-                            Url = "/news/"
-                        });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 1, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup>",
-            });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 2, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<section class='content-image-2'> <img src='/Content/images/sample-32.jpg' alt='Sample 32'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section>",
-            });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 3, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
-            });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 4, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
-            });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 5, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p> <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p> </article>",
-            });
-
-            AddContent(Ids.PageNewsId, Ids.LeftRegionId, 6, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<section class='quotation'> <h2>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat:</h2> <dl> <dd><span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</dd> <dd><span></span>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </dd> <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd> </dl> </section>",
-            });
-
-            AddWidget(Ids.PageNewsId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
-            AddContent(Ids.PageNewsId, Ids.RightRegionId, 2, new HtmlContent
-            {
-                Name = "Lorem ipsum",
-                Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
-            });
-        }
-
-        #region Infrastructure
+        #region Overrides
 
         public override void Up()
         {
-            CreateTemplates();
-            CreateHtmlWidgets();
-            CreateServerWidgets();
-            RemoveDefaultRootPage();
-            CreatePages();
+            AddTemplates();
+            AddWidgets();
+            AddPages();
+            AddContent();
         }
 
         public override void Down()
@@ -338,346 +26,361 @@ namespace BetterCms.Demo.Web.Models.Migrations
             throw new NotImplementedException();
         }
 
-        private void AddTemplate(Template template, IEnumerable<Region> regions)
+        #endregion
+
+
+        private void AddTemplates()
         {
-            Insert
-                .IntoTable(TableNames.Layouts)
-                .InSchema(RootSchemaName)
-                .Row(template);
+            InsertTemplate("Two Columns with Header", "~/Views/Shared/CmsTemplates/_TwoColumnsWithHeader.cshtml", new[] { "Header", "Left", "Right" });
+            InsertTemplate("Two Columns", "~/Views/Shared/CmsTemplates/_TwoColumnsTemplate.cshtml", new[] { "Left", "Right" });
+            InsertTemplate("Three Columns Template", "~/Views/Shared/CmsTemplates/_ThreeColumnsTemplate.cshtml", new[] { "Left", "Middle", "Right" });
+        }
 
-            foreach (var region in regions)
-            {
-                if (!string.IsNullOrEmpty(region.RegionIdentifier))
+        private void AddWidgets()
+        {
+            InsertHtmlWidget("Social Media Links", @"<div class='side-box'> <h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div> </div>");
+            InsertHtmlWidget("Aside bar", @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>");
+        }
+
+        private void AddPages()
+        {
+            UpdateDefaultRootPage();
+            InsertPage("Home", "Two Columns with Header", "/", "Better CMS main demo page.");
+            InsertPage("About Us", "Three Columns Template", "/aboutus/", "About Us page.");
+            InsertPage("Blog", "Two Columns", "/blog/", "Blog landing page.");
+            InsertPage("News", "Two Columns", "/news/", "News page.");
+        }
+
+        public void AddContent()
+        {
+            InsertContent("Home", "Header", 0, new Content { Name = "Banner", Html = @"<div class='banner-image'> <div> <hgroup class='banner-text'> <h1>Ut wisi minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 1' /> </div> <div> <hgroup class='banner-text'> <h1>Esse molestie consequa</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 2' /> </div> <div> <hgroup class='banner-text'> <h1>Congue nihil imperdiet</h1> <h2>doming id quod mazim placerat facer possim assum.</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 3' /> </div> <div> <hgroup class='banner-text'> <h1>Ut wisi enim ad minim veniam</h1> <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2> </hgroup> <a href='#nolink' class='btn-primary action-arrow'>Call to Action</a> <img src='/Content/images/sample-78.jpg' alt='Banner 4' /> </div> </div> <div class='banner-nav' id='home-banner'> <a href='#1' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <p> <br /> You've seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it. </p> </div> <a href='#2' class='banner-link link'>Esse molestie consequa</a> <div class='block'> <p>your bear, you have to admit it! No, we aren't selling bears.</p> </div> <a href='#3' class='banner-link link'>Congue nihil imperdiet</a> <div class='block'> <p>And now, for something completely different. And now, for something completely different. Period.</p> </div> <a href='#4' class='banner-link link'>Ut wisi enim ad minim veniam</a> <div class='block'> <br /> <p>And now, for something completely different. And now.</p> </div> </div> " });
+            InsertContent("Home", "Left", 0, new Content { Name = "About Us", Html = @"<h1>About Us</h1><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... <a href='/AboutUs'>Read more About Us</a></p>" });
+            InsertContent("Home", "Right", 0, new Content { Name = "Gallery", Html = @"<h1>Gallery</h1>" });
+
+            InsertContent("About Us", "Left", 0, new Content { Name = "Lorem ipsum", Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup> <section class='content-image-1'> <img src='/Content/images/sample-45.jpg' alt='Sample 45'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section> <article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article> <article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>" });
+            InsertContent("About Us", "Right", 1, "Social Media Links");
+            InsertContent("About Us", "Right", 2, "Aside bar");
+
+            InsertContent("Blog", "Right", 1, "Social Media Links");
+            InsertContent("Blog", "Right", 2, "Aside bar");
+
+            InsertContent("News", "Left", 0, new Content { Name = "Lorem ipsum", Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup>" });
+            InsertContent("News", "Left", 1, new Content { Name = "Lorem ipsum", Html = @"<section class='content-image-2'> <img src='/Content/images/sample-32.jpg' alt='Sample 32'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section>" });
+            InsertContent("News", "Left", 2, new Content { Name = "Lorem ipsum", Html = @"<article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>" });
+            InsertContent("News", "Left", 3, new Content { Name = "Lorem ipsum", Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>" });
+            InsertContent("News", "Left", 4, new Content { Name = "Lorem ipsum", Html = @"<article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p> <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p> </article>" });
+            InsertContent("News", "Left", 5, new Content { Name = "Lorem ipsum", Html = @"<section class='quotation'> <h2>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat:</h2> <dl> <dd><span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</dd> <dd><span></span>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </dd> <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd> </dl> </section>" });
+            InsertContent("News", "Right", 1, "Social Media Links");
+            InsertContent("News", "Right", 2, "Aside bar");
+
+//            InsertContent("", "", 0, new Content{ Name = "", Html = "" });
+        }
+
+        private void UpdateDefaultRootPage()
+        {
+            Update
+                .Table(Constants.DataBase.Tables.Pages)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Set(new
                 {
+                    PageUrl = "/default/",
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy
+                })
+                .Where(new { PageUrl = "/" });
+        }
 
-                    Insert
-                        .IntoTable(TableNames.Regions)
-                        .InSchema(RootSchemaName)
-                        .Row(region);
+        #region Infrastructure
+
+        private readonly Dictionary<string, Guid> templates = new Dictionary<string, Guid>();
+        private readonly Dictionary<string, Guid> regions = new Dictionary<string, Guid>();
+        private readonly Dictionary<string, Guid> widgets = new Dictionary<string, Guid>();
+        private readonly Dictionary<string, Guid> pages = new Dictionary<string, Guid>();
+        private readonly Dictionary<string, Guid> nodes = new Dictionary<string, Guid>();
+
+        private static class Constants
+        {
+            public static class DataBase
+            {
+                public static class Schemas
+                {
+                    public const string Root = "bcms_root";
+                    public const string Pages = "bcms_pages";
                 }
 
-                var layoutRegion = new LayoutRegion
-                    {
-                        Description = region.RegionIdentifier,
-                        LayoutId = template.Id,
-                        RegionId = region.Id
-                    };
-
-                Insert
-                    .IntoTable(TableNames.LayoutRegions)
-                    .InSchema(RootSchemaName)
-                    .Row(layoutRegion);
+                public static class Tables
+                {
+                    public const string Layouts = "Layouts";
+                    public const string Regions = "Regions";
+                    public const string LayoutRegions = "LayoutRegions";
+                    public const string Pages = "Pages";
+                    public const string SitemapNodes = "SitemapNodes";
+                    public const string Contents = "Contents";
+                    public const string HtmlContents = "HtmlContents";
+                    public const string PageContents = "PageContents";
+                    public const string Widgets = "Widgets";
+                    public const string HtmlContentWidgets = "HtmlContentWidgets";
+                }
             }
         }
 
-        private void AddHtmlWidget(HtmlWidget widget)
+        private class Content
         {
+            public string Name { get; set; }
+            public string Html { get; set; }
+        }
+
+        private void InsertTemplate(string name, string url, IEnumerable<string> regionNames)
+        {
+            // Add template.
+            var templateId = Guid.NewGuid();
+            templates.Add(name, templateId);
+
             Insert
-                .IntoTable(TableNames.Contents)
-                .InSchema(RootSchemaName)
+                .IntoTable(Constants.DataBase.Tables.Layouts)
+                .InSchema(Constants.DataBase.Schemas.Root)
                 .Row(new
                 {
-                    widget.Id,
-                    widget.Version,
-                    widget.IsDeleted,
-                    widget.CreatedOn,
-                    widget.CreatedByUser,
-                    widget.ModifiedOn,
-                    widget.ModifiedByUser,
-                    widget.Name,
-                    widget.Status,
-                    widget.PublishedOn,
-                    widget.PublishedByUser
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Id = templateId,
+                    Name = name,
+                    LayoutPath = url,
+                });
+
+            // Assign regions.
+            foreach (var region in regionNames)
+            {
+                var regionId = Guid.NewGuid();
+                if (!regions.ContainsKey(region))
+                {
+                    // Add region.
+                    regions.Add(region, regionId);
+                    Insert
+                        .IntoTable(Constants.DataBase.Tables.Regions)
+                        .InSchema(Constants.DataBase.Schemas.Root)
+                        .Row(new
+                        {
+                            Version = 1,
+                            IsDeleted = false,
+                            CreatedOn = UpdatedOn,
+                            CreatedByUser = UpdatedBy,
+                            ModifiedOn = UpdatedOn,
+                            ModifiedByUser = UpdatedBy,
+
+                            Id = regionId,
+                            RegionIdentifier = region,
+                        });
+                }
+                else
+                {
+                    regionId = regions[region];
+                }
+
+                // Assign region to template.
+                Insert
+                    .IntoTable(Constants.DataBase.Tables.LayoutRegions)
+                    .InSchema(Constants.DataBase.Schemas.Root)
+                    .Row(new
+                    {
+                        Version = 1,
+                        IsDeleted = false,
+                        CreatedOn = UpdatedOn,
+                        CreatedByUser = UpdatedBy,
+                        ModifiedOn = UpdatedOn,
+                        ModifiedByUser = UpdatedBy,
+
+                        Id = Guid.NewGuid(),
+                        LayoutId = templateId,
+                        RegionId = regionId,
+                    });
+            }
+        }
+
+        private void InsertHtmlWidget(string name, string html)
+        {
+            var id = Guid.NewGuid();
+            widgets.Add(name, id);
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.Contents)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new
+                {
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Id = id,
+                    Name = name,
+                    Status = (int)ContentStatus.Published,
+                    PublishedOn = UpdatedOn,
+                    PublishedByUser = UpdatedBy
                 });
 
             Insert
-                .IntoTable(TableNames.Widgets)
-                .InSchema(RootSchemaName)
-                .Row(new { widget.Id });
+                .IntoTable(Constants.DataBase.Tables.Widgets)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new { Id = id });
 
             Insert
-                .IntoTable(TableNames.HtmlContentWidgets)
-                .InSchema(PagesSchemaName)
-                .Row(new
-                    {
-                        widget.Id,
-                        widget.UseCustomCss,
-                        widget.UseCustomJs,
-                        widget.UseHtml,
-                        widget.Html,
-                        widget.EditInSourceMode
-                    });
-        }
-
-        private void AddPage(Page page, SitemapNode node = null)
-        {
-            page.NodeCountInSitemap += node != null ? 1 : 0;
-
-            Insert
-                .IntoTable(TableNames.Pages)
-                .InSchema(RootSchemaName)
-                .Row(new
-                    {
-                        page.Id,
-                        page.Version,
-                        page.IsDeleted,
-                        page.CreatedOn,
-                        page.CreatedByUser,
-                        page.ModifiedOn,
-                        page.ModifiedByUser,
-                        page.PageUrl,
-                        page.Title,
-                        page.LayoutId,
-                        page.PublishedOn,
-                        page.MetaTitle,
-                        page.MetaKeywords,
-                        page.MetaDescription,
-                        page.IsPublic,
-                        page.Status
-                    });
-
-            Insert
-                .IntoTable(TableNames.Pages)
-                .InSchema(PagesSchemaName)
-                .Row(new
-                    {
-                        page.Id,
-                        page.Description,
-                        //page.ImageId,
-                        page.CanonicalUrl,
-                        page.CustomCss,
-                        page.CustomJS,
-                        page.UseCanonicalUrl,
-                        page.UseNoFollow,
-                        page.UseNoIndex,
-                        page.PublishedOn,
-                        //page.CategoryId,
-                        page.NodeCountInSitemap
-                    });
-
-            if (node != null)
-            {
-                Insert
-                    .IntoTable(TableNames.SitemapNodes)
-                    .InSchema(PagesSchemaName)
-                    .Row(node);
-            }
-        }
-
-        private void AddContent(Guid pageId, Guid regionId, int order, HtmlContent content)
-        {
-            Insert
-                .IntoTable(TableNames.Contents)
-                .InSchema(RootSchemaName)
-                .Row(new
-                    {
-                        content.Id,
-                        content.Version,
-                        content.IsDeleted,
-                        content.CreatedOn,
-                        content.CreatedByUser,
-                        content.ModifiedOn,
-                        content.ModifiedByUser,
-                        content.Name,
-                        content.Status,
-                        content.PublishedOn,
-                        content.PublishedByUser
-                    });
-
-            Insert
-                .IntoTable(TableNames.HtmlContents)
-                .InSchema(PagesSchemaName)
-                .Row(new
-                    {
-                        content.Id,
-                        content.ActivationDate,
-                        content.UseCustomCss,
-                        content.UseCustomJs,
-                        content.Html,
-                        content.EditInSourceMode
-                    });
-
-            Insert
-                .IntoTable(TableNames.PageContents)
-                .InSchema(RootSchemaName)
-                .Row(new
-                    {
-                        Id = Guid.NewGuid(),
-                        Version = 1,
-                        IsDeleted = false,
-                        CreatedOn = DateTime.Now,
-                        CreatedByUser = demoDataCreationUser,
-                        ModifiedOn = DateTime.Now,
-                        ModifiedByUser = demoDataCreationUser,
-                        PageId = pageId,
-                        ContentId = content.Id,
-                        RegionId = regionId,
-                        Order = order
-                    });
-        }
-
-        private void AddWidget(Guid pageId, Guid regionId, int order, Guid widgetId)
-        {
-            Insert
-                .IntoTable(TableNames.PageContents)
-                .InSchema(RootSchemaName)
+                .IntoTable(Constants.DataBase.Tables.HtmlContentWidgets)
+                .InSchema(Constants.DataBase.Schemas.Pages)
                 .Row(new
                 {
-                    Id = Guid.NewGuid(),
+                    Id = id,
+                    UseCustomCss = false,
+                    UseCustomJs = false,
+                    UseHtml = true,
+                    Html = html,
+                    EditInSourceMode = false
+                });
+        }
+
+        private void InsertPage(string name, string templateName, string url, string description, string parentNodeName = null)
+        {
+            var id = Guid.NewGuid();
+            pages.Add(name, id);
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.Pages)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new
+                {
                     Version = 1,
                     IsDeleted = false,
-                    CreatedOn = DateTime.Now,
-                    CreatedByUser = demoDataCreationUser,
-                    ModifiedOn = DateTime.Now,
-                    ModifiedByUser = demoDataCreationUser,
-                    PageId = pageId,
-                    ContentId = widgetId,
-                    RegionId = regionId,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Id = id,
+                    PageUrl = url,
+                    Title = name,
+                    LayoutId = templates[templateName],
+                    PublishedOn = UpdatedOn,
+                    MetaTitle = "Ut wisi minim veniam.",
+                    MetaKeywords = "doming id quod mazim placerat facer possim assum",
+                    MetaDescription = "doming id quod mazim placerat facer possim assum",
+                    IsPublic = true,
+                    Status = (int)PageStatus.Published,
+                });
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.Pages)
+                .InSchema(Constants.DataBase.Schemas.Pages)
+                .Row(new
+                {
+                    Id = id,
+                    Description = description,
+                    // page.ImageId,
+                    // CanonicalUrl,
+                    // CustomCss,
+                    // CustomJS,
+                    UseCanonicalUrl = false,
+                    UseNoFollow = false,
+                    UseNoIndex = false,
+                    PublishedOn = UpdatedOn,
+                    // page.CategoryId,
+                    NodeCountInSitemap = 1
+                });
+
+            var sitemapNodeId = Guid.NewGuid();
+            nodes.Add(name, sitemapNodeId);
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.SitemapNodes)
+                .InSchema(Constants.DataBase.Schemas.Pages)
+                .Row(new
+                {
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Title = name,
+                    Url = url,
+                    DisplayOrder = 0,
+                    // TODO: ParentNodeId = nodes[parentNodeName]
+                });
+        }
+
+        private void InsertContent(string pageName, string regionName, int order, object content)
+        {
+            var contentId = Guid.NewGuid();
+
+            var widgetName = content as string;
+            var htmlContent = content as Content;
+            if (htmlContent != null)
+            {
+                Insert
+                    .IntoTable(Constants.DataBase.Tables.Contents)
+                    .InSchema(Constants.DataBase.Schemas.Root)
+                    .Row(new
+                    {
+                        Version = 1,
+                        IsDeleted = false,
+                        CreatedOn = UpdatedOn,
+                        CreatedByUser = UpdatedBy,
+                        ModifiedOn = UpdatedOn,
+                        ModifiedByUser = UpdatedBy,
+
+                        Id = contentId,
+                        Name = htmlContent.Name,
+                        Status = (int)ContentStatus.Published,
+                        PublishedOn = UpdatedOn,
+                        PublishedByUser = UpdatedBy,
+                    });
+
+                Insert
+                    .IntoTable(Constants.DataBase.Tables.HtmlContents)
+                    .InSchema(Constants.DataBase.Schemas.Pages)
+                    .Row(new
+                    {
+                        Id = contentId,
+                        ActivationDate = UpdatedOn,
+                        UseCustomCss = false,
+                        UseCustomJs = false,
+                        Html = htmlContent.Html,
+                        EditInSourceMode = false
+                    });
+
+            }
+            else if (widgetName != null)
+            {
+                contentId = widgets[widgetName];
+            }
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.PageContents)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new
+                {
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Id = Guid.NewGuid(),
+                    PageId = pages[pageName],
+                    ContentId = contentId,
+                    RegionId = regions[regionName],
                     Order = order
                 });
         }
 
-        private abstract class BaseModel
-        {
-            public Guid Id { get; set; }
-            public int Version { get; set; }
-            public string CreatedByUser { get; set; }
-            public DateTime CreatedOn { get; set; }
-            public string ModifiedByUser { get; set; }
-            public DateTime ModifiedOn { get; set; }
-            public bool IsDeleted { get; set; }
-
-            public BaseModel()
-            {
-                ModifiedByUser = CreatedByUser = demoDataCreationUser;
-                ModifiedOn = CreatedOn = DateTime.Now;
-                IsDeleted = false;
-                Version = 1;
-                Id = Guid.NewGuid();
-            }
-        }
-
-        private class Template : BaseModel
-        {
-            public string Name { get; set; }
-            public string LayoutPath { get; set; }
-        }
-
-        private class Region : BaseModel
-        {
-            public string RegionIdentifier { get; set; }
-        }
-
-        private class LayoutRegion : BaseModel
-        {
-            public string Description { get; set; }
-            public Guid LayoutId { get; set; }
-            public Guid RegionId { get; set; }
-        }
-
-        private class Page : BaseModel
-        {
-            public string PageUrl { get; set; }
-            public string Title { get; set; }
-            public Guid LayoutId { get; set; }
-            public DateTime PublishedOn { get; set; }
-            public string MetaTitle { get; set; }
-            public string MetaKeywords { get; set; }
-            public string MetaDescription { get; set; }
-            public bool IsPublic { get; set; }
-            public int Status { get; set; }
-
-            public string Description { get; set; }
-            //public Guid ImageId { get; set; }
-            public string CanonicalUrl { get; set; }
-            public string CustomCss { get; set; }
-            public string CustomJS { get; set; }
-            public bool UseCanonicalUrl { get; set; }
-            public bool UseNoFollow { get; set; }
-            public bool UseNoIndex { get; set; }
-            //public Guid CategoryId { get; set; }
-            public int NodeCountInSitemap { get; set; }
-
-            public Page()
-            {
-                Status = (int)PageStatus.Published;
-                PublishedOn = DateTime.Now;
-                IsPublic = true;
-                UseCanonicalUrl = false;
-                UseNoFollow = false;
-                UseNoIndex = false;
-                NodeCountInSitemap = 0;
-                MetaTitle = "Ut wisi minim veniam.";
-                MetaKeywords = "doming id quod mazim placerat facer possim assum";
-                MetaDescription = "doming id quod mazim placerat facer possim assum";
-            }
-        }
-
-        private class SitemapNode : BaseModel
-        {
-            public string Title { get; set; }
-            public string Url { get; set; }
-            public int DisplayOrder { get; set; }
-            public Guid? ParentNodeId { get; set; }
-
-            public SitemapNode()
-            {
-                DisplayOrder = 0;
-                ParentNodeId = null;
-            }
-        }
-
-        private class HtmlContent : BaseModel
-        {
-            public string Name { get; set; }
-            public int Status { get; set; }
-            public DateTime PublishedOn { get; set; }
-            public string PublishedByUser { get; set; }
-
-            public DateTime ActivationDate { get; set; }
-            public bool UseCustomCss { get; set; }
-            public bool UseCustomJs { get; set; }
-            public string Html { get; set; }
-            public bool EditInSourceMode { get; set; }
-
-            public HtmlContent()
-            {
-                Status = (int)ContentStatus.Published;
-                PublishedOn = DateTime.Now;
-                PublishedByUser = demoDataCreationUser;
-
-                ActivationDate = DateTime.Now;
-                UseCustomCss = false;
-                UseCustomJs = false;
-                EditInSourceMode = false;
-            }
-        }
-
-        private class HtmlWidget : BaseModel
-        {
-            public string Name { get; set; }
-            public int Status { get; set; }
-            public DateTime PublishedOn { get; set; }
-            public string PublishedByUser { get; set; }
-
-            public bool UseCustomCss { get; set; }
-            public bool UseCustomJs { get; set; }
-            public bool UseHtml { get; set; }
-            public string Html { get; set; }
-            public bool EditInSourceMode { get; set; }
-
-            public HtmlWidget()
-            {
-                Status = (int)ContentStatus.Published;
-                PublishedOn = DateTime.Now;
-                PublishedByUser = demoDataCreationUser;
-
-                UseCustomCss = false;
-                UseCustomJs = false;
-                UseHtml = true;
-                EditInSourceMode = false;
-            }
-        }
         #endregion
     }
 }

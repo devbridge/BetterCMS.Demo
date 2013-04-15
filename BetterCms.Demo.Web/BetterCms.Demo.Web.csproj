@@ -225,7 +225,7 @@
     <Content Include="Views\Shared\Partial\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_MainPageTemplate.cshtml" />
+    <Content Include="Views\Shared\CmsTemplates\_TwoColumnsWithHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Partial\_Footer.cshtml" />
