@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+<section class="two-col-left">
+    @RenderSection("Left", false)
+    @RenderBody()
+</section>
+<aside class="col-right">
+    @RenderSection("Right", false)
+</aside>

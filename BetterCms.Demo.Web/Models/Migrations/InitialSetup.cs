@@ -34,10 +34,12 @@ namespace BetterCms.Demo.Web.Models.Migrations
             public static Guid MainPageMainRegionId = new Guid("3C7F8C94-A36A-445E-B9BF-04A268619475");
             public static Guid MainPageRightSideRegionId = new Guid("F0E53FDC-AA67-49BE-A295-29D822BDFFB9");
 
+            public static Guid TwoColumnsTemplateId = new Guid("40EFD7C1-18B3-456A-A2F2-3479C8C9960E");
+            public static Guid LeftRegionId = new Guid("E79C245D-103E-4517-AACB-3707814C425C");
+            public static Guid RightRegionId = new Guid("D0E17CE8-4FB7-45EA-A2C6-F0957EC2E875");
+
             public static Guid ThreeColumnsTemplateId = new Guid("3621324F-1835-48B4-9E11-CF525B5264A7");
-            public static Guid ThreeColumnsTemplateLeftRegionId = new Guid("F5194EF0-33DD-43C0-8650-E0DB88482CE4");
-            public static Guid ThreeColumnsTemplateMiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
-            public static Guid ThreeColumnsTemplateRightRegionId = new Guid("427436F2-C7D2-4FAA-8AF4-95768DE50EC6");
+            public static Guid MiddleRegionId = new Guid("06162761-174D-483E-98E2-48366A9B9E4A");
 
             // Widgets
             public static Guid WidgetSocialId = new Guid("7F393810-3771-48AD-BD02-A9D1A56B267E");
@@ -45,6 +47,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             // Pages
             public static Guid PageHomeId = new Guid("CF320C05-0C22-4512-B68A-F4CE9679C9AD");
             public static Guid PageAboutUsId = new Guid("B26A10C6-DF0C-48C2-8E3F-2798E928DDC0");
+            public static Guid PageBlogId = new Guid("7709C3E9-7C4D-46EB-ABA6-58FB2C150918");
         }
 
         private void CreateTemplates()
@@ -78,6 +81,27 @@ namespace BetterCms.Demo.Web.Models.Migrations
             AddTemplate(
                 new Template
                     {
+                        Id = Ids.TwoColumnsTemplateId,
+                        Name = "Two Columns Template",
+                        LayoutPath = "~/Views/Shared/CmsTemplates/_TwoColumnsTemplate.cshtml"
+                    },
+                new[]
+                    {
+                        new Region
+                            {
+                                Id = Ids.LeftRegionId,
+                                RegionIdentifier = "Left"
+                            },
+                        new Region
+                            {
+                                Id = Ids.RightRegionId,
+                                RegionIdentifier = "Right"
+                            },
+                    });
+
+            AddTemplate(
+                new Template
+                    {
                         Id = Ids.ThreeColumnsTemplateId,
                         Name = "Three Columns Template",
                         LayoutPath = "~/Views/Shared/CmsTemplates/_ThreeColumnsTemplate.cshtml"
@@ -86,18 +110,16 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     {
                         new Region
                             {
-                                Id = Ids.ThreeColumnsTemplateLeftRegionId,
-                                RegionIdentifier = "Left"
+                                Id = Ids.LeftRegionId,
                             },
                         new Region
                             {
-                                Id = Ids.ThreeColumnsTemplateMiddleRegionId,
+                                Id = Ids.MiddleRegionId,
                                 RegionIdentifier = "Middle"
                             },
                         new Region
                             {
-                                Id = Ids.ThreeColumnsTemplateRightRegionId,
-                                RegionIdentifier = "Right"
+                                Id = Ids.RightRegionId,
                             },
                     });
         }
@@ -135,6 +157,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
         {
             AddMainPage();
             AddAboutUsPage();
+            AddBlogPage();
         }
 
         private void AddMainPage()
@@ -180,7 +203,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             LayoutId = Ids.ThreeColumnsTemplateId,
                             PageUrl = "/aboutus/",
                             Title = "About Us",
-                            Description = "About Us demo page.",
+                            Description = "About Us page.",
                         },
                     new SitemapNode
                         {
@@ -188,7 +211,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                             Url = "/aboutus/"
                         });
 
-            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateLeftRegionId, 0, new HtmlContent
+            AddContent(Ids.PageAboutUsId, Ids.LeftRegionId, 0, new HtmlContent
                 {
                     Name = "Lorem ipsum",
                     Html = @"<hgroup> <h1>This is an Example of a Sub Head</h1> <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2> </hgroup> <section class='content-image-1'> <img src='/Content/images/sample-45.jpg' alt='Sample 45'> <div class='info-box'> <h2>Consectetuer adipiscing</h2> <h3>doming id quod mazim placerat facer possim assum.</h3> </div> </section> <article class='content-article'> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article> <article class='content-article'> <h2>This is an Example of a Sub Head</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p> </article>",
@@ -206,13 +229,37 @@ namespace BetterCms.Demo.Web.Models.Migrations
 //                    Html = @"",
 //                });
 
-            AddWidget(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 1, Ids.WidgetSocialId);
+            AddWidget(Ids.PageAboutUsId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
 
-            AddContent(Ids.PageAboutUsId, Ids.ThreeColumnsTemplateRightRegionId, 2, new HtmlContent
+            AddContent(Ids.PageAboutUsId, Ids.RightRegionId, 2, new HtmlContent
                 {
                     Name = "Lorem ipsum",
                     Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
                 });
+        }
+
+        private void AddBlogPage()
+        {
+            AddPage(new Page
+                        {
+                            Id = Ids.PageBlogId,
+                            LayoutId = Ids.TwoColumnsTemplateId,
+                            PageUrl = "/blog/",
+                            Title = "Blog",
+                            Description = "Blog landing page.",
+                        },
+                    new SitemapNode
+                        {
+                            Title = "Blog",
+                            Url = "/blog/"
+                        });
+
+            AddWidget(Ids.PageBlogId, Ids.RightRegionId, 1, Ids.WidgetSocialId);
+            AddContent(Ids.PageBlogId, Ids.RightRegionId, 2, new HtmlContent
+            {
+                Name = "Lorem ipsum",
+                Html = @"<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>",
+            });
         }
 
         #region Infrastructure
@@ -240,10 +287,14 @@ namespace BetterCms.Demo.Web.Models.Migrations
 
             foreach (var region in regions)
             {
-                Insert
-                    .IntoTable(TableNames.Regions)
-                    .InSchema(RootSchemaName)
-                    .Row(region);
+                if (!string.IsNullOrEmpty(region.RegionIdentifier))
+                {
+
+                    Insert
+                        .IntoTable(TableNames.Regions)
+                        .InSchema(RootSchemaName)
+                        .Row(region);
+                }
 
                 var layoutRegion = new LayoutRegion
                     {
