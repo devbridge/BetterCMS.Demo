@@ -9,3 +9,7 @@
     <a href="/Gallery">Gallery<span class="active-border"><span></span></span></a>
     <a href="/Contacts/">Contacts<span class="active-border"><span></span></span></a>
 </nav>
+@if (User == null || !User.Identity.IsAuthenticated)
+{
+    <a class="logo" style="float: right;" href="~/login">Login</a>
+}
