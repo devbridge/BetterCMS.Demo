@@ -361,6 +361,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             }
             else
             {
+                authors.Add(author, authorId);
                 Insert
                     .IntoTable(Constants.DataBase.Tables.Authors)
                     .InSchema(Constants.DataBase.Schemas.Blog)
