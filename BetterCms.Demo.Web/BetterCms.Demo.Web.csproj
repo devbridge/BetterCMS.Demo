@@ -198,7 +198,9 @@
     <Content Include="Scripts\jquery.accordion.js" />
     <Content Include="Scripts\modernizr.js" />
     <Content Include="Scripts\slides.min.jquery.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -254,7 +256,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>10774</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:17432/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
