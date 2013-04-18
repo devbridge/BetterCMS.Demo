@@ -9,7 +9,10 @@ namespace BetterCms.Demo.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("login", "login", new { controller = "Auth", action = "Login" });
+            routes.MapRoute("Login", "login", new { controller = "Auth", action = "Login" });
+
+            routes.MapRoute("Contact", "contact-form", new { controller = "ContactUs", action = "GetContactUs" });
+            routes.MapRoute("ContactSubmit", "contact-form-submit", new { controller = "ContactUs", action = "PostContactUs" });
         }
     }
 }

@@ -34,12 +34,15 @@ namespace BetterCms.Demo.Web.Models.Migrations
             InsertTemplate("Two Columns with Header", "~/Views/Shared/CmsTemplates/_TwoColumnsWithHeader.cshtml", new[] { "Header", "CMSMainContent", "Right" });
             InsertTemplate("Two Columns", "~/Views/Shared/CmsTemplates/_TwoColumnsTemplate.cshtml", new[] { "CMSMainContent", "Right" });
             InsertTemplate("Three Columns Template", "~/Views/Shared/CmsTemplates/_ThreeColumnsTemplate.cshtml", new[] { "CMSMainContent", "Middle", "Right" });
+            InsertTemplate("Grid", "~/Views/Shared/CmsTemplates/_GridTemplate.cshtml", new[] { "CMSMainContent", "LeftTop", "MiddleTop", "LeftBottom" });
         }
 
         private void AddWidgets()
         {
             InsertHtmlWidget("Social Media Links", "<div class='side-box'> <h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div> </div>");
             InsertHtmlWidget("Aside bar", "<div class='side-box'> <h2>Aside bar</h2> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href='#nolink'>laoreet dolore</a> magna aliquam erat volutpat.</p> <a href='#nolink'>&lt; Read More &gt;</a> </div>");
+            InsertHtmlWidget("Our Location", "<h2>Our Location</h2> <div class='map'> <iframe width='540' height='290' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1659+W+Hubbard+St,+Chicago,+IL,+United+States&amp;aq=0&amp;oq=1659+W.+Hubbard+St&amp;sll=39.74786,-104.994624&amp;sspn=0.016086,0.033023&amp;ie=UTF8&amp;hq=&amp;hnear=1659+W+Hubbard+St,+Chicago,+Cook,+Illinois+60622&amp;t=m&amp;ll=41.890522,-87.668753&amp;spn=0.018529,0.046263&amp;z=14&amp;output=embed'></iframe> </div>");
+            InsertServerWidget("Contact Us", "~/Views/Shared/CmsWidgets/ContactUs.cshtml");
         }
 
         private void AddPages()
@@ -49,6 +52,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
             InsertPage("About Us", "Three Columns Template", "/aboutus/", "About Us page.");
             InsertPage("Blog", "Two Columns", "/blog/", "Blog landing page.");
             InsertPage("News", "Two Columns", "/news/", "News page.");
+            InsertPage("Contacts", "Grid", "/contacts/", "Contacts page.");
 
             InsertBlog("Example Blog Post 1", "Two Columns", "/blog/post1/", "Blog", "Author Name",
                 intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.",
@@ -88,7 +92,11 @@ namespace BetterCms.Demo.Web.Models.Migrations
             InsertContent("News", "Right", 1, "Social Media Links");
             InsertContent("News", "Right", 2, "Aside bar");
 
-//            InsertContent("", "", 0, new Content{ Name = "", Html = "" });
+            InsertContent("Contacts", "CMSMainContent", 0, "Contact Us");
+            InsertContent("Contacts", "LeftTop", 0, new Content { Name = "Address", Html = "<h2>DevBridge Inc.</h2> <dl> <dt>1659 W. Hubbard St</dt> <dt>Chicago, IL 60622</dt> <dd>Ph. 312 242 1642</dd> <dd>Fax. 847 232 3114</dd> </dl>" });
+            InsertContent("Contacts", "MiddleTop", 0, new Content { Name = "Social Media Links", Html = "<h2>Find us on</h2> <div class='social-logo clearfix'> <a href='#nolink' class='facebook'>Facebook</a> <a href='#nolink' class='twitter'>Twitter</a> <a href='#nolink' class='linkedin'>LinkedIn</a> </div> <div class='social-logo clearfix'> <a href='#nolink' class='skype'>Skype</a> <a href='#nolink' class='youtube'>YouTube</a> <a href='#nolink' class='flickr'>Flikr</a> </div>" });
+//            InsertContent("Contacts", "MiddleTop", 0, "Social Media Links");
+            InsertContent("Contacts", "LeftBottom", 0, "Our Location");
         }
 
         private void UpdateDefaultRootPage()
@@ -138,6 +146,7 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     public const string PageContents = "PageContents";
                     public const string Widgets = "Widgets";
                     public const string HtmlContentWidgets = "HtmlContentWidgets";
+                    public const string ServerControlWidgets = "ServerControlWidgets";
                     public const string BlogPosts = "BlogPosts";
                     public const string BlogPostContents = "BlogPostContents";
                     public const string Authors = "Authors";
@@ -276,6 +285,50 @@ namespace BetterCms.Demo.Web.Models.Migrations
                     Html = html,
                     EditInSourceMode = false
                 });
+        }
+
+        private void InsertServerWidget(string name, string url, Dictionary<string,string> options = null)
+        {
+            var id = Guid.NewGuid();
+            widgets.Add(name, id);
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.Contents)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new
+                {
+                    Version = 1,
+                    IsDeleted = false,
+                    CreatedOn = UpdatedOn,
+                    CreatedByUser = UpdatedBy,
+                    ModifiedOn = UpdatedOn,
+                    ModifiedByUser = UpdatedBy,
+
+                    Id = id,
+                    Name = name,
+                    Status = (int)ContentStatus.Published,
+                    PublishedOn = UpdatedOn,
+                    PublishedByUser = UpdatedBy
+                });
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.Widgets)
+                .InSchema(Constants.DataBase.Schemas.Root)
+                .Row(new { Id = id });
+
+            Insert
+                .IntoTable(Constants.DataBase.Tables.ServerControlWidgets)
+                .InSchema(Constants.DataBase.Schemas.Pages)
+                .Row(new
+                {
+                    Id = id,
+                    Url = url,
+                });
+
+            if (options != null)
+            {
+                // TODO: add options.
+            }
         }
 
         private void InsertPage(string name, string templateName, string url, string description, string parentNodeName = null)

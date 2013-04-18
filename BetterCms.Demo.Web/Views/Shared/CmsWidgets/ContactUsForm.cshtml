@@ -1,0 +1,32 @@
+﻿@model BetterCms.Demo.Web.Models.ContactUsModel
+@{ const string containerId = "message-container"; }
+@using (Ajax.BeginForm("PostContactUs", "ContactUs", new { Area = "" }, new AjaxOptions
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = containerId,
+    }, new { @class = "contact-form" }))
+{
+    <h2>Contact Us</h2>
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "text-field", required="required" })
+        @Html.ValidationMessageFor(m => m.Name)        
+    </div>
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "text-field", type="email", required="required" })
+        @Html.ValidationMessageFor(m => m.Email)        
+    </div>
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Message)
+        @Html.TextAreaFor(m => m.Message, new { @class = "text-area", style = "height: 232px;", required="required" })
+        @Html.ValidationMessageFor(m => m.Message)        
+    </div>
+    <div id="@containerId">
+        <button type="submit" class="btn-primary">Send</button>
+    </div>
+}
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.3.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js"></script>
