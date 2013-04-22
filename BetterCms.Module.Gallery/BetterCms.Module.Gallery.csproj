@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F120D13C-2D36-44CB-894D-769EFE47BCEF}</ProjectGuid>
+    <ProjectGuid>{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}</ProjectGuid>
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BetterCms.Demo.Web</RootNamespace>
-    <AssemblyName>BetterCms.Demo.Web</AssemblyName>
+    <RootNamespace>BetterCms.Module.Gallery</RootNamespace>
+    <AssemblyName>BetterCms.Module.Gallery</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -53,6 +53,11 @@
     <Reference Include="BetterCms.Core">
       <HintPath>..\packages\BetterCMS.1.0.0\lib\net40\BetterCms.Core.dll</HintPath>
     </Reference>
+    <Reference Include="BetterCms.Module.MediaManager, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>App_Data\BetterCms\Modules\BetterCms.Module.MediaManager.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Root, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
@@ -78,10 +83,6 @@
     <Reference Include="MvcContrib">
       <HintPath>..\packages\MvcContrib.2.0.95.0\lib\MvcContrib.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
@@ -105,10 +106,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -121,6 +118,13 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
       <Private>True</Private>
@@ -147,6 +151,10 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
@@ -161,96 +169,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\ContactUsController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Commands\GetAlbumList\GetAlbumListCommand.cs" />
+    <Compile Include="Content\Resources\GalleryGlobalization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GalleryGlobalization.resx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactUsModel.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="GalleryModuleDescriptor.cs" />
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Maps\AlbumMap.cs" />
     <Compile Include="Models\Migrations\InitialSetup.cs" />
-    <Compile Include="Models\Migrations\MigrationRunner.cs" />
     <Compile Include="Models\Migrations\MigrationVersionMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration\GalleryJsModuleIncludeDescriptor.cs" />
+    <Compile Include="ViewModels\SiteSettingsAlbumViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Blog.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.MediaManager.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Pages.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Root.dll" />
     <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Templates.dll" />
-    <Content Include="App_Data\CmsData.mdf" />
-    <Content Include="App_Data\CmsData_log.ldf">
-      <DependentUpon>CmsData.mdf</DependentUpon>
-    </Content>
-    <Content Include="Content\Styles\bcms.light.content.css" />
-    <Content Include="Content\Styles\bcms.light.layout.css" />
-    <Content Include="Content\Styles\images\bg-active-menu.png" />
-    <Content Include="Content\Styles\images\bg-header.png" />
-    <Content Include="Content\Styles\images\icn-author.png" />
-    <Content Include="Content\Styles\images\icn-banner-arrow.png" />
-    <Content Include="Content\Styles\images\icn-btn-arrow.png" />
-    <Content Include="Content\Styles\images\icn-tag.png" />
-    <Content Include="Content\Styles\images\social-icons.png" />
-    <Content Include="Global.asax" />
-    <Content Include="Scripts\coverflow.js" />
-    <Content Include="Scripts\gallery.js" />
-    <Content Include="Scripts\jquery.accordion.js" />
-    <Content Include="Scripts\modernizr.js" />
-    <Content Include="Scripts\slides.min.jquery.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
+    <EmbeddedResource Include="Content\Styles\bcms.gallery.css" />
+    <EmbeddedResource Include="Scripts\bcms.gallery.js" />
+    <Content Include="web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsWidgets\ContactUs.cshtml" />
+    <Folder Include="Accessors\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\cms.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <EmbeddedResource Include="Content\Resources\GalleryGlobalization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GalleryGlobalization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Web.config" />
+    <EmbeddedResource Include="Views\Shared\Widgets\GalleryWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_BaseLayout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\Partial\_Header.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_TwoColumnsWithHeader.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\Partial\_Footer.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Config\nlog.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_ThreeColumnsTemplate.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_TwoColumnsTemplate.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsWidgets\ContactUsForm.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_GridTemplate.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -268,9 +230,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>10774</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:17432/</IISUrl>
+          <IISUrl>http://localhost:20897/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -281,14 +243,6 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>REM if exist "$(ProjectDir)App_Data\CmsData.mdf" (del "$(ProjectDir)App_Data\CmsData.mdf" /Q)
-REM if exist "$(ProjectDir)App_Data\CmsData_log.ldf" (del "$(ProjectDir)App_Data\CmsData_log.ldf" /Q)
-if not exist "$(ProjectDir)App_Data\CmsData.mdf" (echo f | xcopy "$(ProjectDir)App_Data\Default.mdf" "$(ProjectDir)App_Data\CmsData.mdf" /Y /Q)
-
-copy "$(SolutionDir)BetterCms.Module.Gallery\bin\BetterCms.Module.Gallery.dll" "$(ProjectDir)App_Data\BetterCms\Modules" /Y
-copy "$(SolutionDir)BetterCms.Module.Gallery\bin\BetterCms.Module.Gallery.pdb" "$(ProjectDir)App_Data\BetterCms\Modules" /Y</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

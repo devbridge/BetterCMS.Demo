@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCms.Demo.Web", "BetterCms.Demo.Web\BetterCms.Demo.Web.csproj", "{F120D13C-2D36-44CB-894D-769EFE47BCEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A} = {7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1F9A5C01-6507-485D-A291-FEB01BB41A8D}"
 	ProjectSection(SolutionItems) = preProject
@@ -9,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1F9A5C
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{FBA93237-41DF-4335-8B94-B1E7D61150D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCms.Module.Gallery", "BetterCms.Module.Gallery\BetterCms.Module.Gallery.csproj", "{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +27,15 @@ Global
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C01FEA5-27D3-46C6-81CA-C14BA4358D8A} = {FBA93237-41DF-4335-8B94-B1E7D61150D8}
 	EndGlobalSection
 EndGlobal
