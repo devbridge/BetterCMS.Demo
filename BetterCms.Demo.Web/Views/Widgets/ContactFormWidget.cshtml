@@ -1,0 +1,30 @@
+﻿@using BetterCms.Demo.Web.Helpers
+@model BetterCms.Demo.Web.Models.ContactFormViewModel
+
+@{ Model.EmailTo = OptionsHelper.GetValue(Model.Options, "EmailToAddress"); }
+
+@using (Html.BeginForm("ContactForm", "Contact", FormMethod.Post, new { @class = "autobind" }))
+{
+    <h2>Contact Us</h2>
+
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "text-field" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "text-field" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <div class="field-holder">
+        @Html.LabelFor(m => m.Message)
+        @Html.TextAreaFor(m => m.Message, new { @class = "text-area", style="height: 232px;" })
+        @Html.ValidationMessageFor(m => m.Message)
+    </div>
+    
+    @Html.HiddenFor(m => m.EmailTo)
+    <a class="btn-primary" data-url="/contacts/submit-form">Send</a>
+}

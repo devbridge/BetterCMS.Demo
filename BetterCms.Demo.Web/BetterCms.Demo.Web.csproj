@@ -47,11 +47,43 @@
     <Reference Include="Autofac.Configuration">
       <HintPath>..\packages\Autofac.3.0.2\lib\net40\Autofac.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="BetterCms.Configuration">
-      <HintPath>..\packages\BetterCMS.1.0.0\lib\net40\BetterCms.Configuration.dll</HintPath>
+    <Reference Include="BetterCms.Configuration, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Core.1.3.3\lib\net40\BetterCms.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="BetterCms.Core">
-      <HintPath>..\packages\BetterCMS.1.0.0\lib\net40\BetterCms.Core.dll</HintPath>
+    <Reference Include="BetterCms.Core, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Core.1.3.3\lib\net40\BetterCms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Api">
+      <HintPath>..\packages\BetterCms.Module.Api.1.3.3\lib\net40\BetterCms.Module.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Api.Abstractions">
+      <HintPath>..\packages\BetterCms.Module.Api.Abstractions.1.3.3\lib\net40\BetterCms.Module.Api.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Blog, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Blog.1.3.3\lib\net40\BetterCms.Module.Blog.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Installation, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Installation.1.3.3\lib\net40\BetterCms.Module.Installation.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.MediaManager, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.MediaManager.1.3.3\lib\net40\BetterCms.Module.MediaManager.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Pages, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Pages.1.3.3\lib\net40\BetterCms.Module.Pages.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Root, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Root.1.3.3\lib\net40\BetterCms.Module.Root.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterCms.Module.Users, Version=1.3.3.58, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Users.1.3.3\lib\net40\BetterCms.Module.Users.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
@@ -62,8 +94,9 @@
     <Reference Include="FluentMigrator">
       <HintPath>..\packages\FluentMigrator.1.0.6.0\lib\40\FluentMigrator.dll</HintPath>
     </Reference>
-    <Reference Include="FluentMigrator.Runner">
-      <HintPath>..\packages\BetterCMS.1.0.0\..\FluentMigrator.Tools.1.0.6.0\tools\AnyCPU\40\FluentMigrator.Runner.dll</HintPath>
+    <Reference Include="FluentMigrator.Runner, Version=1.0.6.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BetterCms.Module.Root.1.3.3\..\FluentMigrator.Tools.1.0.6.0\tools\AnyCPU\40\FluentMigrator.Runner.dll</HintPath>
     </Reference>
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
@@ -72,18 +105,21 @@
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Web.Mvc">
-      <HintPath>..\packages\Mvc2Futures.2.0.50217.0\lib\Microsoft.Web.Mvc.dll</HintPath>
+    <Reference Include="Microsoft.Web.Mvc, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Mvc3Futures.3.0.20105.0\lib\Microsoft.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="MvcContrib">
-      <HintPath>..\packages\MvcContrib.2.0.95.0\lib\MvcContrib.dll</HintPath>
+    <Reference Include="MvcContrib, Version=3.0.100.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvcContrib.Mvc3-ci.3.0.100.0\lib\MvcContrib.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate.Logging.CommonLogging">
       <HintPath>..\packages\NHibernate.Logging.1.3.2\lib\net35\NHibernate.Logging.CommonLogging.dll</HintPath>
@@ -95,6 +131,30 @@
     <Reference Include="NuGet.Core, Version=2.0.30619.9119, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Nuget.Core.2.0.1\lib\net40-Client\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack">
+      <HintPath>..\packages\ServiceStack.3.9.63\lib\net35\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\packages\ServiceStack.Common.3.9.63\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\packages\ServiceStack.Common.3.9.63\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.63\lib\net35\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.63\lib\net35\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\packages\ServiceStack.Redis.3.9.63\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface">
+      <HintPath>..\packages\ServiceStack.3.9.63\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.9.63\lib\net35\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -161,30 +221,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\SitemapController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactUsModel.cs" />
-    <Compile Include="Models\Migrations\InitialSetup.cs" />
-    <Compile Include="Models\Migrations\MigrationRunner.cs" />
-    <Compile Include="Models\Migrations\MigrationVersionMetaData.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\OptionsHelper.cs" />
+    <Compile Include="Helpers\SocialHelper.cs" />
+    <Compile Include="Infrastructure\EmailAttribute.cs" />
+    <Compile Include="Models\BlogItem.cs" />
+    <Compile Include="Models\CategoryItem.cs" />
+    <Compile Include="Models\ContactFormViewModel.cs" />
+    <Compile Include="Models\MenuItemViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Blog.dll" />
-    <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.MediaManager.dll" />
-    <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Pages.dll" />
-    <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Root.dll" />
-    <Content Include="App_Data\BetterCms\Modules\BetterCms.Module.Templates.dll" />
-    <Content Include="App_Data\CmsData.mdf" />
-    <Content Include="App_Data\CmsData_log.ldf">
-      <DependentUpon>CmsData.mdf</DependentUpon>
-    </Content>
+    <Content Include="betterCms.license.txt" />
+    <Content Include="Content\images\gallery-1.jpg" />
+    <Content Include="Content\images\gallery-2.jpg" />
+    <Content Include="Content\images\gallery-3.jpg" />
+    <Content Include="Content\images\gallery-4.jpg" />
+    <Content Include="Content\images\gallery-5.jpg" />
+    <Content Include="Content\images\gallery-6.jpg" />
+    <Content Include="Content\images\gallery.jpg" />
+    <Content Include="Content\images\sample-32.jpg" />
+    <Content Include="Content\images\sample-45.jpg" />
+    <Content Include="Content\images\sample-78.jpg" />
     <Content Include="Content\Styles\bcms.light.content.css" />
     <Content Include="Content\Styles\bcms.light.layout.css" />
     <Content Include="Content\Styles\images\bg-active-menu.png" />
@@ -194,10 +261,15 @@
     <Content Include="Content\Styles\images\icn-btn-arrow.png" />
     <Content Include="Content\Styles\images\icn-tag.png" />
     <Content Include="Content\Styles\images\social-icons.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\coverflow.js" />
+    <Content Include="Scripts\forms.js" />
     <Content Include="Scripts\gallery.js" />
     <Content Include="Scripts\jquery.accordion.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\messages.js" />
     <Content Include="Scripts\modernizr.js" />
     <Content Include="Scripts\slides.min.jquery.js" />
     <Content Include="Web.config">
@@ -212,46 +284,87 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsWidgets\ContactUs.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Config\cms.config">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_BaseLayout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\Partial\_Header.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_TwoColumnsWithHeader.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\Partial\_Footer.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Config\nlog.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_ThreeColumnsTemplate.cshtml" />
+    <Content Include="Config\cms.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_TwoColumnsTemplate.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_BcmsLightLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsWidgets\ContactUsForm.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_BcmsOneCol.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\CmsTemplates\_GridTemplate.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_Contacts.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\SocialWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\ContactFormWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\validation.extenders.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\smtp.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SiteMap\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts\Light\_Home.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts\Light\_BcmsTwoCol.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts\Light\_BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\LatestBlogPostsWdiget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\Last.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\LastBlogPostWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\GetCategories.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\CategoriesMenuWdiget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SiteMap\SubMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\SubMenuWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts\Light\_BcmsThreeCol.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\Feed.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widgets\BlogFeedWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\connectionString.config" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -282,12 +395,8 @@
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <PropertyGroup>
-    <PostBuildEvent>REM if exist "$(ProjectDir)App_Data\CmsData.mdf" (del "$(ProjectDir)App_Data\CmsData.mdf" /Q)
-REM if exist "$(ProjectDir)App_Data\CmsData_log.ldf" (del "$(ProjectDir)App_Data\CmsData_log.ldf" /Q)
-if not exist "$(ProjectDir)App_Data\CmsData.mdf" (echo f | xcopy "$(ProjectDir)App_Data\Default.mdf" "$(ProjectDir)App_Data\CmsData.mdf" /Y /Q)
-
-copy "$(SolutionDir)BetterCms.Module.Gallery\bin\BetterCms.Module.Gallery.dll" "$(ProjectDir)App_Data\BetterCms\Modules" /Y
-copy "$(SolutionDir)BetterCms.Module.Gallery\bin\BetterCms.Module.Gallery.pdb" "$(ProjectDir)App_Data\BetterCms\Modules" /Y</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,14 @@
+﻿@using BetterCms.Demo.Web.Models
+@model IList<BlogItem>
+
+@foreach (var item in Model)
+{
+    <div class="blog-box">
+    <h4><a href="@item.Url">@item.Title</a></h4>
+    <div class="blog-info clearfix">
+        <span class="author">@item.Author</span>
+        <time datetime="@item.PublishedOn.ToString("yyyy-MM-dd")">@item.PublishedOn.ToString("MMM d, yyyy")</time>
+    </div>
+    <img src="@item.ImageUrl" alt="Blog Feed Image">
+</div>
+}

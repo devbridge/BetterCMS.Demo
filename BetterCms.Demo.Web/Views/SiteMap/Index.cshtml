@@ -1,0 +1,6 @@
+﻿@model IList<BetterCms.Demo.Web.Models.MenuItemViewModel>
+
+@foreach (var item in Model)
+{
+     <a href="@item.Url">@item.Caption<span class="active-border"><span></span></span></a>
+}

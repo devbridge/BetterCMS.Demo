@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "~/Views/Shared/Layouts/Light/_BcmsLightLayout.cshtml";
+}
+
+@section MainContent {
+    @RenderSection("MainContent", false)
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+}

@@ -1,0 +1,8 @@
+﻿@using BetterCms.Demo.Web.Helpers
+@{
+    var parentUrl = OptionsHelper.GetValue(Model.Options, "parentUrl");
+    if (parentUrl != null)
+    {
+        Html.RenderAction("SubMenu", "Sitemap", new { area = string.Empty, parentUrl = parentUrl });        
+    }
+}

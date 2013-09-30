@@ -1,5 +1,4 @@
 function reset() {
-
     var replacement = document.createElement('div');
     replacement.id = 'gallery';
 
@@ -87,4 +86,4 @@ function reset() {
         textoffset: 37
     });
 }
-reset();
+//reset();

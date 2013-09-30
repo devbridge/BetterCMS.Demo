@@ -485,7 +485,7 @@
     float: right;
     width: 300px;
     padding: 22px;
-    margin-top: -23px;
+    margin-top: 0;
     border: 1px solid #ececec;
     background: url('images/bg-header.png');
 }

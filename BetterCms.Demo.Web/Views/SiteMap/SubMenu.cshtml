@@ -1,0 +1,10 @@
+﻿@using BetterCms.Demo.Web.Models
+@model IList<MenuItemViewModel>
+
+<div class="submenu">
+    @foreach (var item in Model)
+    {
+        <a href="@item.Url" class="@(Request.Path == item.Url ? "submenu-active": null)">@item.Caption</a>
+    }
+</div>
+

@@ -9,10 +9,13 @@ namespace BetterCms.Demo.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Login", "login", new { controller = "Auth", action = "Login" });
-
-            routes.MapRoute("Contact", "contact-form", new { controller = "ContactUs", action = "GetContactUs" });
-            routes.MapRoute("ContactSubmit", "contact-form-submit", new { controller = "ContactUs", action = "PostContactUs" });
+            routes.MapRoute("contacts-form", "contacts/submit-form", new { area = string.Empty, controller = "Contact", action = "ContactForm" }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("menu-top", "menu/top", new { area = string.Empty, controller = "SiteMap", action = "Index" }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("menu-sub", "menu/submenu/{parentUrl}", new { area = string.Empty, controller = "SiteMap", action = "SubMenu" }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("blog-latest", "blog/latest/{categoryId}", new { area = string.Empty, controller = "Blog", action = "Index", categoryId = UrlParameter.Optional }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("blog-last", "blog/last", new { area = string.Empty, controller = "Blog", action = "Last" }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("blog-categories", "blog/categories", new { area = string.Empty, controller = "Blog", action = "GetCategories" }, new[] { "BetterCms.Demo.Web.Controllers" });
+            routes.MapRoute("blog-feed", "blog/feed", new { area = string.Empty, controller = "Blog", action = "Feed" }, new[] { "BetterCms.Demo.Web.Controllers" });
         }
     }
 }

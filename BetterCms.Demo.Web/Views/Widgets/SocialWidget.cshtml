@@ -1,0 +1,31 @@
+﻿@using BetterCms.Demo.Web.Helpers
+@using BetterCms.Module.Root.ViewModels.Cms
+@model RenderWidgetViewModel
+
+@{
+    var useSideBoxOption = OptionsHelper.GetValue(Model.Options, "useSideBox");
+    var useSideBox = !string.IsNullOrWhiteSpace(useSideBoxOption) && Convert.ToBoolean(useSideBoxOption);
+}
+
+@if (useSideBox)
+{
+    @:<div class="side-box">
+}
+
+<h2>@Html.TitleForSocial()</h2>
+
+<div class="social-logo clearfix">
+    @Html.LinkForSocial("facebookShouldRender", "facebookUrl", "facebookTitle", "facebookCssClass")
+    @Html.LinkForSocial("twitterShouldRender", "twitterUrl", "twitterTitle", "twitterCssClass")
+    @Html.LinkForSocial("linkedinShouldRender", "linkedinUrl", "linkedinTitle", "linkedinCssClass")
+</div>
+<div class="social-logo clearfix">
+    @Html.LinkForSocial("skypeShouldRender", "skypeUrl", "skypeTitle", "skypeCssClass")
+    @Html.LinkForSocial("youtubeShouldRender", "youtubeUrl", "youtubeTitle", "youtubeCssClass")
+    @Html.LinkForSocial("flickrShouldRender", "flickrUrl", "flickrTitle", "flickrCssClass")
+</div>
+
+@if (useSideBox)
+{
+    @:</div>
+}
