@@ -241,6 +241,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\demo.mdf" />
+    <Content Include="App_Data\demo_log.ldf">
+      <DependentUpon>demo.mdf</DependentUpon>
+    </Content>
     <Content Include="betterCms.license.txt" />
     <Content Include="Content\images\gallery-1.jpg" />
     <Content Include="Content\images\gallery-2.jpg" />
@@ -364,7 +368,9 @@
   <ItemGroup>
     <Content Include="Config\connectionString.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\BetterCMS\Modules\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
