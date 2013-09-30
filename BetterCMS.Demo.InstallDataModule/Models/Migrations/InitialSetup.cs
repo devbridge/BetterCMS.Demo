@@ -4,7 +4,7 @@ using FluentMigrator;
 
 namespace BetterCms.Demo.InstallDataModule.Models.Migrations
 {
-    [Migration(201309271343)]
+    [Migration(201309271633)]
     public class InitialSetup : DefaultMigration
     {
         public InitialSetup()
