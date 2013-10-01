@@ -271,7 +271,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
                 <dd>Ph. 312 242 1642</dd>
                 <dd>Fax. 847 232 3114</dd>
             </dl>
- ', 1)
+ ', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'a44ee27c-d1eb-4bba-ae62-a23e009f7fc4', CAST(0x0000A23E00000000 AS DateTime), NULL, NULL, 0, N'
 $.getScript("http://maps.google.com/maps/api/js?sensor=false&async=2&callback=gMapsCallback", function () {});
 
@@ -305,7 +305,7 @@ function gMapsCallback() {
 }', 1, N'<h2>Our Location</h2>
 
 <div id="google-map" class="map"></div>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'5190f6fe-8b06-44fc-b089-a24300cc6b17', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a>
         <div class="block">
             <p>
@@ -329,7 +329,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
             <br />
             <p>And now, for something completely different. And now.</p>
         </div>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ff7fd016-7041-431e-b435-a24300cd6328', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <div>
             <hgroup class="banner-text">
                 <h1>Ut wisi minim veniam</h1>
@@ -362,7 +362,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
             <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
             <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
         </div>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'51c175cc-7d5e-45c4-be67-a24301266d95', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h1>About Us</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
@@ -370,9 +370,9 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla...
 <a href="/about-us/">&lt; Read more About Us &gt</a>
 </p>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'896b6b17-22bd-4844-a66c-a2430126988d', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <h1>Gallery</h1>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<section class="blogpost-head">
 <h1>This is an Example of a Blog Post<a class="back-link" onclick="history.go(-1)">&lt; Back</a></h1>
 <span class="author">Author Name,</span><time datetime="2013-01-28">Jan 28, 2013</time></section>
@@ -402,7 +402,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>dsdfsgsda</p>
 ', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
@@ -430,7 +430,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -456,7 +456,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'072f4ae4-9b64-4176-8f15-a244011ca304', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -482,7 +482,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'462c89e4-1ed9-4e37-b3b1-a24500b622c5', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -508,7 +508,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'94163a66-1f43-4d7d-8156-a24500b69caf', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -534,7 +534,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -560,7 +560,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'c6315c08-038c-4bb1-b1a6-a24500e9b94b', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
     <h1>This is an Example of a Sub Head</h1>
     <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
@@ -600,7 +600,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
         <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd>
     </dl>
 </section>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'a2a7e409-7c56-412b-9cd9-a24500ed8d6d', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'  
 <hgroup>
     <h1>Business Sub Head</h1>
@@ -640,7 +640,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
         <dd><span></span>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </dd>
         <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd>
     </dl>
-</section>', 1)
+</section>', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ed4ac7a4-0651-40f6-b41e-a24500edd4a6', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
 	<h1>Technology Sub Head</h1>
 
@@ -688,7 +688,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 	<dd>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd>
 </dl>
 </section>
-', 1)
+', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'636a7d67-1dfa-4387-9e0a-a24501020e4d', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
 	<h1>About Us</h1>
 
@@ -716,8 +716,8 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7d2eba20-8133-43ec-9c09-a245010c13cb', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 1)
+', 0)
+INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7d2eba20-8133-43ec-9c09-a245010c13cb', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 0)
 GO
 print 'Processed 100 total records'
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'413fa6be-f765-4bd1-92c6-a2450110a70d', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
@@ -746,8 +746,8 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'9bfd80ed-ff09-4d1a-9826-a2450110a70e', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 1)
+</article>', 0)
+INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'9bfd80ed-ff09-4d1a-9826-a2450110a70e', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'c6175ed7-0deb-4de0-a37b-a2450110e9ee', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
 	<h1>About Us : Research</h1>
 
@@ -774,8 +774,8 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'0322541f-75c6-4b5f-ad0e-a2450110e9ef', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 1)
+</article>', 0)
+INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'0322541f-75c6-4b5f-ad0e-a2450110e9ef', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 0)
 
 INSERT [bcms_root].[PageAccessRules] ([PageId], [AccessRuleId]) VALUES (N'596fd4bf-0272-442a-8978-a23d00c7a284', N'8677d6f4-5ff4-4c1f-919d-a23d00c7a288')
 INSERT [bcms_root].[PageAccessRules] ([PageId], [AccessRuleId]) VALUES (N'596fd4bf-0272-442a-8978-a23d00c7a284', N'aeeda51b-b7c6-4658-b2fa-a23d00c7a288')
@@ -883,7 +883,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
         </div>
 
     </div>
-', 1, 1)
+', 1, 0)
 
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52')
