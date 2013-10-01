@@ -364,6 +364,15 @@
   <ItemGroup>
     <Folder Include="App_Data\BetterCMS\Modules\" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BetterCMS.Module.Demo\BetterCMS.Module.Demo.csproj">
+      <Project>{e45b69fe-434c-4b5d-81b2-c78934a1bf04}</Project>
+      <Name>BetterCMS.Module.Demo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

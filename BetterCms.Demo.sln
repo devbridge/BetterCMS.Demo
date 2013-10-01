@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCms.Demo.Web", "BetterCms.Demo.Web\BetterCms.Demo.Web.csproj", "{F120D13C-2D36-44CB-894D-769EFE47BCEF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E45B69FE-434C-4B5D-81B2-C78934A1BF04} = {E45B69FE-434C-4B5D-81B2-C78934A1BF04}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1F9A5C01-6507-485D-A291-FEB01BB41A8D}"
 	ProjectSection(SolutionItems) = preProject
