@@ -134,58 +134,21 @@ INSERT [bcms_root].[Layouts] ([Id], [Version], [IsDeleted], [CreatedOn], [Create
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'539da9fb-4deb-40a8-b7ce-a23e009ed3fa', 1, 0, CAST(0x0000A23E009ED360 AS DateTime), N'user', CAST(0x0000A23E009ED360 AS DateTime), N'user', NULL, NULL, N'Address', NULL, 3, CAST(0x0000A23E009ED360 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'a44ee27c-d1eb-4bba-ae62-a23e009f7fc4', 1, 0, CAST(0x0000A23E009F7FA4 AS DateTime), N'user', CAST(0x0000A23F011B9224 AS DateTime), N'user', NULL, NULL, N'Map', NULL, 3, CAST(0x0000A23F011B9224 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'2314c731-db26-4eb8-8bcf-a23e00b46be3', 1, 0, CAST(0x0000A23E00B46B1C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 3, CAST(0x0000A2440123822C AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'794e0e96-e4c6-42ec-814e-a23e00b88ec5', 1, 0, CAST(0x0000A23E00B88E7C AS DateTime), N'user', CAST(0x0000A23E00B88E7C AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00B46B1C AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'4376b551-cc15-4bd7-9517-a23e00bb3df2', 1, 0, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', CAST(0x0000A23E00BB3D34 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00B88E7C AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'671aa666-15c6-40d1-b0a7-a23e00bf5868', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00BF5860 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'0934f286-e99e-439c-b7ef-a23e00c1e3df', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'edb34ccc-5b22-46be-9400-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'3f9a40db-12d0-4057-9fd0-a23e00c81398', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00C54978 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00C81324 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'f18d4579-2517-41cd-9c5a-a23e01143b06', 1, 0, CAST(0x0000A23E01143A74 AS DateTime), N'user', CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL, NULL, N'ContactFormWidget', NULL, 3, CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'bc6d2656-fee2-4a6d-9dd5-a23e01194802', 1, 0, CAST(0x0000A23E01194708 AS DateTime), N'user', CAST(0x0000A23E01194708 AS DateTime), N'user', NULL, NULL, N'ContactFormWidget', NULL, 4, CAST(0x0000A23E01143A74 AS DateTime), N'user', N'f18d4579-2517-41cd-9c5a-a23e01143b06')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'982e5e4e-9521-49e3-b6de-a23e011a0fc1', 1, 0, CAST(0x0000A23E011A0F6C AS DateTime), N'user', CAST(0x0000A23E011A0F6C AS DateTime), N'user', NULL, NULL, N'ContactFormWidget', NULL, 4, CAST(0x0000A23E01194708 AS DateTime), N'user', N'f18d4579-2517-41cd-9c5a-a23e01143b06')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'a9105464-2331-4f7d-a199-a23e012a4f62', 1, 0, CAST(0x0000A23E012A4E68 AS DateTime), N'user', CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL, NULL, N'ContactFormWidget', NULL, 4, CAST(0x0000A23E011A0F6C AS DateTime), N'user', N'f18d4579-2517-41cd-9c5a-a23e01143b06')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'5190f6fe-8b06-44fc-b089-a24300cc6b17', 1, 0, CAST(0x0000A24300CC6A14 AS DateTime), N'user', CAST(0x0000A24300FCA4F4 AS DateTime), N'user', NULL, NULL, N'1', NULL, 3, CAST(0x0000A24300FCA4F4 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ff7fd016-7041-431e-b435-a24300cd6328', 1, 0, CAST(0x0000A24300CD6284 AS DateTime), N'user', CAST(0x0000A24300FCE568 AS DateTime), N'user', NULL, NULL, N'1', NULL, 3, CAST(0x0000A24300FCE568 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'60a7103b-9997-49ec-85f0-a24300ce5d14', 1, 0, CAST(0x0000A24300CE5C20 AS DateTime), N'user', CAST(0x0000A24300CE5C20 AS DateTime), N'user', NULL, NULL, N'1', NULL, 4, CAST(0x0000A24300CC6A14 AS DateTime), N'user', N'5190f6fe-8b06-44fc-b089-a24300cc6b17')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7cb68bb0-8d3c-4db7-b80e-a24300fca5db', 1, 0, CAST(0x0000A24300FCA4F4 AS DateTime), N'user', CAST(0x0000A24300FCA4F4 AS DateTime), N'user', NULL, NULL, N'1', NULL, 4, CAST(0x0000A24300CE5C20 AS DateTime), N'user', N'5190f6fe-8b06-44fc-b089-a24300cc6b17')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'dfb2a934-1573-4fff-991b-a24300fce57c', 1, 0, CAST(0x0000A24300FCE568 AS DateTime), N'user', CAST(0x0000A24300FCE568 AS DateTime), N'user', NULL, NULL, N'1', NULL, 4, CAST(0x0000A24300CD6284 AS DateTime), N'user', N'ff7fd016-7041-431e-b435-a24300cd6328')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'bcc8b55b-cd31-4783-9df6-a24301231df3', 1, 0, CAST(0x0000A24301231D64 AS DateTime), N'user', CAST(0x0000A2430125F520 AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 3, CAST(0x0000A2430125F520 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'165d9d6d-4d52-4174-908d-a2430123dbb7', 1, 0, CAST(0x0000A2430123DB3C AS DateTime), N'user', CAST(0x0000A2430123DB3C AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 4, CAST(0x0000A24301231D64 AS DateTime), N'user', N'bcc8b55b-cd31-4783-9df6-a24301231df3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'553ce9a1-ae70-46cd-9748-a2430124dec4', 1, 0, CAST(0x0000A2430124DE38 AS DateTime), N'user', CAST(0x0000A2430124DE38 AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 4, CAST(0x0000A2430123DB3C AS DateTime), N'user', N'bcc8b55b-cd31-4783-9df6-a24301231df3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'b96d15bb-21ec-4eed-a25a-a2430125a108', 1, 0, CAST(0x0000A2430125A0C0 AS DateTime), N'user', CAST(0x0000A2430125A0C0 AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 4, CAST(0x0000A2430124DE38 AS DateTime), N'user', N'bcc8b55b-cd31-4783-9df6-a24301231df3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'4a567e8c-b514-445a-88a3-a2430125f608', 1, 0, CAST(0x0000A2430125F520 AS DateTime), N'user', CAST(0x0000A2430125F520 AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 4, CAST(0x0000A2430125A0C0 AS DateTime), N'user', N'bcc8b55b-cd31-4783-9df6-a24301231df3')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'51c175cc-7d5e-45c4-be67-a24301266d95', 1, 0, CAST(0x0000A24301266CA8 AS DateTime), N'user', CAST(0x0000A245011A34EC AS DateTime), N'user', NULL, NULL, N'Article', NULL, 3, CAST(0x0000A245011A34EC AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'efb0ab8c-73fc-49a8-9695-a24301267f77', 1, 0, CAST(0x0000A24301267F68 AS DateTime), N'user', CAST(0x0000A24301267F68 AS DateTime), N'user', NULL, NULL, N'Article', NULL, 4, CAST(0x0000A24301266CA8 AS DateTime), N'user', N'51c175cc-7d5e-45c4-be67-a24301266d95')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'896b6b17-22bd-4844-a66c-a2430126988d', 1, 0, CAST(0x0000A24301269804 AS DateTime), N'user', CAST(0x0000A24301269804 AS DateTime), N'user', NULL, NULL, N'SideBar', NULL, 3, CAST(0x0000A24301269804 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548', 1, 0, CAST(0x0000A24400C94500 AS DateTime), N'user', CAST(0x0000A24400F2A918 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 3, CAST(0x0000A24400F2A918 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'b817c0a0-840a-4e1a-ab07-a24400c989ed', 1, 0, CAST(0x0000A24400C988F8 AS DateTime), N'user', CAST(0x0000A24400C988F8 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400C95EC8 AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7218c609-a9a2-4aef-ae65-a24400c9c09c', 1, 0, CAST(0x0000A24400C9C00C AS DateTime), N'user', CAST(0x0000A24400C9C00C AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400C988F8 AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'9d086108-a99b-482e-ab1f-a24400c9ed9d', 1, 0, CAST(0x0000A24400C9EC94 AS DateTime), N'user', CAST(0x0000A24400C9EC94 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400C9C00C AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ad3d34d6-a0aa-4175-be53-a24400cac387', 1, 0, CAST(0x0000A24400CAC308 AS DateTime), N'user', CAST(0x0000A24400CAC308 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400C9EC94 AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52', 1, 0, CAST(0x0000A24400CDAB2C AS DateTime), N'user', CAST(0x0000A24400CDAB2C AS DateTime), N'user', NULL, NULL, N'dfsfdsf', NULL, 3, CAST(0x0000A24400CDAB2C AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'8536093c-6ce0-4be4-a227-a24400d0155f', 1, 0, CAST(0x0000A24400D014C0 AS DateTime), N'user', CAST(0x0000A24400D014C0 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400CAC308 AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7c9d868f-c480-4de9-a4ad-a24400f2a99f', 1, 0, CAST(0x0000A24400F2A918 AS DateTime), N'user', CAST(0x0000A24400F2A918 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400D014C0 AS DateTime), N'user', N'e76a4678-ecbd-4635-9ac9-a24400c94548')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c', 1, 0, CAST(0x0000A24400FA52D0 AS DateTime), N'user', CAST(0x0000A24501101264 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 3, CAST(0x0000A24501101264 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'76ae7f16-b873-478e-b1cb-a24400fb194e', 1, 0, CAST(0x0000A24400FB18DC AS DateTime), N'user', CAST(0x0000A24400FB18DC AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400FA52D0 AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'410157b6-ebac-4451-9acc-a24400fbedf1', 1, 0, CAST(0x0000A24400FBECF8 AS DateTime), N'user', CAST(0x0000A24400FBECF8 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400FB18DC AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'5044e16d-affd-426f-a606-a24400fc33ff', 1, 0, CAST(0x0000A24400FC3348 AS DateTime), N'user', CAST(0x0000A24400FC3348 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400FBECF8 AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'692b22cc-69c1-4353-9b19-a24400fda681', 1, 0, CAST(0x0000A24400FDA598 AS DateTime), N'user', CAST(0x0000A24400FDA598 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400FC3348 AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'1fb8b25a-26f8-4e55-a4c8-a244011a88f2', 1, 0, CAST(0x0000A244011A8820 AS DateTime), N'user', CAST(0x0000A244011A8820 AS DateTime), N'user', NULL, NULL, N'LatestBlogPostsWdiget', NULL, 3, CAST(0x0000A244011A8820 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c', 1, 0, CAST(0x0000A244011C5CE0 AS DateTime), N'user', CAST(0x0000A24501100328 AS DateTime), N'user', NULL, NULL, N'This is a second example of a Blog Post', NULL, 3, CAST(0x0000A24501100328 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'072f4ae4-9b64-4176-8f15-a244011ca304', 1, 0, CAST(0x0000A244011CA204 AS DateTime), N'user', CAST(0x0000A24501100A30 AS DateTime), N'user', NULL, NULL, N'This is a third example of a Blog Post', NULL, 3, CAST(0x0000A24501100A30 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'28fa38bb-101b-405a-8097-a244011d144e', 1, 0, CAST(0x0000A244011D13B0 AS DateTime), N'user', CAST(0x0000A244011D13B0 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24400FDA598 AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'cd057460-d603-4dfe-8036-a244011d27dd', 1, 0, CAST(0x0000A244011D279C AS DateTime), N'user', CAST(0x0000A244011D279C AS DateTime), N'user', NULL, NULL, N'This is second example of a Blog Post', NULL, 4, CAST(0x0000A244011C5CE0 AS DateTime), N'user', N'af326b53-1339-4136-b8c0-a244011c5d2c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'bcac51c7-7b17-4122-ba3f-a244011d4786', 1, 0, CAST(0x0000A244011D4740 AS DateTime), N'user', CAST(0x0000A244011D4740 AS DateTime), N'user', NULL, NULL, N'This is third example of a Blog Post', NULL, 4, CAST(0x0000A244011CA204 AS DateTime), N'user', N'072f4ae4-9b64-4176-8f15-a244011ca304')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'8034b419-14d2-4c26-8643-a24401238299', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 4, CAST(0x0000A24401226C70 AS DateTime), N'user', N'2314c731-db26-4eb8-8bcf-a23e00b46be3')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'f6957b61-6a09-4926-a53a-a24401275f33', 1, 0, CAST(0x0000A24401275E10 AS DateTime), N'user', CAST(0x0000A24401275E10 AS DateTime), N'user', NULL, NULL, N'LastBlogPostWidget', NULL, 3, CAST(0x0000A24401275E10 AS DateTime), N'user', NULL)
 GO
 print 'Processed 100 total records'
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e73d43aa-b545-4f8d-a162-a24500b48859', 1, 0, CAST(0x0000A24500B4873C AS DateTime), N'user', CAST(0x0000A24500B4873C AS DateTime), N'user', NULL, NULL, N'This is second example of a Blog Post', NULL, 4, CAST(0x0000A244011D279C AS DateTime), N'user', N'af326b53-1339-4136-b8c0-a244011c5d2c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'a6548690-a269-4692-b2ec-a24500b49343', 1, 0, CAST(0x0000A24500B492F4 AS DateTime), N'user', CAST(0x0000A24500B492F4 AS DateTime), N'user', NULL, NULL, N'This is third example of a Blog Post', NULL, 4, CAST(0x0000A244011D4740 AS DateTime), N'user', N'072f4ae4-9b64-4176-8f15-a244011ca304')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'068c994f-a301-45ef-945e-a24500b4a43d', 1, 0, CAST(0x0000A24500B4A35C AS DateTime), N'user', CAST(0x0000A24500B4A35C AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A244011D13B0 AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'462c89e4-1ed9-4e37-b3b1-a24500b622c5', 3, 0, CAST(0x0000A24500B62290 AS DateTime), N'user', CAST(0x0000A245010FEA8C AS DateTime), N'user', NULL, NULL, N'Business post example', NULL, 3, CAST(0x0000A245010FEA8C AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'94163a66-1f43-4d7d-8156-a24500b69caf', 3, 0, CAST(0x0000A24500B69C70 AS DateTime), N'user', CAST(0x0000A245010FFAF4 AS DateTime), N'user', NULL, NULL, N'Research post', NULL, 3, CAST(0x0000A245010FFAF4 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94', 3, 0, CAST(0x0000A24500B6EAF4 AS DateTime), N'user', CAST(0x0000A245010FF3EC AS DateTime), N'user', NULL, NULL, N'Mobile post', NULL, 3, CAST(0x0000A245010FF3EC AS DateTime), N'user', NULL)
@@ -194,31 +157,13 @@ INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [Creat
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'a2a7e409-7c56-412b-9cd9-a24500ed8d6d', 1, 0, CAST(0x0000A24500ED8D48 AS DateTime), N'user', CAST(0x0000A24500ED8D48 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 3, CAST(0x0000A24500ED8D48 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ed4ac7a4-0651-40f6-b41e-a24500edd4a6', 2, 0, CAST(0x0000A24500EDD398 AS DateTime), N'user', CAST(0x0000A24500FE9A84 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 3, CAST(0x0000A24500FE9A84 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e20326de-50c9-46df-b118-a24500fb10bb', 2, 0, CAST(0x0000A24500FB10A8 AS DateTime), N'user', CAST(0x0000A245011820E4 AS DateTime), N'user', NULL, NULL, N'SubMenuWidget', NULL, 3, CAST(0x0000A245011820E4 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'26e54769-b403-48bd-8325-a24500fe9b52', 1, 0, CAST(0x0000A24500FE9A84 AS DateTime), N'user', CAST(0x0000A24500FE9A84 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 4, CAST(0x0000A24500ED8D48 AS DateTime), N'user', N'ed4ac7a4-0651-40f6-b41e-a24500edd4a6')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'636a7d67-1dfa-4387-9e0a-a24501020e4d', 2, 0, CAST(0x0000A24501020E1C AS DateTime), N'user', CAST(0x0000A2450119B530 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 3, CAST(0x0000A2450119B530 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'1c975872-86e9-4b32-ba56-a2450103c98b', 1, 0, CAST(0x0000A2450103C914 AS DateTime), N'user', CAST(0x0000A2450103C914 AS DateTime), N'user', NULL, NULL, N'Business post example', NULL, 4, CAST(0x0000A24500B62290 AS DateTime), N'user', N'462c89e4-1ed9-4e37-b3b1-a24500b622c5')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'67e286ea-2d4b-4934-932a-a2450103d801', 1, 0, CAST(0x0000A2450103D724 AS DateTime), N'user', CAST(0x0000A2450103D724 AS DateTime), N'user', NULL, NULL, N'Mobile post', NULL, 4, CAST(0x0000A24500B6EAF4 AS DateTime), N'user', N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e2e39486-cf93-465a-bc13-a2450103ea36', 1, 0, CAST(0x0000A2450103E9E4 AS DateTime), N'user', CAST(0x0000A2450103E9E4 AS DateTime), N'user', NULL, NULL, N'Research post', NULL, 4, CAST(0x0000A24500B69C70 AS DateTime), N'user', N'94163a66-1f43-4d7d-8156-a24500b69caf')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'2454d848-df55-4472-a0d5-a2450103f5cf', 1, 0, CAST(0x0000A2450103F59C AS DateTime), N'user', CAST(0x0000A2450103F59C AS DateTime), N'user', NULL, NULL, N'This is a second example of a Blog Post', NULL, 4, CAST(0x0000A24500B4873C AS DateTime), N'user', N'af326b53-1339-4136-b8c0-a244011c5d2c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e5abdd96-0f7f-40e7-93e8-a2450104042c', 1, 0, CAST(0x0000A245010403AC AS DateTime), N'user', CAST(0x0000A245010403AC AS DateTime), N'user', NULL, NULL, N'This is a third example of a Blog Post', NULL, 4, CAST(0x0000A24500B492F4 AS DateTime), N'user', N'072f4ae4-9b64-4176-8f15-a244011ca304')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7b356dff-9ee1-4ceb-80b7-a24501040db6', 1, 0, CAST(0x0000A24501040D0C AS DateTime), N'user', CAST(0x0000A24501040D0C AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24500B4A35C AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'7d2eba20-8133-43ec-9c09-a245010c13cb', 1, 0, CAST(0x0000A245010C1358 AS DateTime), N'user', CAST(0x0000A245010C1358 AS DateTime), N'user', NULL, NULL, N'Header', NULL, 3, CAST(0x0000A245010C1358 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'4d8bed4f-8eca-40c7-9485-a245010cff03', 1, 0, CAST(0x0000A245010CFEE4 AS DateTime), N'user', CAST(0x0000A245010CFEE4 AS DateTime), N'user', NULL, NULL, N'BlogFeedWidget', NULL, 3, CAST(0x0000A245010CFEE4 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'2c632154-2f85-4497-aaba-a245010feb2b', 1, 0, CAST(0x0000A245010FEA8C AS DateTime), N'user', CAST(0x0000A245010FEA8C AS DateTime), N'user', NULL, NULL, N'Business post example', NULL, 4, CAST(0x0000A2450103C914 AS DateTime), N'user', N'462c89e4-1ed9-4e37-b3b1-a24500b622c5')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e8504112-9a23-42ff-ac72-a245010ff44a', 1, 0, CAST(0x0000A245010FF3EC AS DateTime), N'user', CAST(0x0000A245010FF3EC AS DateTime), N'user', NULL, NULL, N'Mobile post', NULL, 4, CAST(0x0000A2450103D724 AS DateTime), N'user', N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ac042fc1-f63e-4a53-a2d5-a245010ffb7f', 1, 0, CAST(0x0000A245010FFAF4 AS DateTime), N'user', CAST(0x0000A245010FFAF4 AS DateTime), N'user', NULL, NULL, N'Research post', NULL, 4, CAST(0x0000A2450103E9E4 AS DateTime), N'user', N'94163a66-1f43-4d7d-8156-a24500b69caf')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'6c58cc45-61a7-473b-9625-a245011003ac', 1, 0, CAST(0x0000A24501100328 AS DateTime), N'user', CAST(0x0000A24501100328 AS DateTime), N'user', NULL, NULL, N'This is a second example of a Blog Post', NULL, 4, CAST(0x0000A2450103F59C AS DateTime), N'user', N'af326b53-1339-4136-b8c0-a244011c5d2c')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ce95f4c4-7590-4187-854a-a24501100b45', 1, 0, CAST(0x0000A24501100A30 AS DateTime), N'user', CAST(0x0000A24501100A30 AS DateTime), N'user', NULL, NULL, N'This is a third example of a Blog Post', NULL, 4, CAST(0x0000A245010403AC AS DateTime), N'user', N'072f4ae4-9b64-4176-8f15-a244011ca304')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'1659eaca-5552-4464-9408-a24501101328', 1, 0, CAST(0x0000A24501101264 AS DateTime), N'user', CAST(0x0000A24501101264 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 4, CAST(0x0000A24501040D0C AS DateTime), N'user', N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'413fa6be-f765-4bd1-92c6-a2450110a70d', 2, 0, CAST(0x0000A2450110A60C AS DateTime), N'user', CAST(0x0000A245011975E8 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 3, CAST(0x0000A245011975E8 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'9bfd80ed-ff09-4d1a-9826-a2450110a70e', 1, 0, CAST(0x0000A2450110A60C AS DateTime), N'user', CAST(0x0000A2450110A60C AS DateTime), N'user', NULL, NULL, N'Header', NULL, 3, CAST(0x0000A245010C1358 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'c6175ed7-0deb-4de0-a37b-a2450110e9ee', 2, 0, CAST(0x0000A2450110E8D8 AS DateTime), N'user', CAST(0x0000A24501199C94 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 3, CAST(0x0000A24501199C94 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'0322541f-75c6-4b5f-ad0e-a2450110e9ef', 1, 0, CAST(0x0000A2450110E8D8 AS DateTime), N'user', CAST(0x0000A2450110E8D8 AS DateTime), N'user', NULL, NULL, N'Header', NULL, 3, CAST(0x0000A245010C1358 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'4329a519-239c-4a69-9254-a245011821e8', 1, 0, CAST(0x0000A245011820E4 AS DateTime), N'user', CAST(0x0000A245011820E4 AS DateTime), N'user', NULL, NULL, N'NewsMenuWidget.cshtml', NULL, 4, CAST(0x0000A24500FB10A8 AS DateTime), N'user', N'e20326de-50c9-46df-b118-a24500fb10bb')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'8cb73b8b-787d-47f3-a7ec-a24501197606', 1, 0, CAST(0x0000A245011975E8 AS DateTime), N'user', CAST(0x0000A245011975E8 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 4, CAST(0x0000A24501020E1C AS DateTime), N'user', N'413fa6be-f765-4bd1-92c6-a2450110a70d')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'651516a3-37f9-454c-ba99-a24501199d68', 1, 0, CAST(0x0000A24501199C94 AS DateTime), N'user', CAST(0x0000A24501199C94 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 4, CAST(0x0000A24501020E1C AS DateTime), N'user', N'c6175ed7-0deb-4de0-a37b-a2450110e9ee')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'8020ad90-9467-466b-84b9-a2450119b57c', 1, 0, CAST(0x0000A2450119B530 AS DateTime), N'user', CAST(0x0000A2450119B530 AS DateTime), N'user', NULL, NULL, N'Content', NULL, 4, CAST(0x0000A24501020E1C AS DateTime), N'user', N'636a7d67-1dfa-4387-9e0a-a24501020e4d')
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'2d6139a2-02a5-4250-a069-a245011a3555', 1, 0, CAST(0x0000A245011A34EC AS DateTime), N'user', CAST(0x0000A245011A34EC AS DateTime), N'user', NULL, NULL, N'Article', NULL, 4, CAST(0x0000A24301267F68 AS DateTime), N'user', N'51c175cc-7d5e-45c4-be67-a24301266d95')
 
 INSERT [bcms_pages].[Pages] ([Id], [Description], [ImageId], [CustomCss], [CustomJS], [UseCanonicalUrl], [UseNoFollow], [UseNoIndex], [CategoryId], [NodeCountInSitemap], [SecondaryImageId], [FeaturedImageId], [IsArchived]) VALUES (N'596fd4bf-0272-442a-8978-a23d00c7a284', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, 1, NULL, NULL, 0)
 INSERT [bcms_pages].[Pages] ([Id], [Description], [ImageId], [CustomCss], [CustomJS], [UseCanonicalUrl], [UseNoFollow], [UseNoIndex], [CategoryId], [NodeCountInSitemap], [SecondaryImageId], [FeaturedImageId], [IsArchived]) VALUES (N'bd996dc2-4dfe-44f1-a6f3-a243011d0afb', NULL, NULL, NULL, NULL, 1, 0, 0, NULL, 0, NULL, NULL, 0)
@@ -258,158 +203,34 @@ INSERT [bcms_root].[Pages] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedB
 INSERT [bcms_blog].[Options] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [DefaultLayoutId]) VALUES (N'1ea6a376-6580-44d8-8ab4-a24400c7f833', 1, 0, CAST(0x0000A24400C7F830 AS DateTime), N'user', CAST(0x0000A24400C7F830 AS DateTime), N'user', NULL, NULL, N'4dbd7ae6-e9fc-46bb-9ef6-a24400f95b65')
 
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2cff6860-4195-4e57-a1cc-a23e00b46be7', 1, 0, CAST(0x0000A23E00B46B1C AS DateTime), N'user', CAST(0x0000A23E00B46B1C AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0f2b8fcd-c569-47d3-be1a-a23e00b88ec9', 1, 0, CAST(0x0000A23E00B88E7C AS DateTime), N'user', CAST(0x0000A23E00B88E7C AS DateTime), N'user', NULL, NULL, N'794e0e96-e4c6-42ec-814e-a23e00b88ec5', N'title', 1, N'Title', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'ab488f2b-f9b2-49cd-b05d-a23e00b88ecc', 1, 0, CAST(0x0000A23E00B88E7C AS DateTime), N'user', CAST(0x0000A23E00B88E7C AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'facebookTitle', 1, N'Facebook', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'084bdf5c-790f-41a7-be8b-a23e00b88ecc', 1, 0, CAST(0x0000A23E00B88E7C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'facebookUrl', 1, N'https://www.facebook.com/DevBridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e345acf8-cd6c-4bca-b41f-a23e00bb3df5', 1, 0, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', CAST(0x0000A23E00BB3D34 AS DateTime), N'user', NULL, NULL, N'4376b551-cc15-4bd7-9517-a23e00bb3df2', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bc4a6b4f-197b-4e62-ae55-a23e00bb3df6', 1, 0, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', CAST(0x0000A23E00BB3D34 AS DateTime), N'user', NULL, NULL, N'4376b551-cc15-4bd7-9517-a23e00bb3df2', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b2a911d1-b05c-4466-b0aa-a23e00bb3df6', 1, 0, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', CAST(0x0000A23E00BB3D34 AS DateTime), N'user', NULL, NULL, N'4376b551-cc15-4bd7-9517-a23e00bb3df2', N'facebookUrl', 1, N'#nolink', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'373a83ac-67bc-492a-bb8d-a23e00bb3df8', 1, 0, CAST(0x0000A23E00BB3D34 AS DateTime), N'user', CAST(0x0000A23E00BB3D34 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a5c3e281-394a-4ee7-806b-a23e00bf586c', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'671aa666-15c6-40d1-b0a7-a23e00bf5868', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'142a4c1d-40b6-43d4-8afc-a23e00bf586c', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'671aa666-15c6-40d1-b0a7-a23e00bf5868', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7268e43d-048d-4b23-991b-a23e00bf586c', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'671aa666-15c6-40d1-b0a7-a23e00bf5868', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'426eff01-90e5-4807-b236-a23e00bf586c', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'671aa666-15c6-40d1-b0a7-a23e00bf5868', N'title', 1, N'Title', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a4d14eaa-adcd-4769-a0bc-a23e00bf586e', 1, 0, CAST(0x0000A23E00BF5860 AS DateTime), N'user', CAST(0x0000A23E00BF5860 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd260b9d3-c385-4613-8531-a23e00c08eb0', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'4ca2b24d-7e26-44a1-8752-a23e00c08eb0', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0cd510a1-ce61-4ac4-91c0-a23e00c08eb0', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'20bb33cb-a7ee-4687-a9a3-a23e00c08eb0', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0ce08a20-60ae-4b85-b35a-a23e00c08eb0', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'facebookCssClass', 1, N'facebook', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f2ecd851-9724-430c-93ea-a23e00c08eb2', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'twitterShouldRender', 5, N'false', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'cdfb0cb9-0804-4faf-9aa1-a23e00c08eb2', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'twitterCssClass', 1, N'twitter', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7cfd2959-89b3-468b-bad3-a23e00c08eb2', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'twitterTitle', 1, N'Twitter', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd40763e6-a303-4fc3-bda1-a23e00c08eb2', 1, 0, CAST(0x0000A23E00C08DC0 AS DateTime), N'user', CAST(0x0000A23E00C08DC0 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b1446aca-155e-4444-9863-a23e00c1e3e3', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b5765503-4d7a-4f3b-a73f-a23e00c1e3e3', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bf389f5e-83e8-488c-ad51-a23e00c1e3e3', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3d963b72-175d-462a-b42c-a23e00c1e3e3', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f4deb1a3-1316-48ce-8816-a23e00c1e3e4', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'39ce14d3-ba44-4067-8f74-a23e00c1e3e4', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'9189ff7e-99d4-40ea-912d-a23e00c1e3e4', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a9601118-418e-44a5-9d18-a23e00c1e3e4', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'31bdc551-ed23-415a-b097-a23e00c1e3e4', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'twitterShouldRender', 5, N'false', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6ce864aa-fb84-427e-84fe-a23e00c1e3e6', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'45272775-819a-4093-8b8c-a23e00c1e3e6', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'linkedinCssClass', 1, N'linkedin', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'de839861-acf3-4b20-8e3c-a23e00c1e3e6', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'linkedinTitle', 1, N'LinkedIn', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'cf21a5bd-7d54-4c9f-bb96-a23e00c1e3e6', 1, 0, CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', CAST(0x0000A23E00C1E2C4 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'64b238e7-6908-4e0f-8756-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f7c27d34-f911-400a-87a9-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'facebookUrl', 1, N'#nolink', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'48de4891-4f54-4f40-8eb5-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'skypeUrl', 1, N'skype:devbridge?chat', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'208725ab-66cc-413e-9027-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'linkedinTitle', 1, N'LinkedIn', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'8d0bf7ff-40a0-4d60-9246-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'044cc22f-cb38-415a-9860-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0ccc6092-429a-471f-9d2e-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'4e4b544d-a42a-4eec-9f47-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'linkedinCssClass', 1, N'linkedin', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'eb28d684-6af1-409e-a0c1-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e5f75eb6-e98c-4f90-a505-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'ee6b320f-d866-478d-aeb1-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'twitterShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'cb2a3c36-097a-4c83-afa1-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b45c4ef4-e2a5-43ed-b44b-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'facebookCssClass', 1, N'facebook', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'65fe6e13-f263-4a8e-b57d-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'skypeShouldRender', 5, N'false', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'adf6fea0-b8e1-40e8-b654-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'skypeCssClass', 1, N'skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7bab6949-b3ee-4825-ba44-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'title', 1, N'Title', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'eaede6c8-fb75-4ba1-beca-a23e00c54a33', 1, 0, CAST(0x0000A23E00C54978 AS DateTime), N'user', CAST(0x0000A23E00C54978 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'skypeTitle', 1, N'Skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'11d1d95d-cd5f-4886-a6a0-a23e00c8139d', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f6cbb087-9ddb-4f0f-abe5-a23e00c8139d', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'65b638e1-41b8-4c7d-8351-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'c30840f0-7eab-4a86-84f5-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e754f1a8-ba0e-4604-862a-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'63dccfbb-eefb-4bbe-8f71-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'linkedinCssClass', 1, N'linkedin', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2c17c924-5f62-4495-8fdf-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6b19f680-1d5d-4ab2-9253-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'skypeCssClass', 1, N'skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'85624225-8f89-4b9c-963e-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'22f56b59-1a06-4488-9f58-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'twitterShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'ac57f38f-531e-42f2-9f9d-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'19ce7e81-463d-4ff4-a2b8-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3794013a-3e21-42e2-a696-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'skypeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'95898558-a4d8-46b6-a9e6-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e5bde1b8-a0f5-4003-acac-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'linkedinTitle', 1, N'LinkedIn', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'703f594d-0a34-4a1a-bb3c-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'skypeTitle', 1, N'Skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'fd453e97-3c54-4dcf-be75-a23e00c8139e', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'skypeUrl', 1, N'skype:devbridge?chat', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6fbd6e6e-4bdf-40ba-811e-a23e00c813a1', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'youtubeUrl', 1, N'http://www.youtube.com/user/ChicagoWebDesigners?feature=watch', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3c300064-fa67-4ee1-9c88-a23e00c813a1', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'youtubeShouldRender', 5, N'false', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0ec3ed88-8ac8-4c17-a861-a23e00c813a1', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'youtubeCssClass', 1, N'youtube', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0b1758b5-7c94-4980-aa34-a23e00c813a1', 1, 0, CAST(0x0000A23E00C81324 AS DateTime), N'user', CAST(0x0000A23E00C81324 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'youtubeTitle', 1, N'YouTube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'5f742fef-015c-4772-8130-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'5093734f-01d4-4cb1-8265-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'skypeUrl', 1, N'skype:devbridge?chat', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'46aabcd8-a5ed-4428-890d-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'63e129af-ed0f-4b1c-8a26-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'580be66c-22e0-4e76-8d51-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2536ce95-acd7-47d5-8e94-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e8c02da7-7cdd-4052-93c9-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'twitterShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'33598716-4c24-4817-a0bb-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'linkedinCssClass', 1, N'linkedin', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'360d1fee-72e3-4518-a14d-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a6806102-c44d-4446-a159-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0817adaa-ccc4-4970-a879-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'skypeCssClass', 1, N'skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'66b130aa-78a9-4adf-a929-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'098a96b5-331d-468d-a9e4-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'linkedinTitle', 1, N'LinkedIn', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'0301cced-e349-47df-afbb-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'1088a36d-dbc4-4ced-b151-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'fa885a24-3668-4f86-b84c-a23e00cc8c54', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'skypeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'916c629b-adcf-4158-866e-a23e00cc8c55', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'youtubeUrl', 1, N'http://www.youtube.com/user/ChicagoWebDesigners?feature=watch', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'8d0438ec-a27f-4ce2-960c-a23e00cc8c55', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'skypeTitle', 1, N'Skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'fe85e108-ebf1-456e-987b-a23e00cc8c55', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'youtubeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'ff31d472-634f-4344-a74a-a23e00cc8c55', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'youtubeTitle', 1, N'YouTube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'ecc26ad9-2e0d-422b-a8a7-a23e00cc8c55', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'youtubeCssClass', 1, N'youtube', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd0548f37-f9b8-4a24-8295-a23e00cc8c58', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'flickrCssClass', 1, N'flickr', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'4e7b6531-3ff8-4821-9e1d-a23e00cc8c58', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'flickrUrl', 1, N'http://www.flickr.com/photos/22239955@N08', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e1af6547-2b0a-4747-a20d-a23e00cc8c58', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'flickrTitle', 1, N'Flickr', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6c541d3e-75f8-4e63-bf26-a23e00cc8c58', 1, 0, CAST(0x0000A23E00CC8C10 AS DateTime), N'user', CAST(0x0000A23E00CC8C10 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'flickrShouldRender', 5, N'false', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'acaa337e-d8fd-4cbd-a7a5-a23e012a4f69', 1, 0, CAST(0x0000A23E012A4E68 AS DateTime), N'user', CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL, NULL, N'f18d4579-2517-41cd-9c5a-a23e01143b06', N'EmailToAddress', 1, N'info@BetterCmsDemo.com', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'329f5de2-3256-4477-b702-a24401226cf3', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'8947624e-edfa-4f3b-830a-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'twitterShouldRender', 5, N'false', 1)
 GO
 print 'Processed 100 total records'
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6d8ada82-0ee9-44e2-9514-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'4940d478-7c0e-405a-a3e0-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'70703ce2-6689-4c73-a6f9-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bb8513f5-9892-4152-acfd-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd21e9be6-f449-4ce4-b106-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'dee0afe1-62c1-4845-b15a-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a915fbef-da7d-4d0d-b9b4-a24401226cf4', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6d558eaa-30cc-4293-80c1-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'skypeUrl', 1, N'skype:devbridge?chat', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b05549fc-bdd2-480b-90a3-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'flickrCssClass', 1, N'flickr', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2b2ff69f-eee5-445e-968a-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3c3b9336-4a36-4533-98e7-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'linkedinCssClass', 1, N'linkedin', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7b83f038-ce45-4010-9963-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'youtubeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'eb52127c-2b37-4507-9abb-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'flickrUrl', 1, N'http://www.flickr.com/photos/22239955@N08', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bb9bce9a-5083-46f4-9c7a-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'flickrShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bf44c857-d1cb-4dc9-a16b-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'youtubeTitle', 1, N'YouTube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a43946e2-31c6-4e12-a47f-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'skypeTitle', 1, N'Skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'e5e3061b-b462-43b6-a820-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'youtubeCssClass', 1, N'youtube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6ec2b384-f573-4fe0-af14-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'linkedinTitle', 1, N'LinkedIn', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'6c1cb123-ed7c-43dc-b3d8-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'b36a910f-21a8-42a6-b7b1-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'flickrTitle', 1, N'Flickr', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'789232f8-e48b-49be-ba30-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'skypeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'092a0bb5-5721-4b8b-bcfa-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'youtubeUrl', 1, N'http://www.youtube.com/user/ChicagoWebDesigners?feature=watch', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'802fe52f-7392-47f4-bf8a-a24401226d17', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'skypeCssClass', 1, N'skype', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3052f15c-e34c-4be0-9584-a24401226d1a', 1, 0, CAST(0x0000A24401226C70 AS DateTime), N'user', CAST(0x0000A24401226C70 AS DateTime), N'user', NULL, NULL, N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'useSideBox', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'243ba400-6b94-4dc1-86e8-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'skypeUrl', 1, N'skype:devbridge?chat', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'24db348c-68e3-4df7-87b0-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'youtubeUrl', 1, N'http://www.youtube.com/user/ChicagoWebDesigners?feature=watch', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'fab7a41f-746e-4844-8894-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'linkedinUrl', 1, N'http://www.linkedin.com/company/devbridge-group', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'75fe10ae-3e45-42a0-8c58-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'twitterUrl', 1, N'https://twitter.com/devbridge', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f8797b02-ebbe-41ee-8e85-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'linkedinTitle', 1, N'LinkedIn', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'4890d25e-e673-463e-8efd-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'skypeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd8fa6194-08b4-4eca-922f-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'skypeTitle', 1, N'Skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'd562fbd1-b177-4368-92d9-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'linkedinShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'bc66330f-5a51-4e2a-938d-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'twitterCssClass', 1, N'twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'053b745f-2de2-4f56-946d-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'flickrShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'99aa2f8d-091c-4791-96a7-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'flickrTitle', 1, N'Flickr', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'089f7be7-4ddc-4045-984d-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'twitterTitle', 1, N'Twitter', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2609207f-20a3-46b9-9c8c-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'facebookShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f2c0e56f-ed3e-4d04-9df3-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'facebookCssClass', 1, N'facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'a310ab2d-39fb-4a30-a5b9-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'useSideBox', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7986f6fa-42e5-4c26-ad2a-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'youtubeCssClass', 1, N'youtube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3a193717-18da-4a2d-adc0-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'flickrUrl', 1, N'http://www.flickr.com/photos/22239955@N08', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'7faf52a3-a0e8-4f8f-adf0-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'title', 1, N'Title', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'fac25515-26bf-4416-ae7f-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'skypeCssClass', 1, N'skype', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'3d43249d-bf94-4769-b071-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'twitterShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'f39b188b-57fd-4d83-b151-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'facebookTitle', 1, N'Facebook', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'93392b4c-3611-4268-b6fb-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'flickrCssClass', 1, N'flickr', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'2b9c01cd-c7d8-4c98-b9f6-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'youtubeTitle', 1, N'YouTube', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'c6ed427d-6dd0-4cfb-bb61-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'youtubeShouldRender', 5, N'false', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'9d2a7e4b-fca8-422a-bcff-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'facebookUrl', 1, N'#nolink', 1)
-INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'846a55d9-68d8-44ab-be1a-a2440123829a', 1, 0, CAST(0x0000A2440123822C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'8034b419-14d2-4c26-8643-a24401238299', N'linkedinCssClass', 1, N'linkedin', 1)
 INSERT [bcms_root].[ContentOptions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [ContentId], [Key], [Type], [DefaultValue], [IsDeletable]) VALUES (N'dc68c85e-9243-492e-b52d-a245011821ef', 1, 0, CAST(0x0000A245011820E4 AS DateTime), N'user', CAST(0x0000A245011820E4 AS DateTime), N'user', NULL, NULL, N'e20326de-50c9-46df-b118-a24500fb10bb', N'parentUrl', 1, NULL, 1)
 
 INSERT [bcms_root].[LayoutRegions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Description], [LayoutId], [RegionId]) VALUES (N'0f4cc1db-b9db-44ae-9c1c-a23d00af3c88', 1, 0, CAST(0x0000A23D00AF3B60 AS DateTime), N'user', CAST(0x0000A23D00AF3B60 AS DateTime), N'user', NULL, NULL, N'Scripts', N'453f0187-c653-4e7e-80ff-a23d00af3c87', N'06ffe951-4dc7-41bf-9ead-a23d00af3c83')
@@ -435,31 +256,13 @@ INSERT [bcms_root].[LayoutRegions] ([Id], [Version], [IsDeleted], [CreatedOn], [
 INSERT [bcms_root].[LayoutRegions] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Description], [LayoutId], [RegionId]) VALUES (N'385eb1fb-7f7d-4405-810a-a2450101063b', 1, 0, CAST(0x0000A24501010544 AS DateTime), N'user', CAST(0x0000A24501010544 AS DateTime), N'user', NULL, NULL, N'ColMiddle', N'eeb19260-3de2-4baa-891d-a24501010636', N'acad9cc0-509c-4a2c-8a8d-a2450101063a')
 
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'2314c731-db26-4eb8-8bcf-a23e00b46be3', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'794e0e96-e4c6-42ec-814e-a23e00b88ec5', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'4376b551-cc15-4bd7-9517-a23e00bb3df2', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'671aa666-15c6-40d1-b0a7-a23e00bf5868', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'0934f286-e99e-439c-b7ef-a23e00c1e3df', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'edb34ccc-5b22-46be-9400-a23e00c54a33', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'3f9a40db-12d0-4057-9fd0-a23e00c81398', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'f18d4579-2517-41cd-9c5a-a23e01143b06', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'bc6d2656-fee2-4a6d-9dd5-a23e01194802', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'982e5e4e-9521-49e3-b6de-a23e011a0fc1', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'a9105464-2331-4f7d-a199-a23e012a4f62', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'bcc8b55b-cd31-4783-9df6-a24301231df3', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'165d9d6d-4d52-4174-908d-a2430123dbb7', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'553ce9a1-ae70-46cd-9748-a2430124dec4', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'b96d15bb-21ec-4eed-a25a-a2430125a108', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'4a567e8c-b514-445a-88a3-a2430125f608', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'1fb8b25a-26f8-4e55-a4c8-a244011a88f2', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'8034b419-14d2-4c26-8643-a24401238299', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'f6957b61-6a09-4926-a53a-a24401275f33', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'1dc2764a-53a6-47d7-b60f-a24500be46b0', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'e20326de-50c9-46df-b118-a24500fb10bb', NULL)
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'4d8bed4f-8eca-40c7-9485-a245010cff03', NULL)
-INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'4329a519-239c-4a69-9254-a245011821e8', NULL)
 
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'539da9fb-4deb-40a8-b7ce-a23e009ed3fa', CAST(0x0000A23E00000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'            <h2>DevBridge Inc.</h2>
             <dl>
@@ -560,9 +363,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
             <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
         </div>
 ', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'60a7103b-9997-49ec-85f0-a24300ce5d14', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'zzz1', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7cb68bb0-8d3c-4db7-b80e-a24300fca5db', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a><div class="block"><p><br /> You''ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.</p></div>', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'dfb2a934-1573-4fff-991b-a24300fce57c', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<div><hgroup class="banner-text"><h1>ddd1</h1><h2>doming id quod mazim placerat facer possim assum.</h2></hgroup><a href="#nolink" class="btn-primary action-arrow">Call to Action</a><img src="/Content/images/sample-78.jpg" alt="Banner 1" /></div>', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'51c175cc-7d5e-45c4-be67-a24301266d95', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h1>About Us</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
@@ -571,12 +371,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <a href="/about-us/">&lt; Read more About Us &gt</a>
 </p>
 ', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'efb0ab8c-73fc-49a8-9695-a24301267f77', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;About Us&lt;/h1&gt;<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.&lt;/p&gt;<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... @Html.ActionLink(&quot;&lt; Read more About Us &gt;&quot;, &quot;AboutUs&quot;, &quot;BetterCmsLight&quot;)&lt;/p&gt;</p>
-
-<p>&nbsp;</p>
-', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'896b6b17-22bd-4844-a66c-a2430126988d', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <h1>Gallery</h1>
 ', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<section class="blogpost-head">
@@ -609,63 +403,8 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
 ', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'b817c0a0-840a-4e1a-ab07-a24400c989ed', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7218c609-a9a2-4aef-ae65-a24400c9c09c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'9d086108-a99b-482e-ab1f-a24400c9ed9d', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ad3d34d6-a0aa-4175-be53-a24400cac387', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>dsdfsgsda</p>
 ', 0)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'8536093c-6ce0-4be4-a227-a24400d0155f', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7c9d868f-c480-4de9-a4ad-a24400f2a99f', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<section class="blogpost-head">
-    <h1>This is an Example of a Blog Post<a onclick="history.go(-1)" class="back-link">< Back</a></h1>
-    <span class="author">Author Name,</span><time datetime="2013-01-28">Jan 28, 2013</time>
-</section>
-
-<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -691,33 +430,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 
 <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 </article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'76ae7f16-b873-478e-b1cb-a24400fb194e', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'This is an Example of a Blog Post', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'410157b6-ebac-4451-9acc-a24400fbedf1', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>This is an Example of a Blog Post</p>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'5044e16d-affd-426f-a606-a24400fc33ff', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>This is an Example of a Blog Post</p>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'692b22cc-69c1-4353-9b19-a24400fda681', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-
 ', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
@@ -746,152 +458,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 </article>
 ', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'072f4ae4-9b64-4176-8f15-a244011ca304', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'28fa38bb-101b-405a-8097-a244011d144e', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'cd057460-d603-4dfe-8036-a244011d27dd', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'bcac51c7-7b17-4122-ba3f-a244011d4786', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e73d43aa-b545-4f8d-a162-a24500b48859', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'a6548690-a269-4692-b2ec-a24500b49343', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'068c994f-a301-45ef-945e-a24500b4a43d', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
@@ -1123,46 +689,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 </dl>
 </section>
 ', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'26e54769-b403-48bd-8325-a24500fe9b52', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'  
-<hgroup>
-    <h1>Business Sub Head</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
-</hgroup>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32">
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-
-<section class="quotation">
-    <h2>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat:</h2>
-    <dl>
-        <dd><span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</dd>
-        <dd><span></span>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </dd>
-        <dd><span></span>aliquam erat volutpat. Ut wisi enim ad minim veniam</dd>
-    </dl>
-</section>', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'636a7d67-1dfa-4387-9e0a-a24501020e4d', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
 	<h1>About Us</h1>
 
@@ -1191,304 +717,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 ', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'1c975872-86e9-4b32-ba56-a2450103c98b', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'67e286ea-2d4b-4934-932a-a2450103d801', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e2e39486-cf93-465a-bc13-a2450103ea36', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32" />
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'2454d848-df55-4472-a0d5-a2450103f5cf', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e5abdd96-0f7f-40e7-93e8-a2450104042c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7b356dff-9ee1-4ceb-80b7-a24501040db6', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'7d2eba20-8133-43ec-9c09-a245010c13cb', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'2c632154-2f85-4497-aaba-a245010feb2b', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e8504112-9a23-42ff-ac72-a245010ff44a', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ac042fc1-f63e-4a53-a2d5-a245010ffb7f', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'6c58cc45-61a7-473b-9625-a245011003ac', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ce95f4c4-7590-4187-854a-a24501100b45', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'1659eaca-5552-4464-9408-a24501101328', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 1)
 GO
 print 'Processed 100 total records'
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'413fa6be-f765-4bd1-92c6-a2450110a70d', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
@@ -1547,83 +776,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>', 1)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'0322541f-75c6-4b5f-ad0e-a2450110e9ef', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h2>Blog Posts</h2>', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'8cb73b8b-787d-47f3-a7ec-a24501197606', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
-    <h1>This is an Example of a Sub Head</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
-</hgroup>
-
-<section class="content-image-1">
-    <img src="/Content/images/sample-45.jpg" alt="Sample 45">
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'651516a3-37f9-454c-ba99-a24501199d68', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
-    <h1>This is an Example of a Sub Head</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
-</hgroup>
-
-<section class="content-image-1">
-    <img src="/Content/images/sample-45.jpg" alt="Sample 45">
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'8020ad90-9467-466b-84b9-a2450119b57c', CAST(0x0000A24500000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<hgroup>
-    <h1>This is an Example of a Sub Head</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
-</hgroup>
-
-<section class="content-image-1">
-    <img src="/Content/images/sample-45.jpg" alt="Sample 45">
-    <div class="info-box">
-        <h2>Consectetuer adipiscing</h2>
-        <h3>doming id quod mazim placerat facer possim assum.</h3>
-    </div>
-</section>
-
-<article class="content-article">
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<article class="content-article">
-    <h2>This is an Example of a Sub Head</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-', 1)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'2d6139a2-02a5-4250-a069-a245011a3555', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis brodi autem vel feugait nulla... @Html.ActionLink("< Read more About Us >", "AboutUs", "BetterCmsLight")</p>
-
-', 1)
 
 INSERT [bcms_root].[PageAccessRules] ([PageId], [AccessRuleId]) VALUES (N'596fd4bf-0272-442a-8978-a23d00c7a284', N'8677d6f4-5ff4-4c1f-919d-a23d00c7a288')
 INSERT [bcms_root].[PageAccessRules] ([PageId], [AccessRuleId]) VALUES (N'596fd4bf-0272-442a-8978-a23d00c7a284', N'aeeda51b-b7c6-4658-b2fa-a23d00c7a288')
@@ -1732,336 +884,23 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
 
     </div>
 ', 1, 1)
-INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [UseHtml], [EditInSourceMode]) VALUES (N'165d9d6d-4d52-4174-908d-a2430123dbb7', NULL, 1, NULL, 1, N'    <div class="banner-image">
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 1" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Esse molestie consequa</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 2" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Congue nihil imperdiet</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 3" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi enim ad minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
-        </div>
-    </div>
-
-    <div class="banner-nav" id="home-banner">
-
-        <a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <p>
-                <br />
-                You''ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.
-            </p>
-        </div>
-
-        <a href="#2" class="banner-link link">Esse molestie consequa</a>
-        <div class="block">
-            <p>your bear, you have to admit it! No, we aren''t selling bears.</p>
-        </div>
-
-        <a href="#3" class="banner-link link">Congue nihil imperdiet</a>
-        <div class="block">
-            <p>And now, for something completely different. And now, for something completely different. Period.</p>
-        </div>
-
-        <a href="#4" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <br />
-            <p>And now, for something completely different. And now.</p>
-        </div>
-
-    </div>
-', 1, 1)
-INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [UseHtml], [EditInSourceMode]) VALUES (N'553ce9a1-ae70-46cd-9748-a2430124dec4', NULL, 1, N'        $(document).ready(function () {
-            $("#home-slides").slides({
-                container: ''banner-image'',
-                generatePagination: true,
-                slideSpeed: 200,
-                effect: ''slide''
-            });
-            
-            $(''#home-banner'').accordion({
-                header: ''a'',
-            });
-
-        });
-', 1, N'<div class="banner-image">
-<div>
-<hgroup class="banner-text">
-	<h1>Ut wisi minim veniam</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 1" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Esse molestie consequa</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 2" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Congue nihil imperdiet</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 3" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Ut wisi enim ad minim veniam</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 4" src="/Content/images/sample-78.jpg" /></div>
-</div>
-
-<div class="banner-nav" id="home-banner"><a class="banner-link link" href="#1">Ut wisi enim ad minim veniam</a>
-
-<div class="block">
-<p><br />
-You&#39;ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.</p>
-</div>
-<a class="banner-link link" href="#2">Esse molestie consequa</a>
-
-<div class="block">
-<p>your bear, you have to admit it! No, we aren&#39;t selling bears.</p>
-</div>
-<a class="banner-link link" href="#3">Congue nihil imperdiet</a>
-
-<div class="block">
-<p>And now, for something completely different. And now, for something completely different. Period.</p>
-</div>
-<a class="banner-link link" href="#4">Ut wisi enim ad minim veniam</a>
-
-<div class="block">&nbsp;
-<p>And now, for something completely different. And now.</p>
-</div>
-</div>
-', 1, 1)
-INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [UseHtml], [EditInSourceMode]) VALUES (N'b96d15bb-21ec-4eed-a25a-a2430125a108', N'#home-slides { display:none; }', 1, N'        $(document).ready(function () {
-            $("#home-slides").slides({
-                container: ''banner-image'',
-                generatePagination: true,
-                slideSpeed: 200,
-                effect: ''slide''
-            });
-            
-            $(''#home-banner'').accordion({
-                header: ''a'',
-            });
-
-        });
-', 1, N'<div class="banner-image">
-<div>
-<hgroup class="banner-text">
-	<h1>Ut wisi minim veniam</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 1" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Esse molestie consequa</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 2" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Congue nihil imperdiet</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 3" src="/Content/images/sample-78.jpg" /></div>
-
-<div>
-<hgroup class="banner-text">
-	<h1>Ut wisi enim ad minim veniam</h1>
-
-	<h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-</hgroup>
-<a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 4" src="/Content/images/sample-78.jpg" /></div>
-</div>
-
-<div class="banner-nav" id="home-banner"><a class="banner-link link" href="#1">Ut wisi enim ad minim veniam</a>
-
-<div class="block">
-<p><br />
-You&#39;ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.</p>
-</div>
-<a class="banner-link link" href="#2">Esse molestie consequa</a>
-
-<div class="block">
-<p>your bear, you have to admit it! No, we aren&#39;t selling bears.</p>
-</div>
-<a class="banner-link link" href="#3">Congue nihil imperdiet</a>
-
-<div class="block">
-<p>And now, for something completely different. And now, for something completely different. Period.</p>
-</div>
-<a class="banner-link link" href="#4">Ut wisi enim ad minim veniam</a>
-
-<div class="block">&nbsp;
-<p>And now, for something completely different. And now.</p>
-</div>
-</div>
-', 1, 1)
-INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [UseHtml], [EditInSourceMode]) VALUES (N'4a567e8c-b514-445a-88a3-a2430125f608', NULL, 1, N'        $(document).ready(function () {
-            $("#home-slides").slides({
-                container: ''banner-image'',
-                generatePagination: true,
-                slideSpeed: 200,
-                effect: ''slide''
-            });
-            
-            $(''#home-banner'').accordion({
-                header: ''a'',
-            });
-
-        });
-', 1, N'    <div class="banner-image">
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 1" />
-        </div>
-        <div style="display: none;">
-            <hgroup class="banner-text">
-                <h1>Esse molestie consequa</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 2" />
-        </div>
-        <div style="display: none;">
-            <hgroup class="banner-text">
-                <h1>Congue nihil imperdiet</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 3" />
-        </div>
-        <div style="display: none;">
-            <hgroup class="banner-text">
-                <h1>Ut wisi enim ad minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
-        </div>
-    </div>
-
-    <div class="banner-nav" id="home-banner">
-
-        <a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <p>
-                <br />
-                You''ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.
-            </p>
-        </div>
-
-        <a href="#2" class="banner-link link">Esse molestie consequa</a>
-        <div class="block">
-            <p>your bear, you have to admit it! No, we aren''t selling bears.</p>
-        </div>
-
-        <a href="#3" class="banner-link link">Congue nihil imperdiet</a>
-        <div class="block">
-            <p>And now, for something completely different. And now, for something completely different. Period.</p>
-        </div>
-', 1, 1)
 
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'b817c0a0-840a-4e1a-ab07-a24400c989ed')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'7218c609-a9a2-4aef-ae65-a24400c9c09c')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'9d086108-a99b-482e-ab1f-a24400c9ed9d')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'ad3d34d6-a0aa-4175-be53-a24400cac387')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'8536093c-6ce0-4be4-a227-a24400d0155f')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'7c9d868f-c480-4de9-a4ad-a24400f2a99f')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'76ae7f16-b873-478e-b1cb-a24400fb194e')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'410157b6-ebac-4451-9acc-a24400fbedf1')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'5044e16d-affd-426f-a606-a24400fc33ff')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'692b22cc-69c1-4353-9b19-a24400fda681')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'072f4ae4-9b64-4176-8f15-a244011ca304')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'28fa38bb-101b-405a-8097-a244011d144e')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'cd057460-d603-4dfe-8036-a244011d27dd')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'bcac51c7-7b17-4122-ba3f-a244011d4786')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e73d43aa-b545-4f8d-a162-a24500b48859')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'a6548690-a269-4692-b2ec-a24500b49343')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'068c994f-a301-45ef-945e-a24500b4a43d')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'462c89e4-1ed9-4e37-b3b1-a24500b622c5')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'94163a66-1f43-4d7d-8156-a24500b69caf')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'1c975872-86e9-4b32-ba56-a2450103c98b')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'67e286ea-2d4b-4934-932a-a2450103d801')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e2e39486-cf93-465a-bc13-a2450103ea36')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'2454d848-df55-4472-a0d5-a2450103f5cf')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e5abdd96-0f7f-40e7-93e8-a2450104042c')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'7b356dff-9ee1-4ceb-80b7-a24501040db6')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'2c632154-2f85-4497-aaba-a245010feb2b')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e8504112-9a23-42ff-ac72-a245010ff44a')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'ac042fc1-f63e-4a53-a2d5-a245010ffb7f')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'6c58cc45-61a7-473b-9625-a245011003ac')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'ce95f4c4-7590-4187-854a-a24501100b45')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'1659eaca-5552-4464-9408-a24501101328')
 
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'2314c731-db26-4eb8-8bcf-a23e00b46be3', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'794e0e96-e4c6-42ec-814e-a23e00b88ec5', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'4376b551-cc15-4bd7-9517-a23e00bb3df2', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'671aa666-15c6-40d1-b0a7-a23e00bf5868', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'5afa2a98-dc65-4c47-bb02-a23e00c08eac', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'0934f286-e99e-439c-b7ef-a23e00c1e3df', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'edb34ccc-5b22-46be-9400-a23e00c54a33', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'3f9a40db-12d0-4057-9fd0-a23e00c81398', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'6879b46a-bcd2-44ac-b450-a23e00cc8c4e', N'~/Views/Widgets/SocialWidget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'f18d4579-2517-41cd-9c5a-a23e01143b06', N'~/Views/Widgets/ContactFormWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'bc6d2656-fee2-4a6d-9dd5-a23e01194802', N'~/Views/Widgets/ContactFormWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'982e5e4e-9521-49e3-b6de-a23e011a0fc1', N'~/Views/Widgets/ContactFormWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'a9105464-2331-4f7d-a199-a23e012a4f62', N'~/Views/Widgets/ContactFormWidget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'1fb8b25a-26f8-4e55-a4c8-a244011a88f2', N'~/Views/Widgets/LatestBlogPostsWdiget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'9c4d7d3e-e122-4b11-a8b3-a24401226cef', N'~/Views/Widgets/SocialWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'8034b419-14d2-4c26-8643-a24401238299', N'~/Views/Widgets/SocialWidget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'f6957b61-6a09-4926-a53a-a24401275f33', N'~/Views/Widgets/LastBlogPostWidget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'1dc2764a-53a6-47d7-b60f-a24500be46b0', N'~/Views/Widgets/CategoriesMenuWdiget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'e20326de-50c9-46df-b118-a24500fb10bb', N'~/Views/Widgets/SubMenuWidget.cshtml')
 INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'4d8bed4f-8eca-40c7-9485-a245010cff03', N'~/Views/Widgets/BlogFeedWidget.cshtml')
-INSERT [bcms_pages].[ServerControlWidgets] ([Id], [Url]) VALUES (N'4329a519-239c-4a69-9254-a245011821e8', N'~/Views/Widgets/NewsMenuWidget.cshtml')
 
 INSERT [bcms_root].[PageContents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [PageId], [ContentId], [RegionId], [Order]) VALUES (N'2b1fc175-de47-4710-935b-a23e009ed3fa', 1, 0, CAST(0x0000A23E009ED360 AS DateTime), N'user', CAST(0x0000A23E009ED360 AS DateTime), N'user', NULL, NULL, N'596fd4bf-0272-442a-8978-a23d00c7a284', N'539da9fb-4deb-40a8-b7ce-a23e009ed3fa', N'96ae6cde-a97e-4296-ba69-a23d00f77f6f', 1)
 INSERT [bcms_root].[PageContents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [PageId], [ContentId], [RegionId], [Order]) VALUES (N'1eb81b6a-61dc-49a6-a573-a23e009f7fc4', 1, 0, CAST(0x0000A23E009F7FA4 AS DateTime), N'user', CAST(0x0000A23E009F7FA4 AS DateTime), N'user', NULL, NULL, N'596fd4bf-0272-442a-8978-a23d00c7a284', N'a44ee27c-d1eb-4bba-ae62-a23e009f7fc4', N'1cfaa40f-c1cb-4487-8e1b-a23d00f77f6f', 3)
