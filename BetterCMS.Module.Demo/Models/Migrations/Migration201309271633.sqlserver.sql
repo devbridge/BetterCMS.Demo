@@ -4,10 +4,10 @@ EXEC sp_msforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all"
 -- delete better cms installed default data
 DECLARE @pageId UNIQUEIDENTIFIER
 SELECT @pageId = [Id] FROM [bcms_root].[Pages] WHERE [PageUrl] = N'/'
+DELETE [bcms_pages].[HtmlContents]  WHERE [Id] IN (SELECT [Id] FROM [bcms_root].[PageContents] WHERE [PageId] = @pageId)
+DELETE [bcms_root].[PageContents] WHERE [PageId] = @pageId
+DELETE [bcms_pages].[Pages] WHERE [Id] = @pageId
 DELETE [bcms_root].[Pages] WHERE [Id] = @pageId
-DELETE [bcms_root].[PageContents]  WHERE [PageId] = @pageId
-
-DELETE [bcms_pages].[Pages] WHERE [Description] = N'Default page'
 
 INSERT [bcms_users].[Users] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [UserName], [FirstName], [LastName], [Email], [Password], [Salt], [ImageId]) VALUES (N'a596da3f-d3e2-48e7-8e80-a23c00dc1784', 1, 0, CAST(0x0000A23C00DC1694 AS DateTime), N'Anonymous', CAST(0x0000A23C00DC1694 AS DateTime), N'Anonymous', NULL, NULL, N'user', N'user', N'user', N'user@user.com', N'MqlHBexw4Z8M7IUlK0Bqi0LkBR4=', N'gnXRLUGt+Pk=', NULL)
 
