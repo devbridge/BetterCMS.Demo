@@ -1,5 +1,7 @@
 ﻿@using BetterCms.Module.Blog.Helpers.Extensions
 @using BetterCms.Module.Pages.Helpers.Extensions
+@using BetterCms.Module.Root.Mvc.Helpers
+@using BetterCms.Module.Root.Mvc.Grids.Extensions
 
 @{
     Layout = "~/Views/Shared/Layouts/Light/_BcmsTwoCol.cshtml";
@@ -26,12 +28,16 @@
         <span class="author">@authorName</span><time datetime="@date.ToString("yyyy-MM-dd")">@date.ToString("MMM d, yyyy")</time>
         @if (tags != null && tags.Count > 0)
         {
-            <span>
-                @foreach (var tag in tags)
-                {
-                    <a href="#nolink" class="single-tag">@tag</a>
-                }
-            </span>
+            var blogListUrl = Model.GetOptionValue<string>("Blogs List Page URL");
+            if (!string.IsNullOrEmpty(blogListUrl))
+            {
+                <span>
+                    @foreach (var tag in tags)
+                    {
+                        <a href="@blogListUrl?tagName=@tag" class="single-tag">@tag</a>
+                    }
+                </span>
+            }
         }
     </section>
 
