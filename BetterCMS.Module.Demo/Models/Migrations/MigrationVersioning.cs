@@ -1,8 +1,6 @@
-﻿using BetterCms.Demo.InstallDataModule;
+﻿using FluentMigrator.VersionTableInfo;
 
-using FluentMigrator.VersionTableInfo;
-
-namespace BetterCMS.Demo.InstallDataModule.Models.Migrations
+namespace BetterCMS.Module.Demo.Models.Migrations
 {
     [VersionTableMetaData]
     public class MigrationVersioning : IVersionTableMetaData

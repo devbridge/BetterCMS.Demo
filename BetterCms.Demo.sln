@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1F9A5C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{FBA93237-41DF-4335-8B94-B1E7D61150D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCms.Demo.InstallDataModule", "BetterCMS.Demo.InstallDataModule\BetterCms.Demo.InstallDataModule.csproj", "{E45B69FE-434C-4B5D-81B2-C78934A1BF04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCMS.Module.Demo", "BetterCMS.Module.Demo\BetterCMS.Module.Demo.csproj", "{E45B69FE-434C-4B5D-81B2-C78934A1BF04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

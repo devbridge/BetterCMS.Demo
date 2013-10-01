@@ -1,7 +1,7 @@
 ﻿using BetterCms;
 using BetterCms.Core.Modules;
 
-namespace BetterCms.Demo.InstallDataModule
+namespace BetterCMS.Module.Demo
 {
     public class InstallDataModuleDescriptor : ModuleDescriptor
     {

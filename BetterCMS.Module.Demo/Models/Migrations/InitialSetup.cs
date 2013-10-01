@@ -1,8 +1,7 @@
 ﻿using BetterCms.Core.DataAccess.DataContext.Migrations;
-
 using FluentMigrator;
 
-namespace BetterCms.Demo.InstallDataModule.Models.Migrations
+namespace BetterCMS.Module.Demo.Models.Migrations
 {
     [Migration(201309271633)]
     public class InitialSetup : DefaultMigration

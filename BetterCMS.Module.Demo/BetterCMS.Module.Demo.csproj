@@ -7,8 +7,8 @@
     <ProjectGuid>{E45B69FE-434C-4B5D-81B2-C78934A1BF04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BetterCMS.Demo.InstallDataModule</RootNamespace>
-    <AssemblyName>BetterCMS.Demo.InstallDataModule</AssemblyName>
+    <RootNamespace>BetterCMS.Module.Demo</RootNamespace>
+    <AssemblyName>BetterCMS.Module.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
