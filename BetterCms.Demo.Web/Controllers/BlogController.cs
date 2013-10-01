@@ -20,7 +20,7 @@ namespace BetterCms.Demo.Web.Controllers
             
             using (var api = ApiFactory.Create())
             {
-                var request = new GetBlogPostsModel { Take = 10 };
+                var request = new GetBlogPostsModel { Take = 10, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
                 orFilter.Add("ExpirationDate", null);
@@ -44,7 +44,8 @@ namespace BetterCms.Demo.Web.Controllers
                             PublishedOn = x.ActivationDate, 
                             Title = x.Title, 
                             Url = x.BlogPostUrl,
-                            Author = x.AuthorName
+                            Author = x.AuthorName,
+                            Tags = x.Tags
                         }).ToList();
             }
             
@@ -57,7 +58,7 @@ namespace BetterCms.Demo.Web.Controllers
 
             using (var api = ApiFactory.Create())
             {
-                var requestLatestNewsModel = new GetBlogPostsModel { Take = 1 };
+                var requestLatestNewsModel = new GetBlogPostsModel { Take = 1, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
 
@@ -81,7 +82,8 @@ namespace BetterCms.Demo.Web.Controllers
                             PublishedOn = x.ActivationDate,
                             Title = x.Title,
                             Url = x.BlogPostUrl,
-                            Author = x.AuthorName
+                            Author = x.AuthorName,
+                            Tags = x.Tags
                         }).SingleOrDefault();
             }
 
@@ -116,7 +118,7 @@ namespace BetterCms.Demo.Web.Controllers
 
             using (var api = ApiFactory.Create())
             {
-                var request = new GetBlogPostsModel { Take = 10 };
+                var request = new GetBlogPostsModel { Take = 10, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
                 orFilter.Add("ExpirationDate", null);
@@ -136,7 +138,8 @@ namespace BetterCms.Demo.Web.Controllers
                             Title = x.Title,
                             Url = x.BlogPostUrl,
                             Author = x.AuthorName,
-                            ImageUrl = x.MainImageUrl
+                            ImageUrl = x.MainImageUrl,
+                            Tags = x.Tags
                         }).ToList();
             }
 

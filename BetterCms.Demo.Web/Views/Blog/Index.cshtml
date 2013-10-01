@@ -7,15 +7,12 @@
         <h1><a href="@item.Url">@item.Title</a></h1>
         <span class="author">@item.Author</span><time datetime="@item.PublishedOn.ToString("yyyy-MM-dd")">@item.PublishedOn.ToString("MMM d, yyyy")</time>
         <span>
-            <a href="#nolink" class="single-tag">Business</a>
-            <a href="#nolink" class="single-tag">Clients</a>
-            <a href="#nolink" class="single-tag">Interviews</a>
-            <a href="#nolink" class="single-tag">Apps</a>
-            <a href="#nolink" class="single-tag">IOS</a>
-            <a href="#nolink" class="single-tag">Mobile</a>
-            <a href="#nolink" class="single-tag">Research</a>
-            <a href="#nolink" class="single-tag">Company</a>
-            <a href="#nolink" class="single-tag">Technology</a>
+            @if (item.Tags != null) {
+                foreach (var tag in item.Tags)
+                {
+                    <a href="@Url.Action("Index", "Blog", new { tagName = @tag })" class="single-tag">@tag</a>
+                }
+            }
         </span>
         <article>
             <p>@Html.Raw(item.IntroText)</p>

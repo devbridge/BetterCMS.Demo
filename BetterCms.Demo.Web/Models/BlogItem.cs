@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BetterCms.Demo.Web.Models
 {
@@ -15,6 +16,8 @@ namespace BetterCms.Demo.Web.Models
         public string Author { get; set; }
 
         public string ImageUrl { get; set; }
+        
+        public List<string> Tags { get; set; }
 
         public override string ToString()
         {
