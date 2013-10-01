@@ -14,13 +14,13 @@ namespace BetterCms.Demo.Web.Controllers
 {
     public class BlogController : Controller
     {
-        public virtual ActionResult Index(Guid? categoryId)
+        public virtual ActionResult Index(Guid? categoryId, string tagName)
         {
             IList<BlogItem> posts;
             
             using (var api = ApiFactory.Create())
             {
-                var request = new GetBlogPostsModel { Take = 10/*, IncludeTags = true*/ };
+                var request = new GetBlogPostsModel { Take = 10, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
                 orFilter.Add("ExpirationDate", null);
@@ -35,6 +35,11 @@ namespace BetterCms.Demo.Web.Controllers
                     request.Filter.Add("CategoryId", categoryId.Value);
                 }
 
+                if (!string.IsNullOrEmpty(tagName))
+                {
+                    request.FilterByTags.Add(tagName);
+                }
+
                 var pages = api.Blog.BlogPosts.Get(new GetBlogPostsRequest { Data = request });
 
                 posts = pages.Data.Items.Select(
@@ -45,7 +50,7 @@ namespace BetterCms.Demo.Web.Controllers
                             Title = x.Title, 
                             Url = x.BlogPostUrl,
                             Author = x.AuthorName,
-                            //Tags = x.Tags
+                            Tags = x.Tags
                         }).ToList();
             }
             
@@ -58,7 +63,7 @@ namespace BetterCms.Demo.Web.Controllers
 
             using (var api = ApiFactory.Create())
             {
-                var requestLatestNewsModel = new GetBlogPostsModel { Take = 1/*, IncludeTags = true*/ };
+                var requestLatestNewsModel = new GetBlogPostsModel { Take = 1, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
 
@@ -83,7 +88,7 @@ namespace BetterCms.Demo.Web.Controllers
                             Title = x.Title,
                             Url = x.BlogPostUrl,
                             Author = x.AuthorName,
-                            //Tags = x.Tags
+                            Tags = x.Tags
                         }).SingleOrDefault();
             }
 
@@ -118,7 +123,7 @@ namespace BetterCms.Demo.Web.Controllers
 
             using (var api = ApiFactory.Create())
             {
-                var request = new GetBlogPostsModel { Take = 10/*, IncludeTags = true*/ };
+                var request = new GetBlogPostsModel { Take = 10, IncludeTags = true };
 
                 var orFilter = new DataFilter(FilterConnector.Or);
                 orFilter.Add("ExpirationDate", null);
@@ -139,7 +144,7 @@ namespace BetterCms.Demo.Web.Controllers
                             Url = x.BlogPostUrl,
                             Author = x.AuthorName,
                             ImageUrl = x.MainImageUrl,
-                            //Tags = x.Tags
+                            Tags = x.Tags
                         }).ToList();
             }
 
