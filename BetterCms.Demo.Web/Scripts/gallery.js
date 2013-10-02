@@ -10,11 +10,30 @@ $(function () {
     var selectors = {
         images: '.page-frame .bcms-gallery-image-holder > img',
         imagesContainer: '.page-frame section:has(.bcms-gallery-image-holder)',
-        galleryContainerId: 'images-gallery-container'
+        galleryTemplate: '#gallery-template',
+        galleryThumbnailTemplate: '#gallery-thumbnail-template',
+        galleryContainer: 'images-gallery-container',
+        thumbnailsContainer: '#gallery-thumbnails',
+        thumbnailImage: 'img',
+        allThumbnails: '#gallery-thumbnails a',
+        galleryScrollbar: '.gallery-scrollbar',
+        gallerySlider: '.gallery-slider',
     },
+        classes = {
+            activeImage: "active-image"
+        },
         images = [],
         galleryDiv,
-        imgSrc, imgTitle;
+        imgSrc,
+        imgTitle,
+        thumbnailContainer,
+        dragTimer,
+        galleryScrollbar,
+        gallerySlider,
+        sliderWidth,
+        sliderSteps,
+        sliderStep,
+        sliderChanged = false;
 
     if (getQueryParam("image-gallery-album-id")) {
         $(selectors.images).each(function() {
@@ -30,12 +49,45 @@ $(function () {
         });
 
         if (images.length > 0) {
-            galleryDiv = $('<div class="gallery-view" id="' + selectors.galleryContainerId + '"></div>');
+            galleryDiv = $($(selectors.galleryTemplate).html());
 
+            // Setup cover flow plugin
             $(selectors.imagesContainer).first().replaceWith(galleryDiv);
             $(selectors.imagesContainer).remove();
             
-            window.coverflow(selectors.galleryContainerId).setup({
+            // Setup thumbnails
+            thumbnailContainer = $(selectors.thumbnailsContainer);
+            $(images).each(function (index) {
+                // Setup thumbnail
+                var thumbnail = $($(selectors.galleryThumbnailTemplate).html()),
+                    image;
+                if (index == 0) {
+                    thumbnail.addClass(classes.activeImage);
+                }
+                thumbnail.data('index', index);
+
+                // Setup image
+                image = thumbnail.find(selectors.thumbnailImage);
+                image.attr('src', this.image);
+                image.attr('alt', this.title);
+                
+                thumbnailContainer.append(thumbnail);
+                
+                thumbnail.on('click', function () {
+                    var self = $(this);
+
+                    window.coverflow().to(self.data('index'));
+                });
+            });
+
+            galleryScrollbar = $(selectors.galleryScrollbar);
+            gallerySlider = $(selectors.gallerySlider);
+            sliderWidth = gallerySlider.width();
+            sliderSteps = images.length;
+            sliderStep = (galleryScrollbar.width() - sliderWidth) / sliderSteps;
+
+            // Setup coverflow gallery
+            window.coverflow(selectors.galleryContainer).setup({
                 playlist: images,
                 backgroundcolor: 'fff',
                 mode: 'html5',
@@ -53,6 +105,40 @@ $(function () {
                 reflectionratio: 5,
                 fixedsize: true,
                 textoffset: 37
+            }).on('focus', function (index) {
+                $(selectors.allThumbnails).each(function () {
+                    var self = $(this);
+                    
+                    if (self.data('index') == index) {
+                        self.addClass(classes.activeImage);
+                    } else {
+                        self.removeClass(classes.activeImage);
+                    }
+                });
+
+                if (!sliderChanged) {
+                    if (index == 0) {
+                        gallerySlider.css('left', 0);
+                    } else {
+                        gallerySlider.css('left', index * sliderStep + 2 + sliderStep / 2);
+                    }
+                }
+                sliderChanged = false;
+            });
+
+            // Setup gallery slider
+            $(gallerySlider).draggable({
+                axis: "x",
+                containment: "parent"
+            }).on('drag', function (event, ui) {
+                clearTimeout(dragTimer);
+                dragTimer = setTimeout(function () {
+                    var left = ui.position.left + sliderWidth / 2,
+                        currentStep = Math.ceil(left / sliderStep);
+
+                    sliderChanged = true;
+                    window.coverflow().to(currentStep > sliderSteps ? sliderSteps - 1 : currentStep - 1);
+                }, 30);
             });
         }
     }
