@@ -5,12 +5,15 @@ using System.Web.Routing;
 
 using BetterCms.Core;
 using BetterCms.Core.Environment.Host;
+using BetterCms.Demo.Web.Tools;
 
 namespace BetterCms.Demo.Web
 {
     public class MvcApplication : HttpApplication
     {
         private static ICmsHost cmsHost;
+
+        public static Resetter Resetter { get; private set; }
 
         protected void Application_Start()
         {
@@ -22,10 +25,13 @@ namespace BetterCms.Demo.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             cmsHost.OnApplicationStart(this);
+
+            Resetter = new Resetter(15, cmsHost);
         }
 
         protected void Application_BeginRequest()
         {
+            Resetter.CheckTime();
             cmsHost.OnBeginRequest(this);
         }
 

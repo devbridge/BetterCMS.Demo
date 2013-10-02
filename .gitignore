@@ -107,3 +107,4 @@ packages/**
 /BetterCms.Demo.Web/App_Data/CmsData.mdf
 /BetterCms.Demo.Web/logs
 /BetterCms.Demo.Web/App_Data/BetterCMS/versions.info
+/BetterCms.Demo.Web/App_Data/Temp

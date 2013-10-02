@@ -1,4 +1,5 @@
-﻿@{ Layout = "~/Areas/bcms-Root/Views/Shared/BaseLayout.cshtml"; }
+﻿@using BetterCms.Demo.Web
+@{ Layout = "~/Areas/bcms-Root/Views/Shared/BaseLayout.cshtml"; }
 
 <!DOCTYPE html>
 <html>
@@ -14,6 +15,7 @@
     <![endif]-->
 </head>
 <body>
+    @Html.Raw(MvcApplication.Resetter.GetHtml())
     <div class="page">
         <header class="page-header">
             <div class="page-frame clearfix">
