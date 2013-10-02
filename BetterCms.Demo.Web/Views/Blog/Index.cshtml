@@ -10,7 +10,7 @@
             @if (item.Tags != null) {
                 foreach (var tag in item.Tags)
                 {
-                    <a href="@Url.Action("Index", "Blog", new { tagName = @tag })" class="single-tag">@tag</a>
+                    <a href="@Request.Path?tagName=@tag" class="single-tag">@tag</a>
                 }
             }
         </span>
