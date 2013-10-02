@@ -1,6 +1,5 @@
 ﻿@using BetterCms.Module.Blog.Helpers.Extensions
 @using BetterCms.Module.Pages.Helpers.Extensions
-@using BetterCms.Module.Root.Mvc.Helpers
 @using BetterCms.Module.Root.Mvc.Grids.Extensions
 
 @{
@@ -15,8 +14,18 @@
         authorName = author.Name;
     }
 
-    var date = Model.GetBlogPostModel().ActivationDate;
-    var tags = Model.GetPageTagsList();
+    IList<string> tags;
+    DateTime? date;
+    if (Model.IsBlogPost())
+    {
+        date = Model.GetBlogPostModel().ActivationDate;
+        tags = Model.GetPageTagsList();
+    }
+    else
+    {
+        date = null;
+        tags = new List<string>();
+    }
 }
 
 
@@ -25,7 +34,11 @@
 @section CMSMainContent {
     <section class="blogpost-head">
         <h1>@Model.Title<a onclick=" history.go(-1) " class="back-link">< Back</a></h1>
-        <span class="author">@authorName</span><time datetime="@date.ToString("yyyy-MM-dd")">@date.ToString("MMM d, yyyy")</time>
+        <span class="author">@authorName</span>
+        @if (date.HasValue)
+        {
+            <time datetime="@date.Value.ToString("yyyy-MM-dd")">@date.Value.ToString("MMM d, yyyy")</time>
+        }
         @if (tags != null && tags.Count > 0)
         {
             var blogListUrl = Model.GetOptionValue<string>("Blogs List Page URL");
