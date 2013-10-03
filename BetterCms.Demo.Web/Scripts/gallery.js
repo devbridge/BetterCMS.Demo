@@ -84,9 +84,13 @@ $(function () {
 
             galleryScrollbar = $(selectors.galleryScrollbar);
             gallerySlider = $(selectors.gallerySlider);
-            sliderWidth = gallerySlider.width();
             sliderSteps = images.length;
-            sliderStep = (galleryScrollbar.width() - sliderWidth) / sliderSteps;
+            sliderWidth = gallerySlider.width();
+            if (galleryScrollbar.width() / sliderSteps > sliderWidth) {
+                sliderWidth = galleryScrollbar.width() / sliderSteps;
+                gallerySlider.css('width', sliderWidth);
+            }
+            sliderStep = galleryScrollbar.width() / sliderSteps;
 
             // Setup coverflow gallery
             window.coverflow(selectors.galleryContainer).setup({
@@ -119,11 +123,7 @@ $(function () {
                 });
 
                 if (!sliderChanged) {
-                    if (index == 0) {
-                        gallerySlider.css('left', 0);
-                    } else {
-                        gallerySlider.css('left', index * sliderStep + 2 + sliderStep / 2);
-                    }
+                    gallerySlider.css('left', index * sliderStep + 2);
                 }
                 sliderChanged = false;
             });
