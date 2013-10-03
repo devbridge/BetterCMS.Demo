@@ -25,6 +25,7 @@ $(function () {
         images = [],
         galleryDiv,
         imgSrc,
+        imgCaption,
         imgTitle,
         thumbnailContainer,
         dragTimer,
@@ -38,11 +39,12 @@ $(function () {
     if (getQueryParam("image-gallery-album-id")) {
         $(selectors.images).each(function() {
             imgSrc = $(this).attr('src');
-            imgTitle = $(this).attr('alt');
+            imgCaption = $(this).attr('alt');
+            imgTitle = $(this).data('title');
             if (imgSrc) {
                 images.push({
                     title: imgTitle,
-                    description: imgTitle,
+                    description: imgCaption,
                     image: imgSrc
                 });
             }

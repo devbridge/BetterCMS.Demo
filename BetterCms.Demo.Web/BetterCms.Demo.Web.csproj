@@ -308,13 +308,13 @@
     <Content Include="Config\cms.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BcmsLightLayout.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_LightLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BcmsOneCol.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_LightOneColumnLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_Contacts.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_ContactsLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Widgets\SocialWidget.cshtml" />
@@ -332,13 +332,13 @@
     <Content Include="Views\SiteMap\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_Home.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_HomeLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BcmsTwoCol.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_LightTwoColumnsLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BlogPost.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_BlogPostLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Blog\Index.cshtml" />
@@ -365,7 +365,7 @@
     <Content Include="Views\Widgets\SubMenuWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BcmsThreeCol.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_LightThreeColumnsLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Blog\Feed.cshtml" />
@@ -389,7 +389,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Layouts\Light\_BcmsGallery.cshtml" />
+    <Content Include="Views\Shared\Layouts\Light\_GalleryLayout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
