@@ -2,6 +2,12 @@
     Layout = "~/Views/Shared/Layouts/Light/_LightOneColumnLayout.cshtml";
 }
 
+@section HeadScripts {
+    <link href="/Content/Styles/bcms.light.gallery.css" rel="stylesheet" />
+    
+    @RenderSection("HeadScripts", false)
+}
+
 @section MainContent {
     @RenderSection("MainContent", false)
 }
@@ -10,16 +16,6 @@
 
 @section Scripts {
     @RenderSection("Scripts", false)
-
-    <script src="@Url.Content("~/Scripts/coverflow.js")"></script>
-    <script src="@Url.Content("~/Scripts/gallery.js")"></script>
-    
-    <script type="text/html" id="gallery-template"><div class="gallery-view" id="images-gallery-container"></div>
-        <div class="gallery-scrollbar">
-            <div class="gallery-slider"></div>
-        </div>
-        <div id="gallery-thumbnails" class="thumbnails clearfix"></div>
-    </script>
-    
-    <script type="text/html" id="gallery-thumbnail-template"><a><img src="" alt="" /></a></script>
+    @Html.Partial("Layouts/Light/Partial/_GalleryScripts")
+    <script src="@Url.Content("~/Scripts/gallery.gallery.js")"></script>
 }

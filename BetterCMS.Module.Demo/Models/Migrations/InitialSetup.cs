@@ -6,7 +6,7 @@ using FluentMigrator;
 
 namespace BetterCMS.Module.Demo.Models.Migrations
 {
-    [Migration(201309271633)]
+    [Migration(201310041400)]
     public class InitialSetup : DefaultMigration
     {
         public InitialSetup()
@@ -16,8 +16,7 @@ namespace BetterCMS.Module.Demo.Models.Migrations
 
         public override void Up()
         {
-            IfSqlServer().Execute.EmbeddedScript("Migration201309271633.sqlserver.sql");
-
+            IfSqlServer().Execute.EmbeddedScript("Migration201310041400.sqlserver.sql");
 
             var codeBase = System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
             var uri = new UriBuilder(codeBase);

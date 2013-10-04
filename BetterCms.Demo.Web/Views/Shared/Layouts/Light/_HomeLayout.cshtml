@@ -19,8 +19,14 @@
     </div>
 }
 
+@section HeadScripts {
+     <link href="/Content/Styles/bcms.light.gallery.css" rel="stylesheet" />
+}
+
 @RenderBody()
 
 @section Scripts {
     @RenderSection("Scripts", false)
+    @Html.Partial("Layouts/Light/Partial/_GalleryScripts")
+    <script src="@Url.Content("~/Scripts/gallery.home.js")"></script>
 }

@@ -273,6 +273,8 @@
     <Content Include="Content\Styles\images\social-icons.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\gallery.gallery.js" />
+    <Content Include="Scripts\gallery.home.js" />
     <Content Include="Scripts\coverflow.js" />
     <Content Include="Scripts\forms.js" />
     <Content Include="Scripts\gallery.js" />
@@ -390,6 +392,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Layouts\Light\_GalleryLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Layouts\Light\Partial\_GalleryScripts.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
