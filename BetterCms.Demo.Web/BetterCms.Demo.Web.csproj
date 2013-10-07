@@ -252,13 +252,7 @@
       <DependentUpon>demo.mdf</DependentUpon>
     </Content>
     <Content Include="betterCms.license.txt" />
-    <Content Include="Content\images\gallery-1.jpg" />
-    <Content Include="Content\images\gallery-2.jpg" />
-    <Content Include="Content\images\gallery-3.jpg" />
-    <Content Include="Content\images\gallery-4.jpg" />
-    <Content Include="Content\images\gallery-5.jpg" />
-    <Content Include="Content\images\gallery-6.jpg" />
-    <Content Include="Content\images\gallery.jpg" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\sample-32.jpg" />
     <Content Include="Content\images\sample-45.jpg" />
     <Content Include="Content\images\sample-78.jpg" />
