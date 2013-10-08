@@ -17,6 +17,9 @@ SELECT NEWID(), 1, 0, [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUse
 INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'9d6e121f-a5c8-4bd4-a0f6-a245010fc078', N'sample-3.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\76b0ce094175470d8d9bcbd4ef18a1ba\sample-3_1.jpg', N'[WebServerPath]/uploads/image/76b0ce094175470d8d9bcbd4ef18a1ba/sample-3_1.jpg', 15734, 0, 1, 0)
 INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'5c82979d-e3a5-4e71-a89f-a245010fc078', N'sample-2.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\a65fa022168f487c8f11a404152eddb3\sample-2_1.jpg', N'[WebServerPath]/uploads/image/a65fa022168f487c8f11a404152eddb3/sample-2_1.jpg', 13828, 0, 1, 0)
 INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'd4f30c0b-0b3a-414a-bb9f-a245010fc078', N'sample-1.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\81378d1f525c405a8c68533cd801173a\sample-1_1.jpg', N'[WebServerPath]/uploads/image/81378d1f525c405a8c68533cd801173a/sample-1_1.jpg', 11889, 0, 1, 0)
+INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'4646503D-E549-479C-99CA-A251007BCF06', N'sample-7.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\40940f359b5b44ca97b8b92cddd062e9\sample-43_1.jpg', N'[WebServerPath]/uploads/image/40940f359b5b44ca97b8b92cddd062e9/sample-43_1.jpg', 68665, 0, 1, 0)
+INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'9BC9F86C-6F48-4683-BB32-A251007BCF06', N'sample-6.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\08eee80a1bb7434691158775a40d906f\sample-42_1.jpg', N'[WebServerPath]/uploads/image/08eee80a1bb7434691158775a40d906f/sample-42_1.jpg', 57130, 0, 1, 0)
+INSERT [bcms_media].[MediaFiles] ([Id], [OriginalFileName], [OriginalFileExtension], [FileUri], [PublicUrl], [Size], [IsTemporary], [IsUploaded], [IsCanceled]) VALUES (N'381F98EB-8A14-49FA-AE48-A251007BCF07', N'sample-5.jpg', N'.jpg', N'[WebSiteRootPath]\uploads\image\6f9a4a524a8a4a869793f6994107ecd7\sample-41_1.jpg', N'[WebServerPath]/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg', 33040, 0, 1, 0)
 
 INSERT [bcms_blog].[Authors] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [ImageId]) VALUES (N'e2493e34-0b97-4852-9d9c-a24400c842ef', 1, 0, CAST(0x0000A24400C84204 AS DateTime), N'user', CAST(0x0000A24400C84204 AS DateTime), N'user', NULL, NULL, N'Joe Blogger', NULL)
 
@@ -86,9 +89,15 @@ INSERT [bcms_pages].[SitemapNodes] ([Id], [Version], [IsDeleted], [CreatedOn], [
 INSERT [bcms_pages].[SitemapNodes] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Title], [Url], [DisplayOrder], [ParentNodeId]) VALUES (N'212e90e3-9149-495b-9e28-a2450110b270', 1, 0, CAST(0x0000A2450110B1C4 AS DateTime), N'user', CAST(0x0000A2450110B1C4 AS DateTime), N'user', NULL, NULL, N'Business', N'/about-us/business/', 0, N'2132c3a3-a111-4863-bd8e-a2450101594f')
 INSERT [bcms_pages].[SitemapNodes] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Title], [Url], [DisplayOrder], [ParentNodeId]) VALUES (N'42b50cfe-5901-4e15-8b77-a2450110fa54', 1, 0, CAST(0x0000A2450110F940 AS DateTime), N'user', CAST(0x0000A2450110F940 AS DateTime), N'user', NULL, NULL, N'Research', N'/about-us/research/', 1, N'2132c3a3-a111-4863-bd8e-a2450101594f')
 
-INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'9d6e121f-a5c8-4bd4-a0f6-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, NULL, N'sample-3.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
-INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'5c82979d-e3a5-4e71-a89f-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, NULL, N'sample-2.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
-INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'd4f30c0b-0b3a-414a-bb9f-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, NULL, N'sample-1.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'F67A0EAF-837B-454C-8A19-A251007BB951', 1, 0, CAST(0x0000A24A00CF25B0 AS DateTime), N'user', CAST(0x0000A24A00CF25B0 AS DateTime), N'user', NULL, NULL, NULL, N'Samples', 1, 2, 0, NULL, CAST(0x0000A24A00CF25B0 AS DateTime), NULL, NULL)
+INSERT [bcms_media].[MediaFolders] ([Id]) VALUES (N'F67A0EAF-837B-454C-8A19-A251007BB951')
+
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'9d6e121f-a5c8-4bd4-a0f6-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-3.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'5c82979d-e3a5-4e71-a89f-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-2.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'd4f30c0b-0b3a-414a-bb9f-a245010fc078', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-1.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'4646503D-E549-479C-99CA-A251007BCF06', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-7.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'9BC9F86C-6F48-4683-BB32-A251007BCF06', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-6.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
+INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [FolderId], [Title], [Type], [ContentType], [IsArchived], [OriginalId], [PublishedOn], [ImageId], [Description]) VALUES (N'381F98EB-8A14-49FA-AE48-A251007BCF07', 1, 0, CAST(0x0000A245010FC05C AS DateTime), N'user', CAST(0x0000A245010FD31C AS DateTime), N'user', NULL, NULL, N'F67A0EAF-837B-454C-8A19-A251007BB951', N'sample-5.jpg', 1, 1, 0, NULL, CAST(0x0000A245010FD31C AS DateTime), NULL, NULL)
 
 INSERT [bcms_root].[AccessRules] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Identity], [AccessLevel], [IsForRole]) VALUES (N'8677d6f4-5ff4-4c1f-919d-a23d00c7a288', 1, 0, CAST(0x0000A23D00C7A178 AS DateTime), N'user', CAST(0x0000A23D00CB5C8C AS DateTime), N'user', NULL, NULL, N'Everyone', 2, 1)
 INSERT [bcms_root].[AccessRules] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Identity], [AccessLevel], [IsForRole]) VALUES (N'aeeda51b-b7c6-4658-b2fa-a23d00c7a288', 1, 0, CAST(0x0000A23D00C7A178 AS DateTime), N'user', CAST(0x0000A23D00C7A178 AS DateTime), N'user', NULL, NULL, N'Authenticated Users', 3, 1)
@@ -129,6 +138,9 @@ INSERT [bcms_root].[Categories] ([Id], [Version], [IsDeleted], [CreatedOn], [Cre
 INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'9d6e121f-a5c8-4bd4-a0f6-a245010fc078', NULL, NULL, 220, 100, NULL, NULL, NULL, NULL, 220, 100, 15734, N'[WebSiteRootPath]\uploads\image\76b0ce094175470d8d9bcbd4ef18a1ba\o_sample-3.jpg', N'[WebServerPath]/uploads/image/76b0ce094175470d8d9bcbd4ef18a1ba/o_sample-3.jpg', 1, 150, 150, 66275, N'[WebSiteRootPath]\uploads\image\76b0ce094175470d8d9bcbd4ef18a1ba\t_sample-3_1.png', N'[WebServerPath]/uploads/image/76b0ce094175470d8d9bcbd4ef18a1ba/t_sample-3_1.png', 1)
 INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'5c82979d-e3a5-4e71-a89f-a245010fc078', NULL, NULL, 220, 100, NULL, NULL, NULL, NULL, 220, 100, 13828, N'[WebSiteRootPath]\uploads\image\a65fa022168f487c8f11a404152eddb3\o_sample-2.jpg', N'[WebServerPath]/uploads/image/a65fa022168f487c8f11a404152eddb3/o_sample-2.jpg', 1, 150, 150, 71632, N'[WebSiteRootPath]\uploads\image\a65fa022168f487c8f11a404152eddb3\t_sample-2_1.png', N'[WebServerPath]/uploads/image/a65fa022168f487c8f11a404152eddb3/t_sample-2_1.png', 1)
 INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'd4f30c0b-0b3a-414a-bb9f-a245010fc078', NULL, NULL, 220, 100, NULL, NULL, NULL, NULL, 220, 100, 11889, N'[WebSiteRootPath]\uploads\image\81378d1f525c405a8c68533cd801173a\o_sample-1.jpg', N'[WebServerPath]/uploads/image/81378d1f525c405a8c68533cd801173a/o_sample-1.jpg', 1, 150, 150, 60541, N'[WebSiteRootPath]\uploads\image\81378d1f525c405a8c68533cd801173a\t_sample-1_1.png', N'[WebServerPath]/uploads/image/81378d1f525c405a8c68533cd801173a/t_sample-1_1.png', 1)
+INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'4646503D-E549-479C-99CA-A251007BCF06', NULL, NULL, 617, 360, NULL, NULL, NULL, NULL, 617, 360, 68665, N'[WebSiteRootPath]\uploads\image\40940f359b5b44ca97b8b92cddd062e9\o_sample-43_1.jpg', N'[WebServerPath]/uploads/image/40940f359b5b44ca97b8b92cddd062e9/o_sample-43_1.jpg', 1, 150, 150, 55273, N'[WebSiteRootPath]\uploads\image\40940f359b5b44ca97b8b92cddd062e9\t_sample-43_1.png', N'[WebServerPath]/uploads/image/40940f359b5b44ca97b8b92cddd062e9/t_sample-43_1.png', 1)
+INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'9BC9F86C-6F48-4683-BB32-A251007BCF06', NULL, NULL, 458, 301, NULL, NULL, NULL, NULL, 458, 301, 57130, N'[WebSiteRootPath]\uploads\image\08eee80a1bb7434691158775a40d906f\o_sample-42_1.jpg', N'[WebServerPath]/uploads/image/08eee80a1bb7434691158775a40d906f/o_sample-42_1.jpg', 1, 150, 150, 62822, N'[WebSiteRootPath]\uploads\image\08eee80a1bb7434691158775a40d906f\t_sample-42_1.png', N'[WebServerPath]/uploads/image/08eee80a1bb7434691158775a40d906f/t_sample-42_1.png', 1)
+INSERT [bcms_media].[MediaImages] ([Id], [Caption], [ImageAlign], [Width], [Height], [CropCoordX1], [CropCoordY1], [CropCoordX2], [CropCoordY2], [OriginalWidth], [OriginalHeight], [OriginalSize], [OriginalUri], [PublicOriginallUrl], [IsOriginalUploaded], [ThumbnailWidth], [ThumbnailHeight], [ThumbnailSize], [ThumbnailUri], [PublicThumbnailUrl], [IsThumbnailUploaded]) VALUES (N'381F98EB-8A14-49FA-AE48-A251007BCF07', NULL, NULL, 344, 200, NULL, NULL, NULL, NULL, 344, 200, 33040, N'[WebSiteRootPath]\uploads\image\6f9a4a524a8a4a869793f6994107ecd7\o_sample-41_1.jpg', N'[WebServerPath]/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/o_sample-41_1.jpg', 1, 150, 150, 63339, N'[WebSiteRootPath]\uploads\image\6f9a4a524a8a4a869793f6994107ecd7\t_sample-41_1.png', N'[WebServerPath]/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/t_sample-41_1.png', 1)
 
 INSERT [bcms_root].[Layouts] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [LayoutPath], [ModuleId], [PreviewUrl]) VALUES (N'5c4ffb26-746c-4d99-bf74-a23d00af62e5', 1, 0, CAST(0x0000A23D00AF620C AS DateTime), N'user', CAST(0x0000A23D00AF620C AS DateTime), N'user', NULL, NULL, N'Light One Column Layout', N'~/Views/Shared/Layouts/Light/_LightOneColumnLayout.cshtml', NULL, NULL)
 INSERT [bcms_root].[Layouts] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [LayoutPath], [ModuleId], [PreviewUrl]) VALUES (N'64ae7880-5bff-4428-a328-a23d00f77f6d', 1, 0, CAST(0x0000A23D00F77E98 AS DateTime), N'user', CAST(0x0000A23D00F77E98 AS DateTime), N'user', NULL, NULL, N'Contacts Layout', N'~/Views/Shared/Layouts/Light/_ContactsLayout.cshtml', NULL, NULL)
@@ -143,13 +155,9 @@ INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [Creat
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'a44ee27c-d1eb-4bba-ae62-a23e009f7fc4', 1, 0, CAST(0x0000A23E009F7FA4 AS DateTime), N'user', CAST(0x0000A23F011B9224 AS DateTime), N'user', NULL, NULL, N'Map', NULL, 3, CAST(0x0000A23F011B9224 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'2314c731-db26-4eb8-8bcf-a23e00b46be3', 1, 0, CAST(0x0000A23E00B46B1C AS DateTime), N'user', CAST(0x0000A2440123822C AS DateTime), N'user', NULL, NULL, N'SocialWidget', NULL, 3, CAST(0x0000A2440123822C AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'f18d4579-2517-41cd-9c5a-a23e01143b06', 1, 0, CAST(0x0000A23E01143A74 AS DateTime), N'user', CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL, NULL, N'ContactFormWidget', NULL, 3, CAST(0x0000A23E012A4E68 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'5190f6fe-8b06-44fc-b089-a24300cc6b17', 1, 0, CAST(0x0000A24300CC6A14 AS DateTime), N'user', CAST(0x0000A24300FCA4F4 AS DateTime), N'user', NULL, NULL, N'1', NULL, 3, CAST(0x0000A24300FCA4F4 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'ff7fd016-7041-431e-b435-a24300cd6328', 1, 0, CAST(0x0000A24300CD6284 AS DateTime), N'user', CAST(0x0000A24300FCE568 AS DateTime), N'user', NULL, NULL, N'1', NULL, 3, CAST(0x0000A24300FCE568 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'bcc8b55b-cd31-4783-9df6-a24301231df3', 1, 0, CAST(0x0000A24301231D64 AS DateTime), N'user', CAST(0x0000A2430125F520 AS DateTime), N'user', NULL, NULL, N'Slider', NULL, 3, CAST(0x0000A2430125F520 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'51c175cc-7d5e-45c4-be67-a24301266d95', 1, 0, CAST(0x0000A24301266CA8 AS DateTime), N'user', CAST(0x0000A245011A34EC AS DateTime), N'user', NULL, NULL, N'Article', NULL, 3, CAST(0x0000A245011A34EC AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'896b6b17-22bd-4844-a66c-a2430126988d', 1, 0, CAST(0x0000A24301269804 AS DateTime), N'user', CAST(0x0000A24301269804 AS DateTime), N'user', NULL, NULL, N'SideBar', NULL, 3, CAST(0x0000A24301269804 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548', 1, 0, CAST(0x0000A24400C94500 AS DateTime), N'user', CAST(0x0000A24400F2A918 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 3, CAST(0x0000A24400F2A918 AS DateTime), N'user', NULL)
-INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52', 1, 0, CAST(0x0000A24400CDAB2C AS DateTime), N'user', CAST(0x0000A24400CDAB2C AS DateTime), N'user', NULL, NULL, N'ContentTitle', NULL, 3, CAST(0x0000A24400CDAB2C AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c', 1, 0, CAST(0x0000A24400FA52D0 AS DateTime), N'user', CAST(0x0000A24501101264 AS DateTime), N'user', NULL, NULL, N'This is an Example of a Blog Post', NULL, 3, CAST(0x0000A24501101264 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'1fb8b25a-26f8-4e55-a4c8-a244011a88f2', 1, 0, CAST(0x0000A244011A8820 AS DateTime), N'user', CAST(0x0000A244011A8820 AS DateTime), N'user', NULL, NULL, N'LatestBlogPostsWdiget', NULL, 3, CAST(0x0000A244011A8820 AS DateTime), N'user', NULL)
 INSERT [bcms_root].[Contents] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [PreviewUrl], [Status], [PublishedOn], [PublishedByUser], [OriginalId]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c', 1, 0, CAST(0x0000A244011C5CE0 AS DateTime), N'user', CAST(0x0000A24501100328 AS DateTime), N'user', NULL, NULL, N'This is an another example of a Blog Post', NULL, 3, CAST(0x0000A24501100328 AS DateTime), N'user', NULL)
@@ -312,63 +320,8 @@ function gMapsCallback() {
 
 <div id="google-map" class="map"></div>
 ', 0)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'5190f6fe-8b06-44fc-b089-a24300cc6b17', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <a href="#1" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <p>
-                <br />
-                You''ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.
-            </p>
-        </div>
 
-        <a href="#2" class="banner-link link">Esse molestie consequa</a>
-        <div class="block">
-            <p>your bear, you have to admit it! No, we aren''t selling bears.</p>
-        </div>
 
-        <a href="#3" class="banner-link link">Congue nihil imperdiet</a>
-        <div class="block">
-            <p>And now, for something completely different. And now, for something completely different. Period.</p>
-        </div>
-
-        <a href="#4" class="banner-link link">Ut wisi enim ad minim veniam</a>
-        <div class="block">
-            <br />
-            <p>And now, for something completely different. And now.</p>
-        </div>
-', 0)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'ff7fd016-7041-431e-b435-a24300cd6328', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 1" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Esse molestie consequa</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 2" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Congue nihil imperdiet</h1>
-                <h2>doming id quod mazim placerat facer possim assum.</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 3" />
-        </div>
-        <div>
-            <hgroup class="banner-text">
-                <h1>Ut wisi enim ad minim veniam</h1>
-                <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
-            </hgroup>
-            <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
-        </div>
-', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'51c175cc-7d5e-45c4-be67-a24301266d95', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<h1>About Us</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
@@ -379,38 +332,6 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 ', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'896b6b17-22bd-4844-a66c-a2430126988d', CAST(0x0000A24300000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'        <h1>Gallery</h1>
 ', 0)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<section class="blogpost-head">
-<h1>This is an Example of a Blog Post<a class="back-link" onclick="history.go(-1)">&lt; Back</a></h1>
-<span class="author">Author Name,</span><time datetime="2013-01-28">Jan 28, 2013</time></section>
-
-<article class="content-article">
-<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, nos trud exe rci tation ullamc orper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
-</article>
-
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
-<div class="info-box">
-<h2>Consectetuer adipiscing</h2>
-
-<h3>doming id quod mazim placerat facer possim assum.</h3>
-</div>
-</section>
-
-<article class="content-article">
-<h2>This is an Example of a Sub Head</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-
-<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-</article>
-', 0)
-INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<p>dsdfsgsda</p>
-', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c', CAST(0x0000A24400000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'<article class="content-article">
 <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h3>
 
@@ -419,7 +340,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -445,7 +366,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -471,7 +392,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -497,7 +418,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -523,7 +444,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -549,7 +470,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel feugait nulla facilisi.</p>
 </article>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -573,7 +494,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 </hgroup>
 
 <section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32">
+    <img src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" alt="Sample 41">
     <div class="info-box">
         <h2>Consectetuer adipiscing</h2>
         <h3>doming id quod mazim placerat facer possim assum.</h3>
@@ -614,7 +535,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 </hgroup>
 
 <section class="content-image-2">
-    <img src="/Content/images/sample-32.jpg" alt="Sample 32">
+    <img src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" alt="Sample 41">
     <div class="info-box">
         <h2>Consectetuer adipiscing</h2>
         <h3>doming id quod mazim placerat facer possim assum.</h3>
@@ -653,7 +574,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 	<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
 </hgroup>
 
-<section class="content-image-2"><img alt="Sample 32" src="/Content/images/sample-32.jpg" />
+<section class="content-image-2"><img alt="Sample 41" src="/uploads/image/6f9a4a524a8a4a869793f6994107ecd7/sample-41_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -701,7 +622,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 	<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
 </hgroup>
 
-<section class="content-image-1"><img alt="Sample 45" src="/Content/images/sample-45.jpg" />
+<section class="content-image-1"><img alt="Sample 42" src="/uploads/image/08eee80a1bb7434691158775a40d906f/sample-42_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -732,7 +653,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 	<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
 </hgroup>
 
-<section class="content-image-1"><img alt="Sample 45" src="/Content/images/sample-45.jpg" />
+<section class="content-image-1"><img alt="Sample 42" src="/uploads/image/08eee80a1bb7434691158775a40d906f/sample-42_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -760,7 +681,7 @@ INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [C
 	<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</h2>
 </hgroup>
 
-<section class="content-image-1"><img alt="Sample 45" src="/Content/images/sample-45.jpg" />
+<section class="content-image-1"><img alt="Sample 42" src="/uploads/image/08eee80a1bb7434691158775a40d906f/sample-42_1.jpg" />
 <div class="info-box">
 <h2>Consectetuer adipiscing</h2>
 
@@ -834,7 +755,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
                 <h2>doming id quod mazim placerat facer possim assum.</h2>
             </hgroup>
             <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 1" />
+            <img src="/uploads/image/40940f359b5b44ca97b8b92cddd062e9/sample-43_1.jpg" alt="Banner 1" />
         </div>
         <div style="display: none;">
             <hgroup class="banner-text">
@@ -842,7 +763,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
                 <h2>doming id quod mazim placerat facer possim assum.</h2>
             </hgroup>
             <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 2" />
+            <img src="/uploads/image/40940f359b5b44ca97b8b92cddd062e9/sample-43_1.jpg" alt="Banner 2" />
         </div>
         <div style="display: none;">
             <hgroup class="banner-text">
@@ -850,7 +771,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
                 <h2>doming id quod mazim placerat facer possim assum.</h2>
             </hgroup>
             <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 3" />
+            <img src="/uploads/image/40940f359b5b44ca97b8b92cddd062e9/sample-43_1.jpg" alt="Banner 3" />
         </div>
         <div style="display: none;">
             <hgroup class="banner-text">
@@ -858,7 +779,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
                 <h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
             </hgroup>
             <a href="#nolink" class="btn-primary action-arrow">Call to Action</a>
-            <img src="/Content/images/sample-78.jpg" alt="Banner 4" />
+            <img src="/uploads/image/40940f359b5b44ca97b8b92cddd062e9/sample-43_1.jpg" alt="Banner 4" />
         </div>
     </div>
 
@@ -891,8 +812,6 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
     </div>
 ', 1, 0)
 
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e76a4678-ecbd-4635-9ac9-a24400c94548')
-INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'e838e63d-9b12-46e5-8b37-a24400cdac52')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'072f4ae4-9b64-4176-8f15-a244011ca304')
@@ -1162,4 +1081,3 @@ INSERT [bcms_root].[PageContentOptions] ([Id], [Version], [IsDeleted], [CreatedO
 
 -- enable all constraints
 EXEC sp_msforeachtable @command1="print '?'", @command2="ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
-
