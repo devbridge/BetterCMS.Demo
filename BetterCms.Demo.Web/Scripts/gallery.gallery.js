@@ -7,7 +7,7 @@ $(function() {
         return result ? result[3] : false;
     }
 
-    if (getQueryParam("image-gallery-album-id")) {
+    if (getQueryParam("image-gallery-folder-id")) {
         var model = new GalleryModel();
         model.initialize();
     }

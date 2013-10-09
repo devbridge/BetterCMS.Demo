@@ -142,7 +142,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Models\Migrations\Migration201310041400.sqlserver.sql">
+    <EmbeddedResource Include="Models\Migrations\Migration201310091000.sqlserver.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

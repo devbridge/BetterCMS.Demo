@@ -7,11 +7,19 @@ function GalleryModel(opts) {
             coverheight: 355,
             width: 940,
             height: 445,
-            covergap: 80
+            covergap: 80,
+            imagesSelector: '.page-frame .bcms-gallery-image-holder > img',
+            imagesContainerSelector: '.page-frame section:has(>.bcms-gallery-image-holder)',
+            onOpenImage: function (link) {
+                window.open(link, '_blank');
+            },
+            getImageUrl: function(imgElement) {
+                return imgElement.attr('src');
+            }
         }, opts),
         selectors = {
-            images: '.page-frame .bcms-gallery-image-holder > img',
-            imagesContainer: '.page-frame section:has(>.bcms-gallery-image-holder)',
+            images: options.imagesSelector,
+            imagesContainer: options.imagesContainerSelector,
             galleryTemplate: '#gallery-template',
             galleryThumbnailTemplate: '#gallery-thumbnail-template',
             galleryContainer: 'images-gallery-container',
@@ -20,9 +28,12 @@ function GalleryModel(opts) {
             allThumbnails: '#gallery-thumbnails a',
             galleryScrollbar: '.gallery-scrollbar',
             gallerySlider: '.gallery-slider',
+            backButton: '.bcms-gallery-title a.bcms-gallery-back-link'
         },
         classes = {
-            activeImage: "active-image"
+            activeImage: "active-image",
+            albumHolder: "bcms-album-holder"
+            
         },
         images = [],
         dragTimer,
@@ -33,6 +44,7 @@ function GalleryModel(opts) {
     function collectImages() {
         $(selectors.images).each(function () {
             var imgSrc = $(this).attr('src'),
+                imgUrl = options.getImageUrl.call(this, $(this)),
                 imgCaption = $(this).attr('alt'),
                 imgTitle = $(this).data('title');
 
@@ -41,7 +53,7 @@ function GalleryModel(opts) {
                     title: imgTitle,
                     description: imgCaption,
                     image: imgSrc,
-                    link: imgSrc
+                    link: imgUrl
                 });
             }
         });
@@ -152,7 +164,7 @@ function GalleryModel(opts) {
 
             this.on('click', function (index, link) {
                 if (link) {
-                    window.open(link, '_blank');
+                    options.onOpenImage(link);
                 }
             });
         });
@@ -175,6 +187,11 @@ function GalleryModel(opts) {
             setupThumbnails();
             setupSlider();
             setupCoverflow();
+        }
+        
+        // Hide back button if there is no history
+        if (history.length <= 1) {
+            $(selectors.backButton).hide();
         }
     };
 
