@@ -231,3 +231,8 @@
     .coverflow-text h2 {
         margin: 0;
     }
+
+.lightbox-image {
+    overflow-y: auto;
+    cursor: pointer;
+}

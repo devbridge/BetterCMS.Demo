@@ -10,8 +10,24 @@ function GalleryModel(opts) {
             covergap: 80,
             imagesSelector: '.page-frame .bcms-gallery-image-holder > img',
             imagesContainerSelector: '.page-frame section:has(>.bcms-gallery-image-holder)',
-            onOpenImage: function (link) {
-                window.open(link, '_blank');
+            onOpenImage: function (link, index) {
+                var container = $($('#gallery-image-modal-template').html()),
+                    image = container.find('img'),
+                    imageWidth = $(window).width() - 100,
+                    imageHeight = $(window).height() - 100;
+
+                image.attr('src', link);
+                image.attr('alt', images[index].title || images[index].description);
+                image.css('max-width', imageWidth + 'px');
+                image.css('max-height', imageHeight + 'px');
+
+                container.lightbox_me({
+                    destroyOnClose: true,
+                    centered: true
+                });
+                container.on('click', function() {
+                    container.trigger('close');
+                });
             },
             getImageUrl: function(imgElement) {
                 return imgElement.attr('src');
@@ -164,7 +180,7 @@ function GalleryModel(opts) {
 
             this.on('click', function (index, link) {
                 if (link) {
-                    options.onOpenImage(link);
+                    options.onOpenImage(link, index);
                 }
             });
         });

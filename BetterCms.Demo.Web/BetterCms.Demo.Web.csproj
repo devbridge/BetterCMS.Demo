@@ -263,6 +263,11 @@
     <Content Include="Content\Styles\images\icn-btn-arrow.png" />
     <Content Include="Content\Styles\images\icn-tag.png" />
     <Content Include="Content\Styles\images\social-icons.png" />
+    <Content Include="Content\img\close.png" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\next.png" />
+    <Content Include="Content\img\prev.png" />
+    <Content Include="Content\Styles\lightbox.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\gallery.gallery.js" />
@@ -273,6 +278,7 @@
     <Content Include="Scripts\jquery.accordion.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\lightbox-2.6.min.js" />
     <Content Include="Scripts\messages.js" />
     <Content Include="Scripts\modernizr.js" />
     <Content Include="Scripts\slides.min.jquery.js" />
