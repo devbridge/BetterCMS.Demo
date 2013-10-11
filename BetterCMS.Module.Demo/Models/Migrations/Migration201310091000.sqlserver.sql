@@ -28,6 +28,9 @@ DELETE [bcms_root].[Pages] WHERE [Id] = @pageId
 
 -- Insert demo data
 INSERT [bcms_blog].[Authors] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [ImageId]) VALUES (N'e2493e34-0b97-4852-9d9c-a24400c842ef', 1, 0, CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', NULL, NULL, N'Joe Blogger', NULL)
+INSERT [bcms_blog].[Authors] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [ImageId]) VALUES (N'81A08308-6193-401C-920E-7F9172C23915', 1, 0, CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', NULL, NULL, N'Joe Author', NULL)
+INSERT [bcms_blog].[Authors] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [ImageId]) VALUES (N'819B9FC0-5CCD-4864-9D3D-803474BE09B0', 1, 0, CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', NULL, NULL, N'Joe Writer', NULL)
+INSERT [bcms_blog].[Authors] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [Name], [ImageId]) VALUES (N'222E3EE4-DB81-41C3-B84C-CE95ED40D954', 1, 0, CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', CAST(0x0000A24400C84204 AS DateTime), N'Better CMS', NULL, NULL, N'Joe Publisher', NULL)
 
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'c73ccc96-e4ae-4a44-8bfe-a24400fa536c')
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'af326b53-1339-4136-b8c0-a244011c5d2c')
@@ -37,10 +40,10 @@ INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'94163a66-1f43-4d7d-8156-a
 INSERT [bcms_blog].[BlogPostContents] ([Id]) VALUES (N'7ec1762a-e6ee-4ff2-b77c-a24500b6eb94')
 
 INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'99614554-e15d-4152-8b3e-a24400fa536e', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24400000000 AS DateTime), NULL)
-INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'4dfb5f1b-e58c-4e93-ad41-a244011c5d2d', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24400000000 AS DateTime), NULL)
-INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'fa9ea0dc-4cbe-48cf-942a-a244011ca304', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24400000000 AS DateTime), NULL)
+INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'4dfb5f1b-e58c-4e93-ad41-a244011c5d2d', N'81A08308-6193-401C-920E-7F9172C23915', CAST(0x0000A24400000000 AS DateTime), NULL)
+INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'fa9ea0dc-4cbe-48cf-942a-a244011ca304', N'222E3EE4-DB81-41C3-B84C-CE95ED40D954', CAST(0x0000A24400000000 AS DateTime), NULL)
 INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'e6cb8675-3b56-43e6-b796-a24500b622c5', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24500000000 AS DateTime), NULL)
-INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'09bc1567-53b6-404d-a1a0-a24500b69caf', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24500000000 AS DateTime), NULL)
+INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'09bc1567-53b6-404d-a1a0-a24500b69caf', N'819B9FC0-5CCD-4864-9D3D-803474BE09B0', CAST(0x0000A24500000000 AS DateTime), NULL)
 INSERT [bcms_blog].[BlogPosts] ([Id], [AuthorId], [ActivationDate], [ExpirationDate]) VALUES (N'b5d7b574-455a-4401-8df2-a24500b6eb94', N'e2493e34-0b97-4852-9d9c-a24400c842ef', CAST(0x0000A24500000000 AS DateTime), NULL)
 
 INSERT [bcms_blog].[Options] ([Id], [Version], [IsDeleted], [CreatedOn], [CreatedByUser], [ModifiedOn], [ModifiedByUser], [DeletedOn], [DeletedByUser], [DefaultLayoutId]) VALUES (N'1ea6a376-6580-44d8-8ab4-a24400c7f833', 1, 0, CAST(0x0000A24400C7F830 AS DateTime), N'Better CMS', CAST(0x0000A24400C7F830 AS DateTime), N'Better CMS', NULL, NULL, N'4dbd7ae6-e9fc-46bb-9ef6-a24400f95b65')
