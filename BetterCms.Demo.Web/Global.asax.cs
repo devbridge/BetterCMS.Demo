@@ -26,7 +26,7 @@ namespace BetterCms.Demo.Web
 
             cmsHost.OnApplicationStart(this);
 
-            Resetter = new Resetter(15, cmsHost);
+            Resetter = new Resetter(cmsHost);
         }
 
         protected void Application_BeginRequest()
