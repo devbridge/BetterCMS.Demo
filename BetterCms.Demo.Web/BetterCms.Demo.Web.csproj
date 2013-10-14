@@ -300,11 +300,14 @@
     <Content Include="Areas\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\nlog.config" />
+    <Content Include="Config\nlog.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\cms.config">
       <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -326,7 +329,9 @@
     <Content Include="Scripts\validation.extenders.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\smtp.config" />
+    <Content Include="Config\smtp.config">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\SiteMap\Index.cshtml" />
@@ -376,6 +381,7 @@
   <ItemGroup>
     <Content Include="Config\connectionStrings.config">
       <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -392,6 +398,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Layouts\Light\Partial\_GalleryScripts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\cms.Debug.config">
+      <DependentUpon>cms.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\cms.Release.config">
+      <DependentUpon>cms.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\connectionStrings.Debug.config">
+      <DependentUpon>connectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\connectionStrings.Release.config">
+      <DependentUpon>connectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\nlog.Debug.config">
+      <DependentUpon>nlog.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\nlog.Release.config">
+      <DependentUpon>nlog.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\smtp.Debug.config">
+      <DependentUpon>smtp.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\smtp.Release.config">
+      <DependentUpon>smtp.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -426,6 +466,12 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SC_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\SlowCheetah.2.5.8\tools\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" Label="SlowCheetah" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
