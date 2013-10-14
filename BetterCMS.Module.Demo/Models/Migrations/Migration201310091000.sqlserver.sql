@@ -700,22 +700,22 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
 
 <div class="block">
 <p><br />
-You&#39;ve seen it coming! Buy now and get nothing for free! Well, at least no free beer. Perhaps a bear, if you can afford it.</p>
+am non sodales velit, in accumsan quam. Cras consectetur porttitor lectus vel porttitor.</p>
 </div>
 <a class="banner-link link" href="#2">Esse molestie consequa</a>
 
 <div class="block">
-<p>your bear, you have to admit it! No, we aren&#39;t selling bears.</p>
+<p>Vestibulum aliquam lacus sit amet tortor consectetur, vitae ullamcorper urna volutpat.</p>
 </div>
 <a class="banner-link link" href="#3">Congue nihil imperdiet</a>
 
 <div class="block">
-<p>And now, for something completely different. And now, for something completely different. Period.</p>
+<p>Donec consectetur sollicitudin lacinia. Sed posuere fermentum urna sit amet tincidunt.</p>
 </div>
 <a class="banner-link link" href="#4">Ut wisi enim ad minim veniam</a>
 
 <div class="block">&nbsp;
-<p>And now, for something completely different. And now.</p>
+<p>Etiam interdum vestibulum dui ut luctus.</p>
 </div>
 </div>
 ', 1, 1)
