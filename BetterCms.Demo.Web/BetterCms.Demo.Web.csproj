@@ -374,7 +374,9 @@
     <Content Include="Views\Widgets\BlogFeedWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Config\connectionStrings.config" />
+    <Content Include="Config\connectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\BetterCMS\Modules\" />
