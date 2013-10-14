@@ -49,5 +49,10 @@ namespace BetterCms.Demo.Web
         {
             cmsHost.OnApplicationEnd(this);
         }
+
+        protected void Application_AuthenticateRequest()
+        {
+            cmsHost.OnAuthenticateRequest(this);
+        }
     }
 }

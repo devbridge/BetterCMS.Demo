@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/Layouts/Light/_LightOneColumnLayout.cshtml";
+}
+
+@section MainContent {
+    <div class="contact-info clearfix">
+        <div class="clearfix">
+            <div class="contact-address">
+                @RenderSection("Address", false)
+            </div>
+
+            <div class="contact-social">
+                @RenderSection("Social", false)                
+            </div>
+        </div>
+
+        <div class="contact-map">
+            @RenderSection("Map", false)
+        </div>
+    </div>
+
+    <div class="contact-form">
+        @RenderSection("Form", false)
+    </div>
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+}

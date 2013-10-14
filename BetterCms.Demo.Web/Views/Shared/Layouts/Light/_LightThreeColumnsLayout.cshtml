@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/Layouts/Light/_LightLayout.cshtml";
+}
+
+@section MainContent {
+    <section class="three-col-left">
+        @RenderSection("MainContent", false)
+    </section>
+    
+    <section class="three-col-middle">
+        @RenderSection("ColMiddle")
+    </section>
+    
+    <aside class="col-right">
+        @RenderSection("ColRight", false)
+    </aside>
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+}

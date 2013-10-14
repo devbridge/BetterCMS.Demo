@@ -1,62 +1,84 @@
-$(function () {
-    function getQueryParam(param) {
-        var result =  window.location.search.match(
-            new RegExp("(\\?|&)" + param + "(\\[\\])?=([^&]*)")
-        );
+function GalleryModel(opts) {
+    var self = this,
+        options = $.extend({
+            renderSlider: true,
+            renderThumbnails: true,
+            coverwidth: 525,
+            coverheight: 355,
+            width: 940,
+            height: 445,
+            covergap: 80,
+            imagesSelector: '.page-frame .bcms-gallery-image-holder > img',
+            imagesContainerSelector: '.page-frame section:has(>.bcms-gallery-image-holder)',
+            onOpenImage: function (link, index) {
+                var container = $($('#gallery-image-modal-template').html()),
+                    image = container.find('img'),
+                    imageWidth = $(window).width() - 100,
+                    imageHeight = $(window).height() - 100;
 
-        return result ? result[3] : false;
-    }
+                image.attr('src', link);
+                image.attr('alt', images[index].title || images[index].description);
+                image.css('max-width', imageWidth + 'px');
+                image.css('max-height', imageHeight + 'px');
 
-    var selectors = {
-        images: '.page-frame .bcms-gallery-image-holder > img',
-        imagesContainer: '.page-frame section:has(.bcms-gallery-image-holder)',
-        galleryTemplate: '#gallery-template',
-        galleryThumbnailTemplate: '#gallery-thumbnail-template',
-        galleryContainer: 'images-gallery-container',
-        thumbnailsContainer: '#gallery-thumbnails',
-        thumbnailImage: 'img',
-        allThumbnails: '#gallery-thumbnails a',
-        galleryScrollbar: '.gallery-scrollbar',
-        gallerySlider: '.gallery-slider',
-    },
+                container.lightbox_me({
+                    destroyOnClose: true,
+                    centered: true
+                });
+                container.on('click', function() {
+                    container.trigger('close');
+                });
+            },
+            getImageUrl: function(imgElement) {
+                return imgElement.attr('src');
+            }
+        }, opts),
+        selectors = {
+            images: options.imagesSelector,
+            imagesContainer: options.imagesContainerSelector,
+            galleryTemplate: '#gallery-template',
+            galleryThumbnailTemplate: '#gallery-thumbnail-template',
+            galleryContainer: 'images-gallery-container',
+            thumbnailsContainer: '#gallery-thumbnails',
+            thumbnailImage: 'img',
+            allThumbnails: '#gallery-thumbnails a',
+            galleryScrollbar: '.gallery-scrollbar',
+            gallerySlider: '.gallery-slider',
+            backButton: '.bcms-gallery-title a.bcms-gallery-back-link'
+        },
         classes = {
-            activeImage: "active-image"
+            activeImage: "active-image",
+            albumHolder: "bcms-album-holder"
+            
         },
         images = [],
-        galleryDiv,
-        imgSrc,
-        imgTitle,
-        thumbnailContainer,
         dragTimer,
-        galleryScrollbar,
         gallerySlider,
-        sliderWidth,
-        sliderSteps,
         sliderStep,
         sliderChanged = false;
 
-    if (getQueryParam("image-gallery-album-id")) {
-        $(selectors.images).each(function() {
-            imgSrc = $(this).attr('src');
-            imgTitle = $(this).attr('alt');
+    function collectImages() {
+        $(selectors.images).each(function () {
+            var imgSrc = $(this).attr('src'),
+                imgUrl = options.getImageUrl.call(this, $(this)),
+                imgCaption = $(this).attr('alt'),
+                imgTitle = $(this).data('title');
+
             if (imgSrc) {
                 images.push({
                     title: imgTitle,
-                    description: imgTitle,
-                    image: imgSrc
+                    description: imgCaption,
+                    image: imgSrc,
+                    link: imgUrl
                 });
             }
         });
+    }
 
-        if (images.length > 0) {
-            galleryDiv = $($(selectors.galleryTemplate).html());
-
-            // Setup cover flow plugin
-            $(selectors.imagesContainer).first().replaceWith(galleryDiv);
-            $(selectors.imagesContainer).remove();
+    function setupThumbnails() {
+        if (options.renderThumbnails) {
+            var thumbnailContainer = $(selectors.thumbnailsContainer);
             
-            // Setup thumbnails
-            thumbnailContainer = $(selectors.thumbnailsContainer);
             $(images).each(function (index) {
                 // Setup thumbnail
                 var thumbnail = $($(selectors.galleryThumbnailTemplate).html()),
@@ -70,63 +92,33 @@ $(function () {
                 image = thumbnail.find(selectors.thumbnailImage);
                 image.attr('src', this.image);
                 image.attr('alt', this.title);
-                
+
                 thumbnailContainer.append(thumbnail);
-                
+
                 thumbnail.on('click', function () {
-                    var self = $(this);
-
-                    window.coverflow().to(self.data('index'));
+                    window.coverflow().to($(this).data('index'));
                 });
             });
+        }
+    }
 
-            galleryScrollbar = $(selectors.galleryScrollbar);
-            gallerySlider = $(selectors.gallerySlider);
-            sliderWidth = gallerySlider.width();
+    function setupSlider() {
+        var galleryScrollbar,
+            sliderWidth,
+            sliderSteps;
+
+        gallerySlider = $(selectors.gallerySlider);
+        galleryScrollbar = $(selectors.galleryScrollbar);
+
+        if (options.renderSlider) {
             sliderSteps = images.length;
-            sliderStep = (galleryScrollbar.width() - sliderWidth) / sliderSteps;
-
-            // Setup coverflow gallery
-            window.coverflow(selectors.galleryContainer).setup({
-                playlist: images,
-                backgroundcolor: 'fff',
-                mode: 'html5',
-                item: 0,
-                width: 940,
-                height: 445,
-                x: 0,
-                y: 0,
-                coverwidth: 525,
-                coverheight: 355,
-                coverangle: 45,
-                covergap: 80,
-                coverdepth: 185,
-                opacitydecrease: 0.5,
-                reflectionratio: 5,
-                fixedsize: true,
-                textoffset: 37
-            }).on('focus', function (index) {
-                $(selectors.allThumbnails).each(function () {
-                    var self = $(this);
-                    
-                    if (self.data('index') == index) {
-                        self.addClass(classes.activeImage);
-                    } else {
-                        self.removeClass(classes.activeImage);
-                    }
-                });
-
-                if (!sliderChanged) {
-                    if (index == 0) {
-                        gallerySlider.css('left', 0);
-                    } else {
-                        gallerySlider.css('left', index * sliderStep + 2 + sliderStep / 2);
-                    }
-                }
-                sliderChanged = false;
-            });
-
-            // Setup gallery slider
+            sliderWidth = gallerySlider.width();
+            if (galleryScrollbar.width() / sliderSteps > sliderWidth) {
+                sliderWidth = galleryScrollbar.width() / sliderSteps;
+                gallerySlider.css('width', sliderWidth);
+            }
+            sliderStep = galleryScrollbar.width() / sliderSteps;
+            
             $(gallerySlider).draggable({
                 axis: "x",
                 containment: "parent"
@@ -140,6 +132,84 @@ $(function () {
                     window.coverflow().to(currentStep > sliderSteps ? sliderSteps - 1 : currentStep - 1);
                 }, 30);
             });
+        } else {
+            galleryScrollbar.hide();
         }
     }
-});
+
+    function setupCoverflow() {
+        window.coverflow(selectors.galleryContainer).setup({
+            playlist: images,
+            backgroundcolor: 'fff',
+            mode: 'html5',
+            item: 0,
+            width: options.width,
+            height: options.height,
+            x: 0,
+            y: 0,
+            coverwidth: options.coverwidth,
+            coverheight: options.coverheight,
+            coverangle: 45,
+            covergap: options.covergap,
+            coverdepth: 185,
+            opacitydecrease: 0.5,
+            reflectionratio: 5,
+            fixedsize: true,
+            textoffset: 37
+        }).on('ready', function () {
+            this.on('focus', function (index) {
+                if (options.renderThumbnails) {
+                    $(selectors.allThumbnails).each(function () {
+                        var $this = $(this);
+
+                        if ($this.data('index') == index) {
+                            $this.addClass(classes.activeImage);
+                        } else {
+                            $this.removeClass(classes.activeImage);
+                        }
+                    });
+                }
+
+                if (options.renderSlider) {
+                    if (!sliderChanged) {
+                        gallerySlider.css('left', index * sliderStep + 2);
+                    }
+                    sliderChanged = false;
+                }
+            });
+
+            this.on('click', function (index, link) {
+                if (link) {
+                    options.onOpenImage(link, index);
+                }
+            });
+        });
+    }
+
+    self.initialize = function () {
+        var galleryDiv;
+
+        // Collects images
+        collectImages();
+
+        if (images.length > 0) {
+            // Add custom HTML with slider, thumbnails and coverflow gallery
+            galleryDiv = $($(selectors.galleryTemplate).html());
+            
+            $(selectors.imagesContainer).first().replaceWith(galleryDiv);
+            $(selectors.imagesContainer).remove();
+
+            // Setup
+            setupThumbnails();
+            setupSlider();
+            setupCoverflow();
+        }
+        
+        // Hide back button if there is no history
+        if (history.length <= 1) {
+            $(selectors.backButton).hide();
+        }
+    };
+
+    return self;
+}

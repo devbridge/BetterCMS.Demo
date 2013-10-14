@@ -1,0 +1,68 @@
+﻿@using BetterCms.Module.Blog.Helpers.Extensions
+@using BetterCms.Module.Pages.Helpers.Extensions
+@using BetterCms.Module.Root.Mvc.Helpers
+
+@{
+    Layout = "~/Views/Shared/Layouts/Light/_LightTwoColumnsLayout.cshtml";
+}
+
+@{
+    var authorName = string.Empty;
+    var author = Model.GetBlogPostAuthorModel();
+    if (author != null)
+    {
+        authorName = author.Name;
+    }
+
+    IList<string> tags;
+    DateTime? date;
+    if (Model.IsBlogPost())
+    {
+        date = Model.GetBlogPostModel().ActivationDate;
+        tags = Model.GetPageTagsList();
+    }
+    else
+    {
+        date = null;
+        tags = new List<string>();
+    }
+}
+
+
+@model BetterCms.Module.Root.ViewModels.Cms.RenderPageViewModel
+
+@section CMSMainContent {
+    <section class="blogpost-head">
+        <h1>@Model.Title<a onclick=" history.go(-1) " class="back-link">< Back</a></h1>
+        <span class="author">@authorName</span>
+        @if (date.HasValue)
+        {
+            <time datetime="@date.Value.ToString("yyyy-MM-dd")">@date.Value.ToString("MMM d, yyyy")</time>
+        }
+        @if (tags != null && tags.Count > 0)
+        {
+            var blogListUrl = Model.GetOptionValue<string>("Blogs List Page URL");
+            if (!string.IsNullOrEmpty(blogListUrl))
+            {
+                <span>
+                    @foreach (var tag in tags)
+                    {
+                        <a href="@blogListUrl?tagName=@tag" class="single-tag">@tag</a>
+                    }
+                </span>
+            }
+        }
+    </section>
+
+    @RenderSection("CMSMainContent", false)
+}
+
+@section ColRight {
+    @RenderSection("ColRight", false)
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+}

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/Layouts/Light/_LightLayout.cshtml";
+}
+
+@section MainContent {
+    <section class="two-col-left">
+        @RenderSection("CMSMainContent", false)
+    </section>
+    
+    <aside class="col-right">
+        @RenderSection("ColRight", false)
+    </aside>
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+}

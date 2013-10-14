@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/Layouts/Light/_LightOneColumnLayout.cshtml";
+}
+
+@section HeadScripts {
+    <link href="/Content/Styles/bcms.light.gallery.css" rel="stylesheet" />
+    
+    @RenderSection("HeadScripts", false)
+}
+
+@section MainContent {
+    @RenderSection("MainContent", false)
+}
+
+@RenderBody()
+
+@section Scripts {
+    @RenderSection("Scripts", false)
+    @Html.Partial("Layouts/Light/Partial/_GalleryScripts")
+    <script src="@Url.Content("~/Scripts/gallery.gallery.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.lightbox_me.js")"></script>
+}
