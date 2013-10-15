@@ -1,5 +1,26 @@
 ﻿-- disable all constraints
-EXEC sp_msforeachtable "ALTER TABLE ? NOCHECK CONSTRAINT all"
+DECLARE @tname VARCHAR(128), 
+	@tschema VARCHAR(128);
+
+DECLARE tables CURSOR FOR
+	SELECT TABLE_SCHEMA, TABLE_NAME
+	FROM INFORMATION_SCHEMA.TABLES;
+
+OPEN tables
+
+FETCH NEXT FROM tables
+    INTO @tschema, @tname
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	PRINT 'Disabling constraints for table: [' + @tschema + '].[' + @tname + ']'
+    EXECUTE ('ALTER TABLE [' + @tschema + '].[' + @tname + '] NOCHECK CONSTRAINT ALL');
+    FETCH NEXT FROM tables
+        INTO @tschema, @tname;
+end;
+
+CLOSE tables
+DEALLOCATE tables
 
 -- delete better cms installed default data
 DECLARE @pageId UNIQUEIDENTIFIER
@@ -1121,4 +1142,24 @@ INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'e20326de-50c9-46df-b
 INSERT [bcms_root].[Widgets] ([Id], [CategoryId]) VALUES (N'4d8bed4f-8eca-40c7-9485-a245010cff03', NULL)
 
 -- enable all constraints
-EXEC sp_msforeachtable @command1="print '?'", @command2="ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
+--EXEC sp_msforeachtable @command1="print '?'", @command2="ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all"
+
+DECLARE tables CURSOR FOR
+	SELECT TABLE_SCHEMA, TABLE_NAME
+	FROM INFORMATION_SCHEMA.TABLES;
+
+OPEN tables
+
+FETCH NEXT FROM tables
+    INTO @tschema, @tname
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	PRINT 'Enabling constraints for table: [' + @tschema + '].[' + @tname + ']'
+    EXECUTE ('ALTER TABLE [' + @tschema + '].[' + @tname + '] WITH CHECK CHECK CONSTRAINT all');
+    FETCH NEXT FROM tables
+        INTO @tschema, @tname;
+end;
+
+CLOSE tables
+DEALLOCATE tables
