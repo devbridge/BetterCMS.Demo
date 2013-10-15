@@ -21,16 +21,21 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{F120D13C-2D36-44CB-894D-769EFE47BCEF}.Staging|Any CPU.Build.0 = Staging|Any CPU
 		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{E45B69FE-434C-4B5D-81B2-C78934A1BF04}.Staging|Any CPU.Build.0 = Staging|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

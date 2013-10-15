@@ -408,11 +408,19 @@
       <DependentUpon>cms.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Config\cms.Staging.config">
+      <DependentUpon>cms.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
     <None Include="Config\connectionStrings.Debug.config">
       <DependentUpon>connectionStrings.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
     <None Include="Config\connectionStrings.Release.config">
+      <DependentUpon>connectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Config\connectionStrings.Staging.config">
       <DependentUpon>connectionStrings.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
@@ -424,6 +432,10 @@
       <DependentUpon>nlog.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Config\nlog.Staging.config">
+      <DependentUpon>nlog.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
     <None Include="Config\smtp.Debug.config">
       <DependentUpon>smtp.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
@@ -432,10 +444,20 @@
       <DependentUpon>smtp.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
     </None>
+    <None Include="Config\smtp.Staging.config">
+      <DependentUpon>smtp.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="Web.Staging.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
