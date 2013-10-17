@@ -204,7 +204,12 @@ function GalleryModel(opts) {
             // Setup
             setupThumbnails();
             setupSlider();
-            setupCoverflow();
+
+            try {
+                setupCoverflow();
+            } catch(exc) {
+                console.log("Failed to initialize coverflow plug-in.");
+            }
         }
         
         // Hide back button if there is no history

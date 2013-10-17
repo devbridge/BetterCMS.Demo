@@ -259,6 +259,7 @@
     <Content Include="Content\Styles\bcms.light.content.css" />
     <Content Include="Content\Styles\bcms.light.layout.css" />
     <Content Include="Content\Styles\bcms.light.gallery.css" />
+    <Content Include="Content\Styles\coverflow.css" />
     <Content Include="Content\Styles\images\bg-active-menu.png" />
     <Content Include="Content\Styles\images\bg-header.png" />
     <Content Include="Content\Styles\images\icn-author.png" />
