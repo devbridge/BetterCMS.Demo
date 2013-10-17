@@ -208,7 +208,7 @@ function GalleryModel(opts) {
             try {
                 setupCoverflow();
             } catch(exc) {
-                console.log("Failed to initialize coverflow plug-in.");
+                console.error("Failed to initialize coverflow plug-in. Try to open gallery in another browsers, try to install flash and disable ActiceX filtering.");
             }
         }
         
