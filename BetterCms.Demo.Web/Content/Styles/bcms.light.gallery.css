@@ -162,7 +162,7 @@
     background: #2dacd4;
     cursor: w-resize;
 }
-
+/*
 .coverflow {
     z-index: 10;
     position: relative;
@@ -231,6 +231,7 @@
     .coverflow-text h2 {
         margin: 0;
     }
+*/
 
 .lightbox-image {
     overflow-y: auto;

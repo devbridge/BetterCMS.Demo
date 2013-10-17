@@ -268,6 +268,7 @@
     <Content Include="Content\Styles\images\social-icons.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\coverflow.swf" />
     <Content Include="Scripts\gallery.gallery.js" />
     <Content Include="Scripts\gallery.home.js" />
     <Content Include="Scripts\coverflow.js" />

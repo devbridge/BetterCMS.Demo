@@ -140,7 +140,7 @@ function GalleryModel(opts) {
     function setupCoverflow() {
         window.coverflow(selectors.galleryContainer).setup({
             playlist: images,
-            backgroundcolor: 'fff',
+            backgroundcolor: 'ffffff',
             mode: 'html5',
             item: 0,
             width: options.width,
@@ -155,7 +155,9 @@ function GalleryModel(opts) {
             opacitydecrease: 0.5,
             reflectionratio: 5,
             fixedsize: true,
-            textoffset: 37
+            textoffset: 37,
+            textstyle: ".coverflow-text{color:#000000;text-align:center;font-family:Arial Rounded MT Bold,Arial;} .coverflow-text h1{font-size:14px;font-weight:normal;line-height:21px;} .coverflow-text h2{font-size:11px;font-weight:normal;} .coverflow-text a{color:#0000EE;}",
+            flash: '/scripts/coverflow.swf'
         }).on('ready', function () {
             this.on('focus', function (index) {
                 if (options.renderThumbnails) {
