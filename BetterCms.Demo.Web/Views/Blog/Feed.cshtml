@@ -9,6 +9,6 @@
         <span class="author">@item.Author</span>
         <time datetime="@item.PublishedOn.ToString("yyyy-MM-dd")">@item.PublishedOn.ToString("MMM d, yyyy")</time>
     </div>
-    <img src="@item.ImageUrl" alt="Blog Feed Image">
+    <a href="@item.Url"><img src="@item.ImageUrl" alt="Blog Feed Image"></a>
 </div>
 }
