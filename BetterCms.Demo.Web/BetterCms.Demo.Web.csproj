@@ -259,7 +259,6 @@
     <Content Include="Content\Styles\bcms.light.content.css" />
     <Content Include="Content\Styles\bcms.light.layout.css" />
     <Content Include="Content\Styles\bcms.light.gallery.css" />
-    <Content Include="Content\Styles\coverflow.css" />
     <Content Include="Content\Styles\images\bg-active-menu.png" />
     <Content Include="Content\Styles\images\bg-header.png" />
     <Content Include="Content\Styles\images\icn-author.png" />
@@ -269,10 +268,8 @@
     <Content Include="Content\Styles\images\social-icons.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\coverflow.swf" />
     <Content Include="Scripts\gallery.gallery.js" />
     <Content Include="Scripts\gallery.home.js" />
-    <Content Include="Scripts\coverflow.js" />
     <Content Include="Scripts\forms.js" />
     <Content Include="Scripts\gallery.js" />
     <Content Include="Scripts\jquery.accordion.js" />
@@ -285,7 +282,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\messages.js" />
     <Content Include="Scripts\modernizr.js" />
-    <Content Include="Scripts\reflection.js" />
     <Content Include="Scripts\slides.min.jquery.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
