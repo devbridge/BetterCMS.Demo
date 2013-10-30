@@ -696,7 +696,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
 <hgroup class="banner-text">
 	<h1>Esse molestie consequa</h1>
 
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
+	<h2>Nullam vulputate magna diam, nec pharetra orci ornare id</h2>
 </hgroup>
 <a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 2" src="/uploads/image/f5aa60cc5d424876bd1f194596c1a934/home-02_1.jpg" /></div>
 
@@ -704,7 +704,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
 <hgroup class="banner-text">
 	<h1>Congue nihil imperdiet</h1>
 
-	<h2>doming id quod mazim placerat facer possim assum.</h2>
+	<h2>Nam ultricies aliquam diam, eu tristique justo aliquam sit amet.</h2>
 </hgroup>
 <a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 3" src="/uploads/image/069f24899c854fe5b893da75e65e6d8a/home-03_1.jpg" /></div>
 
@@ -712,7 +712,7 @@ INSERT [bcms_pages].[HtmlContentWidgets] ([Id], [CustomCss], [UseCustomCss], [Cu
 <hgroup class="banner-text">
 	<h1>Ut wisi enim ad minim veniam</h1>
 
-	<h2>doming id quod mazim placerat facer possim assum. doming id quod mazim placerat facer possim assum</h2>
+	<h2>Proin fringilla aliquet lacinia. Proin felis nibh, ultricies ac libero non, aliquet lacinia mauris. Ut pretium porta nibh a faucibus. </h2>
 </hgroup>
 <a class="btn-primary action-arrow" href="#nolink">Call to Action</a> <img alt="Banner 4" src="/uploads/image/8926575648c748b19de6a2fc5f488162/home-04_1.jpg" /></div>
 </div>
