@@ -11,8 +11,8 @@ $(function () {
             coverWidth: '200px',
             imagesSelector: '.home-bottom .bcms-album-holder > img',
             imagesContainerSelector: '.page-frame section:has(>.bcms-album-holder)',
-            onOpenImage: function(link) {
-                window.location.href = link;
+            onOpenImage: function(imageModel) {
+                window.location.href = imageModel.link;
             },
             getImageUrl: function (imgElement) {
                 return imgElement.parents(selectors.imageParent).find(selectors.imageLink).attr('href') || imgElement.attr('src');
