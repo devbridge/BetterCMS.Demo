@@ -276,11 +276,16 @@
     <Content Include="Scripts\forms.js" />
     <Content Include="Scripts\gallery.js" />
     <Content Include="Scripts\jquery.accordion.js" />
+    <Content Include="Scripts\jquery.coverflow.js" />
+    <Content Include="Scripts\jquery.interpolate.js" />
     <Content Include="Scripts\jquery.lightbox_me.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.touchSwipe.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\messages.js" />
     <Content Include="Scripts\modernizr.js" />
+    <Content Include="Scripts\reflection.js" />
     <Content Include="Scripts\slides.min.jquery.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

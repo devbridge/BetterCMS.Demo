@@ -6,11 +6,9 @@ $(function () {
         options = {
             renderThumbnails: false,
             renderSlider: false,
-            coverwidth: 150,
-            coverheight: 100,
-            width: 300,
-            height: 180,
-            covergap: 10,
+            renderDescription: false,
+            coverHeight: '133px',
+            coverWidth: '200px',
             imagesSelector: '.home-bottom .bcms-album-holder > img',
             imagesContainerSelector: '.page-frame section:has(>.bcms-album-holder)',
             onOpenImage: function(link) {

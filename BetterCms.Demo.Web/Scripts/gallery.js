@@ -3,21 +3,19 @@ function GalleryModel(opts) {
         options = $.extend({
             renderSlider: true,
             renderThumbnails: true,
-            coverwidth: 525,
-            coverheight: 355,
-            width: 940,
-            height: 445,
-            covergap: 80,
+            renderDescription: true,
+            coverHeight: '334px',
+            coverWidth: '500px',
             imagesSelector: '.page-frame .bcms-gallery-image-holder > img',
             imagesContainerSelector: '.page-frame section:has(>.bcms-gallery-image-holder)',
-            onOpenImage: function (link, index) {
+            onOpenImage: function (model) {
                 var container = $($('#gallery-image-modal-template').html()),
                     image = container.find('img'),
                     imageWidth = $(window).width() - 100,
                     imageHeight = $(window).height() - 100;
 
-                image.attr('src', link);
-                image.attr('alt', images[index].title || images[index].description);
+                image.attr('src', model.link);
+                image.attr('alt', model.title || model.description);
                 image.css('max-width', imageWidth + 'px');
                 image.css('max-height', imageHeight + 'px');
 
@@ -38,26 +36,28 @@ function GalleryModel(opts) {
             imagesContainer: options.imagesContainerSelector,
             galleryTemplate: '#gallery-template',
             galleryThumbnailTemplate: '#gallery-thumbnail-template',
-            galleryContainer: 'images-gallery-container',
+            galleryContainer: '#images-gallery-container',
             thumbnailsContainer: '#gallery-thumbnails',
             thumbnailImage: 'img',
             allThumbnails: '#gallery-thumbnails a',
             galleryScrollbar: '.gallery-scrollbar',
             gallerySlider: '.gallery-slider',
-            backButton: '.bcms-gallery-title a.bcms-gallery-back-link'
+            backButton: '.bcms-gallery-title a.bcms-gallery-back-link',
+            imageTitle: '.gallery-title h1',
+            imageDescription: '.gallery-title h2'
         },
         classes = {
             activeImage: "active-image",
-            albumHolder: "bcms-album-holder"
-            
+            albumHolder: "bcms-album-holder",
+            currentImage: "current"
         },
         images = [],
-        dragTimer,
         gallerySlider,
         sliderStep,
         sliderChanged = false;
 
     function collectImages() {
+        var i = 0;
         $(selectors.images).each(function () {
             var imgSrc = $(this).attr('src'),
                 imgUrl = options.getImageUrl.call(this, $(this)),
@@ -69,8 +69,11 @@ function GalleryModel(opts) {
                     title: imgTitle,
                     description: imgCaption,
                     image: imgSrc,
-                    link: imgUrl
+                    link: imgUrl,
+                    index: i
                 });
+
+                i++;
             }
         });
     }
@@ -86,7 +89,7 @@ function GalleryModel(opts) {
                 if (index == 0) {
                     thumbnail.addClass(classes.activeImage);
                 }
-                thumbnail.data('index', index);
+                thumbnail.data('model', this);
 
                 // Setup image
                 image = thumbnail.find(selectors.thumbnailImage);
@@ -96,7 +99,16 @@ function GalleryModel(opts) {
                 thumbnailContainer.append(thumbnail);
 
                 thumbnail.on('click', function () {
-                    window.coverflow().to($(this).data('index'));
+                    var dom = $(this),
+                        model = dom.data('model');
+
+                    if (model) {
+
+                        $(selectors.allThumbnails).removeClass(classes.activeImage);
+                        dom.addClass(classes.activeImage);
+
+                        $(selectors.galleryContainer).coverflow('index', model.index);
+                    }
                 });
             });
         }
@@ -123,14 +135,13 @@ function GalleryModel(opts) {
                 axis: "x",
                 containment: "parent"
             }).on('drag', function (event, ui) {
-                clearTimeout(dragTimer);
-                dragTimer = setTimeout(function () {
-                    var left = ui.position.left + sliderWidth / 2,
-                        currentStep = Math.ceil(left / sliderStep);
+                var left = ui.position.left + sliderWidth / 2,
+                    currentStep = Math.ceil(left / sliderStep),
+                    index = currentStep > sliderSteps ? sliderSteps - 1 : currentStep - 1;
 
-                    sliderChanged = true;
-                    window.coverflow().to(currentStep > sliderSteps ? sliderSteps - 1 : currentStep - 1);
-                }, 30);
+                sliderChanged = true;
+
+                $(selectors.galleryContainer).coverflow('index', index);
             });
         } else {
             galleryScrollbar.hide();
@@ -138,53 +149,68 @@ function GalleryModel(opts) {
     }
 
     function setupCoverflow() {
-        window.coverflow(selectors.galleryContainer).setup({
-            playlist: images,
-            backgroundcolor: 'ffffff',
-            mode: 'html5',
-            item: 0,
-            width: options.width,
-            height: options.height,
-            x: 0,
-            y: 0,
-            coverwidth: options.coverwidth,
-            coverheight: options.coverheight,
-            coverangle: 45,
-            covergap: options.covergap,
-            coverdepth: 185,
-            opacitydecrease: 0.5,
-            reflectionratio: 5,
-            fixedsize: true,
-            textoffset: 37,
-            textstyle: ".coverflow-text{color:#000000;text-align:center;font-family:Arial Rounded MT Bold,Arial;} .coverflow-text h1{font-size:14px;font-weight:normal;line-height:21px;} .coverflow-text h2{font-size:11px;font-weight:normal;} .coverflow-text a{color:#0000EE;}",
-            flash: '/scripts/coverflow.swf'
-        }).on('ready', function () {
-            this.on('focus', function (index) {
-                if (options.renderThumbnails) {
-                    $(selectors.allThumbnails).each(function () {
-                        var $this = $(this);
 
-                        if ($this.data('index') == index) {
-                            $this.addClass(classes.activeImage);
-                        } else {
-                            $this.removeClass(classes.activeImage);
+        $.each(images, function() {
+            var model = this,
+                imgDom = $('<img />');
+            
+            imgDom.attr('src', model.image);
+            imgDom.css('max-height', options.coverHeight);
+            imgDom.css('max-width', options.coverWidth);
+            imgDom.data('model', model);
+
+            $(selectors.galleryContainer).append(imgDom);
+        });
+
+        $(selectors.galleryContainer).coverflow({
+            select: function (cover, imgDom) {
+                var image = $(imgDom),
+                    maxLength = 150,
+                    model,
+                    title, description;
+                
+                if (image.hasClass(classes.currentImage)) {
+                    model = image.data('model');
+                    
+                    if (model) {
+                        if (options.renderThumbnails) {
+                            $(selectors.allThumbnails).each(function () {
+                                var $this = $(this);
+
+                                if ($this.data('model') == model) {
+                                    $this.addClass(classes.activeImage);
+                                } else {
+                                    $this.removeClass(classes.activeImage);
+                                }
+                            });
                         }
-                    });
-                }
 
-                if (options.renderSlider) {
-                    if (!sliderChanged) {
-                        gallerySlider.css('left', index * sliderStep + 2);
+                        if (options.renderSlider) {
+                            if (!sliderChanged) {
+                                gallerySlider.css('left', model.index * sliderStep + 2);
+                            }
+                            sliderChanged = false;
+                        }
+
+                        if (options.renderDescription) {
+                            title = model.title.length > maxLength ? model.title.substr(0, maxLength) + '...' : model.title;
+                            description = model.description.length > maxLength ? model.description.substr(0, maxLength) + '...' : model.description;
+
+                            $(selectors.imageTitle).html(title);
+                            $(selectors.imageDescription).html(description);
+                        }
                     }
-                    sliderChanged = false;
                 }
-            });
+            },
+            confirm: function (cover, imgDom) {
+                console.log(cover);
 
-            this.on('click', function (index, link) {
-                if (link) {
-                    options.onOpenImage(link, index);
+                var model = $(imgDom).data('model');
+                
+                if (model && model.link) {
+                    options.onOpenImage(model);
                 }
-            });
+            }
         });
     }
 
@@ -197,19 +223,14 @@ function GalleryModel(opts) {
         if (images.length > 0) {
             // Add custom HTML with slider, thumbnails and coverflow gallery
             galleryDiv = $($(selectors.galleryTemplate).html());
-            
+
             $(selectors.imagesContainer).first().replaceWith(galleryDiv);
             $(selectors.imagesContainer).remove();
 
             // Setup
             setupThumbnails();
             setupSlider();
-
-            try {
-                setupCoverflow();
-            } catch(exc) {
-                console.error("Failed to initialize coverflow plug-in. Try to open gallery in another browsers, try to install flash and disable ActiceX filtering.");
-            }
+            setupCoverflow();
         }
         
         // Hide back button if there is no history
