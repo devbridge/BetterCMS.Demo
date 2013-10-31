@@ -242,9 +242,6 @@
     <Compile Include="Models\ContactFormViewModel.cs" />
     <Compile Include="Models\MenuItemViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tools\DatabaseRefresher.cs" />
-    <Compile Include="Tools\LiquidConnectionProvider.cs" />
-    <Compile Include="Tools\Resetter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
