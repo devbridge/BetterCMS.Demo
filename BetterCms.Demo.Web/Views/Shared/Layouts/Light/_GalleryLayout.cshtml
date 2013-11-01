@@ -9,7 +9,9 @@
 }
 
 @section MainContent {
-    @RenderSection("MainContent", false)
+    <div id="gallery-main-content" style="visibility: hidden;">
+        @RenderSection("MainContent", false)
+    </div>
 }
 
 @RenderBody()

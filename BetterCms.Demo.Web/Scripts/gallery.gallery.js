@@ -10,5 +10,7 @@ $(function() {
     if (getQueryParam("image-gallery-folder-id")) {
         var model = new GalleryModel();
         model.initialize();
+    } else {
+        $('#gallery-main-content').css('visibility', 'visible');
     }
 });

@@ -14,7 +14,9 @@
         </article>
         
         <section class="home-gallery">
-            @RenderSection("SideBar", false)
+            <div id="gallery-main-content" style="visibility: hidden;">
+                @RenderSection("SideBar", false)
+            </div>
         </section>
     </div>
 }

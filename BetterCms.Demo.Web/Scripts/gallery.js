@@ -44,7 +44,8 @@ function GalleryModel(opts) {
             gallerySlider: '.gallery-slider',
             backButton: '.bcms-gallery-title a.bcms-gallery-back-link',
             imageTitle: '.gallery-title h1',
-            imageDescription: '.gallery-title h2'
+            imageDescription: '.gallery-title h2',
+            galleryContent: '#gallery-main-content'
         },
         classes = {
             activeImage: "active-image",
@@ -163,6 +164,7 @@ function GalleryModel(opts) {
         });
 
         $(selectors.galleryContainer).coverflow({
+            index: 0,
             select: function (cover, imgDom) {
                 var image = $(imgDom),
                     maxLength = 150,
@@ -231,6 +233,12 @@ function GalleryModel(opts) {
             setupThumbnails();
             setupSlider();
             setupCoverflow();
+            
+            // Chrome fix: refreshing after setup - sometimes on first load images are loaded distorted
+            setTimeout(function () {
+                $(selectors.galleryContainer).coverflow('refresh', 0);
+                $(selectors.galleryContent).css('visibility', 'visible');
+            }, 200);
         }
         
         // Hide back button if there is no history
