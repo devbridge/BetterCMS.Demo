@@ -3,7 +3,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 
+using Autofac;
+
+using BetterCMS.Module.Demo.Services;
 using BetterCms.Core;
+using BetterCms.Core.Dependencies;
 using BetterCms.Core.Environment.Host;
 
 namespace BetterCms.Demo.Web
@@ -46,7 +50,25 @@ namespace BetterCms.Demo.Web
 
         protected void Application_AuthenticateRequest()
         {
-            cmsHost.OnAuthenticateRequest(this);
+            using (var container = ContextScopeProvider.CreateChildContainer())
+            {
+                var installService = container.Resolve<IInstallService>();
+
+                var dbShouldBeSet = installService.ShoulDatabaseBeSet();
+
+                if (!dbShouldBeSet)
+                {
+                    cmsHost.OnAuthenticateRequest(this);
+                }
+                else
+                {
+                    // Allow local .js files
+                    if (!HttpContext.Current.Request.Url.PathAndQuery.ToLower().EndsWith(".js"))
+                    {
+                        installService.NavigateToDatabaseSetup();
+                    }
+                }
+            }
         }
     }
 }
