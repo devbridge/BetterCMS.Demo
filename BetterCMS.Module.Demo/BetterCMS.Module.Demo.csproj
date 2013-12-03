@@ -193,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Models\Migrations\Migration201310091000.sqlserver.sql" />
+    <EmbeddedResource Include="Content\Styles\bcms.install.css" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>

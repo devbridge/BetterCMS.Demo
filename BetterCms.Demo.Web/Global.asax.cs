@@ -62,11 +62,7 @@ namespace BetterCms.Demo.Web
                 }
                 else
                 {
-                    // Allow local .js files
-                    if (!HttpContext.Current.Request.Url.PathAndQuery.ToLower().EndsWith(".js"))
-                    {
-                        installService.NavigateToDatabaseSetup();
-                    }
+                    installService.NavigateToDatabaseSetup();
                 }
             }
         }

@@ -50,7 +50,12 @@ namespace BetterCMS.Module.Demo.Services
 
             if (http != null && http.Request != null && http.Request.Url != null)
             {
-                if (!http.Request.Url.PathAndQuery.StartsWith(url) && !http.Request.Url.PathAndQuery.StartsWith(testConnectionUrl))
+                var isJs = http.Request.Url.PathAndQuery.ToLower().EndsWith(".js");
+                var isCss = http.Request.Url.PathAndQuery.ToLower().EndsWith(".css");
+                var isUrl = http.Request.Url.PathAndQuery.StartsWith(url);
+                var isTestUrl = http.Request.Url.PathAndQuery.StartsWith(testConnectionUrl);
+
+                if (!isJs && !isCss && !isUrl && !isTestUrl)
                 {
                     http.Response.Redirect(url, true);
                 }

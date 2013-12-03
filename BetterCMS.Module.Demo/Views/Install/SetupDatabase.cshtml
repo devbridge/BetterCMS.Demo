@@ -13,11 +13,7 @@
 {
     <h2>@InstallGlobalization.SetupDatabase_Information</h2>
     
-    <div class="validation-summary-valid" data-valmsg-summary="true">
-        @Html.ValidationSummary()
-    </div>
-    
-    <div>
+    <div class="bcms-advanced-box">
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_EditConnectionString:</span>
         <p>
             @Html.CheckBoxFor(m => m.EditConnectionString, new { @id = "bcms-advanced-user" })
@@ -28,7 +24,6 @@
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_Server:</span>
         <p>
             @Html.TextBoxFor(m => m.Server, new { @class = "bcms-editor-field-box", @id = "bcms-server-name" })
-            @Html.ValidationMessageFor(m => m.Server)
         </p>
     </div>
     
@@ -36,11 +31,10 @@
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_DatabaseName:</span>
         <p>
             @Html.TextBoxFor(m => m.Database, new { @class = "bcms-editor-field-box", @id = "bcms-database-name" })
-            @Html.ValidationMessageFor(m => m.Database)
         </p>
     </div>
     
-    <div class="bcms-configuration-field">
+    <div class="bcms-configuration-field bcms-advanced-box">
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_IntegratedSecurity:</span>
         <p>
             @Html.CheckBoxFor(m => m.IsIntegratedSecurity, new { @id = "bcms-integrated-security" })
@@ -51,7 +45,6 @@
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_Username:</span>
         <p>
             @Html.TextBoxFor(m => m.Username, new { @class = "bcms-editor-field-box", @id = "bcms-user-name" })
-            @Html.ValidationMessageFor(m => m.Username)
         </p>
     </div>
 
@@ -59,24 +52,17 @@
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_Password:</span>
         <p>
             @Html.PasswordFor(m => m.Password, new { @class = "bcms-editor-field-box", @id = "bcms-password" })
-            @Html.ValidationMessageFor(m => m.Password)
         </p>
     </div>
     
     <div id="bcms-connection-string-box" style="display:none;">
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_ConnectionString:</span>
         <p>
-            @Html.TextAreaFor(m => m.ConnectionString, new { @class = "bcms-editor-field-box", @style = "height: 283px;", @id = "bcms-connection-string" })
-            @Html.ValidationMessageFor(m => m.ConnectionString)
+            @Html.TextAreaFor(m => m.ConnectionString, new { @class = "bcms-editor-field-box", @id = "bcms-connection-string" })
         </p>
     </div>
 
     @Html.SubmitButton("testConnection", InstallGlobalization.SetupDatabase_TestConnection, new { @class = "bcms-btn-small", @id = "bcms-test-connection" })
     @:&nbsp; &nbsp;
     @Html.SubmitButton("submit", InstallGlobalization.SetupDatabase_Save, new { @class = "bcms-btn-small", @id = "bcms-submit-configuration" })
-}
-
-@section Scripts {
-    <script type="text/javascript" src="/file/bcms-demo-data/scripts/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="/file/bcms-demo-data/scripts/db-setup.js"></script>
 }
