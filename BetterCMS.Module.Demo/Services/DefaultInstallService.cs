@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Web.Configuration;
 
 using BetterCMS.Module.Demo.Content.Resources;
@@ -50,12 +51,14 @@ namespace BetterCMS.Module.Demo.Services
 
             if (http != null && http.Request != null && http.Request.Url != null)
             {
-                var isJs = http.Request.Url.PathAndQuery.ToLower().EndsWith(".js");
-                var isCss = http.Request.Url.PathAndQuery.ToLower().EndsWith(".css");
+                var allowableExtensions = new[] { ".js", ".css", ".gif" };
+                var extension = System.IO.Path.GetExtension(http.Request.Url.PathAndQuery.ToLower());
+                var allow = allowableExtensions.Contains(extension);
+
                 var isUrl = http.Request.Url.PathAndQuery.StartsWith(url);
                 var isTestUrl = http.Request.Url.PathAndQuery.StartsWith(testConnectionUrl);
 
-                if (!isJs && !isCss && !isUrl && !isTestUrl)
+                if (!allow && !isUrl && !isTestUrl)
                 {
                     http.Response.Redirect(url, true);
                 }

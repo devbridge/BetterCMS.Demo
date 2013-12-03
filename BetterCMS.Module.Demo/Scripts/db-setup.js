@@ -67,7 +67,9 @@ $(function () {
 
     function submitForm(url, onSuccess) {
         var form = $('form'),
-            onComplete = function(json) {
+            onComplete = function (json) {
+                form.hideLoading();
+
                 var successMessages = $(selectors.successMessageContainer),
                     errorMessages = $(selectors.errorMessageContainer);
 
@@ -92,6 +94,8 @@ $(function () {
                 }
             };
 
+        form.showLoading();
+        
         $.ajax({
             type: 'POST',
             url: url,
