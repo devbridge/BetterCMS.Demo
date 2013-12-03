@@ -1,4 +1,6 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
+using System.Web.Hosting;
 using System.Web.Mvc;
 using BetterCMS.Module.Demo.Commands.SetupDatabase;
 using BetterCMS.Module.Demo.Commands.TestConnection;
@@ -16,12 +18,9 @@ namespace BetterCMS.Module.Demo.Controllers
     {
         private readonly IInstallService installService;
 
-        private readonly ICmsHost cmsHost;
-
-        public InstallController(IInstallService installService, ICmsHost cmsHost)
+        public InstallController(IInstallService installService)
         {
             this.installService = installService;
-            this.cmsHost = cmsHost;
         }
 
         [HttpGet]
@@ -49,7 +48,9 @@ namespace BetterCMS.Module.Demo.Controllers
             {
                 if (GetCommand<SetupDatabaseCommand>().ExecuteCommand(model))
                 {
-                    cmsHost.RestartApplicationHost();
+                    // Touch web.config, which causes server to restart
+                    System.IO.File.SetLastWriteTimeUtc(HostingEnvironment.MapPath("~/web.config"), DateTime.UtcNow);
+
                     success = true;
                     Messages.AddSuccess(InstallGlobalization.SetupDatabase_DatabaseIsOK_Reloading);
                 }
