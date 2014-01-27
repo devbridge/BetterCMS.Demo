@@ -33,6 +33,15 @@
             @Html.TextBoxFor(m => m.Database, new { @class = "bcms-editor-field-box", @id = "bcms-database-name" })
         </p>
     </div>
+
+    <div class="bcms-configuration-field">
+        <span class="bcms-title">
+            @InstallGlobalization.SetupDatabase_DatabaseNameCreateNew:
+        </span>
+         <p>
+            @Html.CheckBoxFor(m => m.CreateDatabase, new { @id = "bcms-create-database" })
+        </p>
+    </div>
     
     <div class="bcms-configuration-field bcms-advanced-box">
         <span class="bcms-title">@InstallGlobalization.SetupDatabase_IntegratedSecurity:</span>

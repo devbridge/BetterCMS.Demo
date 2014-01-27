@@ -10,8 +10,8 @@ namespace BetterCMS.Module.Demo.Services
 
         bool SaveConnectionString(string connectionString);
 
-        string CreateConnectionString(SetupDatabaseViewModel model);
+        string TestConnectionString(SetupDatabaseViewModel model);
 
-        bool TestConnectionString(string connectionString);
+        string CreateDatabase(SetupDatabaseViewModel model);
     }
 }

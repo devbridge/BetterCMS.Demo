@@ -61,6 +61,15 @@ namespace BetterCMS.Module.Demo.Content.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creating database name can contain only letters (a-z, A-Z), numbers (0-9) and underscore (_)..
+        /// </summary>
+        public static string CreateDatabase_DatabaseNameIsInvalid {
+            get {
+                return ResourceManager.GetString("CreateDatabase_DatabaseNameIsInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Connection string.
         /// </summary>
         public static string SetupDatabase_ConnectionString {
@@ -84,6 +93,15 @@ namespace BetterCMS.Module.Demo.Content.Resources {
         public static string SetupDatabase_DatabaseName {
             get {
                 return ResourceManager.GetString("SetupDatabase_DatabaseName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create database if doesn&apos;t exist.
+        /// </summary>
+        public static string SetupDatabase_DatabaseNameCreateNew {
+            get {
+                return ResourceManager.GetString("SetupDatabase_DatabaseNameCreateNew", resourceCulture);
             }
         }
         
@@ -165,6 +183,15 @@ namespace BetterCMS.Module.Demo.Content.Resources {
         public static string SetupDatabase_Username {
             get {
                 return ResourceManager.GetString("SetupDatabase_Username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Administrator roles are required, when creating new database..
+        /// </summary>
+        public static string TestDatabaseConnection_AdminIsRequired {
+            get {
+                return ResourceManager.GetString("TestDatabaseConnection_AdminIsRequired", resourceCulture);
             }
         }
         

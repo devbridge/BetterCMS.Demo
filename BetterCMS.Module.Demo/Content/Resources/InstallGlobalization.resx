@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CreateDatabase_DatabaseNameIsInvalid" xml:space="preserve">
+    <value>Creating database name can contain only letters (a-z, A-Z), numbers (0-9) and underscore (_).</value>
+  </data>
   <data name="SetupDatabase_ConnectionString" xml:space="preserve">
     <value>Connection string</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="SetupDatabase_DatabaseName" xml:space="preserve">
     <value>Database name</value>
+  </data>
+  <data name="SetupDatabase_DatabaseNameCreateNew" xml:space="preserve">
+    <value>Create database if doesn't exist</value>
   </data>
   <data name="SetupDatabase_EditConnectionString" xml:space="preserve">
     <value>I'm advanced user, let me edit connection string manually</value>
@@ -152,6 +158,9 @@
   </data>
   <data name="SetupDatabase_Username" xml:space="preserve">
     <value>Username</value>
+  </data>
+  <data name="TestDatabaseConnection_AdminIsRequired" xml:space="preserve">
+    <value>Administrator roles are required, when creating new database.</value>
   </data>
   <data name="TestDatabaseConnection_ConnectionIsOK" xml:space="preserve">
     <value>Database credentials are OK.</value>

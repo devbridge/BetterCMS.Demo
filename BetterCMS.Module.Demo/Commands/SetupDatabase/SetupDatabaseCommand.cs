@@ -19,11 +19,19 @@ namespace BetterCMS.Module.Demo.Commands.SetupDatabase
         {
             if (installService.ShoulDatabaseBeSet())
             {
-                var connectionString = installService.CreateConnectionString(request);
-                if (installService.TestConnectionString(connectionString))
+                string connectionString;
+                if (request.CreateDatabase)
                 {
-                    return installService.SaveConnectionString(connectionString);
+                    connectionString = installService.CreateDatabase(request);
                 }
+                else
+                {
+                    connectionString = installService.TestConnectionString(request);
+                }
+
+                installService.SaveConnectionString(connectionString);
+
+                return true;
             }
 
             return false;

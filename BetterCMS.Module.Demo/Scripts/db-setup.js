@@ -2,6 +2,7 @@ $(function () {
     var selectors = {
         servername: '#bcms-server-name',
         databaseName: '#bcms-database-name',
+        createDatabase: '#bcms-create-database',
         integratedSecurity: '#bcms-integrated-security',
         username: '#bcms-username',
         password: '#bcms-password',
@@ -19,6 +20,7 @@ $(function () {
     function recreateConnectionString() {
         var serverName = $(selectors.servername).val() || '{ServerName}',
             databaseName = $(selectors.databaseName).val() || '{DatabaseName}',
+            createDatabase = $(selectors.createDatabase).val(),
             isIntegratedSecurity = $(selectors.integratedSecurity).attr('checked'),
             username = $(selectors.username).val() || '{UserName}',
             password = $(selectors.password).val() || '{Password}',

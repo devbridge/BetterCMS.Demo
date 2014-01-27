@@ -17,9 +17,9 @@ namespace BetterCMS.Module.Demo.Commands.TestConnection
 
         public bool Execute(SetupDatabaseViewModel request)
         {
-            var connectionString = installService.CreateConnectionString(request);
+            installService.TestConnectionString(request);
 
-            return installService.TestConnectionString(connectionString);
+            return true;
         }
     }
 }
