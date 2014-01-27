@@ -247,6 +247,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="403.aspx" />
+    <Content Include="404.aspx" />
+    <Content Include="500.aspx" />
     <Content Include="App_Data\demo.mdf" />
     <Content Include="App_Data\demo_log.ldf">
       <DependentUpon>demo.mdf</DependentUpon>
