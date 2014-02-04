@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -17,6 +18,7 @@ namespace BetterCms.Demo.Web.Controllers
             using (var api = ApiFactory.Create())
             {
                 var request = new GetSitemapNodesRequest();
+                request.SitemapId = new Guid("17ABFEE9-5AE6-470C-92E1-C2905036574B");
                 request.Data.Filter.Add("ParentId", null);
                 request.Data.Order.Add("DisplayOrder");
 
