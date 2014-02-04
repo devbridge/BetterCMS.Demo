@@ -13,12 +13,14 @@ namespace BetterCms.Demo.Web.Controllers
     {
         public virtual ActionResult Index()
         {
-            IList<MenuItemViewModel> menuItems = null;
+            var menuItems = new List<MenuItemViewModel>();
 
             using (var api = ApiFactory.Create())
             {
-                var request = new GetSitemapNodesRequest();
-                request.SitemapId = new Guid("17ABFEE9-5AE6-470C-92E1-C2905036574B");
+                var request = new GetSitemapNodesRequest
+                    {
+                        SitemapId = new Guid("17ABFEE9-5AE6-470C-92E1-C2905036574B")
+                    };
                 request.Data.Filter.Add("ParentId", null);
                 request.Data.Order.Add("DisplayOrder");
 
