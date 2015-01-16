@@ -1,4 +1,5 @@
-﻿using Autofac;
+﻿using System;
+using Autofac;
 using BetterCMS.Module.Demo.Services;
 using BetterCms;
 using BetterCms.Core.Modules;
@@ -62,7 +63,12 @@ namespace BetterCMS.Module.Demo
         {
             get { return ModuleName; }
         }
-        
+
+        public override Guid Id
+        {
+            get { return new Guid("48ce174c-36ef-404e-b6a4-3fb7805dc3a2"); }
+        }
+
         public override string Description
         {
             get { return "Installs required data for BetterCMS Demo project."; }
