@@ -9,7 +9,7 @@ using BetterCms.Module.Api;
 using BetterCms.Module.Api.Infrastructure;
 using BetterCms.Module.Api.Infrastructure.Enums;
 using BetterCms.Module.Api.Operations.Blog.BlogPosts;
-using BetterCms.Module.Api.Operations.Root.Categories;
+using BetterCms.Module.Api.Operations.Root.Categories.Category;
 
 namespace BetterCms.Demo.Web.Controllers
 {
@@ -33,7 +33,7 @@ namespace BetterCms.Demo.Web.Controllers
                 request.Filter.Inner.Add(orFilter);
                 if (categoryId.HasValue)
                 {
-                    request.Filter.Add("CategoryId", categoryId.Value);
+                    request.FilterByCategories = new List<Guid> { categoryId.Value };
                 }
 
                 if (!string.IsNullOrEmpty(tagName))
@@ -102,12 +102,14 @@ namespace BetterCms.Demo.Web.Controllers
 
             using (var api = ApiFactory.Create())
             {
-                var request = new GetCategoriesRequest();
-                request.Data.Order.By.Add(new OrderItem("Name"));
+                var request = new GetCategoryTreeRequest();
+                
+                request.CategoryTreeId = new Guid("98FD87B4-A25C-4DDE-933C-83826B6A94D7");
+                request.Data.IncludeNodes = true;
 
-                var pages = api.Root.Categories.Get(request);
+                var pages = api.Root.Category.Get(request);
 
-                categories = pages.Data.Items.Select(
+                categories = pages.Nodes.Where(n => n.ParentId == null && n.Id != new Guid("d837bebf-67de-4952-bc60-db03043b1524")).OrderBy(n => n.Name).Select(
                         x => new CategoryItem
                         {
                             Id = x.Id,
