@@ -11,7 +11,8 @@ using BetterCMS.Module.Demo.ViewModels;
 
 using BetterCms;
 using BetterCms.Core.Exceptions.Mvc;
-using BetterCms.Core.Web;
+
+using BetterModules.Core.Web.Web;
 
 namespace BetterCMS.Module.Demo.Services
 {

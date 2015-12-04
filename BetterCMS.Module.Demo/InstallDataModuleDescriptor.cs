@@ -1,12 +1,14 @@
-﻿using System;
-using Autofac;
+﻿using Autofac;
 using BetterCMS.Module.Demo.Services;
 using BetterCms;
 using BetterCms.Core.Modules;
 
+using BetterModules.Core.Modules.Registration;
+using BetterModules.Core.Web.Modules.Registration;
+
 namespace BetterCMS.Module.Demo
 {
-    public class InstallDataModuleDescriptor : ModuleDescriptor
+    public class InstallDataModuleDescriptor : CmsModuleDescriptor
     {
         public const string ModuleName = "demo_data";
 
@@ -19,19 +21,9 @@ namespace BetterCMS.Module.Demo
         public InstallDataModuleDescriptor(ICmsConfiguration configuration)
             : base(configuration)
         {
-            BetterCms.Events.CoreEvents.Instance.HostAuthenticateRequest += OnHostAuthenticateRequest;
-            BetterCms.Events.CoreEvents.Instance.HostStart += OnHostStart;
         }
 
-        private void OnHostStart(BetterCms.Events.SingleItemEventArgs<System.Web.HttpApplication> args)
-        {
-        }
-
-        private void OnHostAuthenticateRequest(BetterCms.Events.SingleItemEventArgs<System.Web.HttpApplication> args)
-        {
-        }
-
-        public override void RegisterCustomRoutes(ModuleRegistrationContext context, ContainerBuilder containerBuilder)
+        public override void RegisterCustomRoutes(WebModuleRegistrationContext context, ContainerBuilder containerBuilder)
         {
             context.MapRoute(
                         "bcms-setup-database-first-time",
@@ -62,11 +54,6 @@ namespace BetterCMS.Module.Demo
         public override string Name
         {
             get { return ModuleName; }
-        }
-
-        public override Guid Id
-        {
-            get { return new Guid("48ce174c-36ef-404e-b6a4-3fb7805dc3a2"); }
         }
 
         public override string Description
