@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using System.IO;
-
 using BetterCms.Configuration;
-
-using BetterModules.Core.DataAccess.DataContext.Migrations;
-
+using BetterCms.Core.DataAccess.DataContext.Migrations;
 using FluentMigrator;
 
 namespace BetterCMS.Module.Demo.Models.Migrations
@@ -52,8 +49,8 @@ namespace BetterCMS.Module.Demo.Models.Migrations
         {
             var serverUrl = string.Empty;
 
-            var configurationLoader = new CmsConfigurationLoader();
-            var configuration = configurationLoader.LoadConfig<CmsConfigurationSection>();
+            var configurationLoader = new DefaultConfigurationLoader();
+            var configuration = configurationLoader.LoadCmsConfiguration();                            
 
             if (!string.IsNullOrEmpty(configuration.WebSiteUrl) && configuration.WebSiteUrl.ToLower() != "auto")
             {

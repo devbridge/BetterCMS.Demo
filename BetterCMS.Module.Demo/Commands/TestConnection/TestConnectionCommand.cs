@@ -1,11 +1,10 @@
 ﻿using BetterCMS.Module.Demo.Services;
 using BetterCMS.Module.Demo.ViewModels;
-
-using BetterModules.Core.Web.Mvc.Commands;
+using BetterCms.Core.Mvc.Commands;
 
 namespace BetterCMS.Module.Demo.Commands.TestConnection
 {
-    public class TestConnectionCommand : ICommand<SetupDatabaseViewModel, bool>
+    public class TestConnectionCommand : ICommandBase, ICommand<SetupDatabaseViewModel, bool>
     {
         private readonly IInstallService installService;
 
