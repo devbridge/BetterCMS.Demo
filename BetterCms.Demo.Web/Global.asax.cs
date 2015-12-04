@@ -7,8 +7,9 @@ using Autofac;
 
 using BetterCMS.Module.Demo.Services;
 using BetterCms.Core;
-using BetterCms.Core.Dependencies;
 using BetterCms.Core.Environment.Host;
+
+using BetterModules.Core.Dependencies;
 
 namespace BetterCms.Demo.Web
 {
