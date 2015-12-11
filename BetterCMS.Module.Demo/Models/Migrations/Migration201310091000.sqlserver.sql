@@ -237,19 +237,20 @@ INSERT [bcms_media].[Medias] ([Id], [Version], [IsDeleted], [CreatedOn], [Create
 
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'539da9fb-4deb-40a8-b7ce-a23e009ed3fa', CAST(0x0000A23E00000000 AS DateTime), NULL, NULL, 0, NULL, 0, N'            <h2>Devbridge Group</h2>
             <dl>
-                <dt>1659 W. Hubbard St</dt>
-                <dt>Chicago, IL 60622</dt>
-                <dd>Ph. 312 242 1642</dd>
-                <dd>Fax. 847 232 3114</dd>
+                <dt>343 W. Erie St.</dt>
+				<dt>Suite 600</dt>
+				<dt>Chicago, IL 60654</dt>
+				<dd>Ph. 312 635 4103</dd>
+				<dd>Fax. 847 277 1068</dd>
             </dl>
  ', 0)
 INSERT [bcms_pages].[HtmlContents] ([Id], [ActivationDate], [ExpirationDate], [CustomCss], [UseCustomCss], [CustomJs], [UseCustomJs], [Html], [EditInSourceMode]) VALUES (N'a44ee27c-d1eb-4bba-ae62-a23e009f7fc4', CAST(0x0000A23E00000000 AS DateTime), NULL, NULL, 0, N'
 $.getScript("http://maps.google.com/maps/api/js?sensor=false&async=2&callback=gMapsCallback", function () {});
 function gMapsCallback() {
     $(document).ready(function() {
-        var location = new google.maps.LatLng(41.889709,-87.66933);
+        var location = new google.maps.LatLng(41.893617, -87.637155);
         var options = {
-			center: new google.maps.LatLng(41.893000,-87.669200),
+			center: new google.maps.LatLng(41.8967, -87.637155),
 			zoom: 14,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
@@ -257,7 +258,8 @@ function gMapsCallback() {
 		
 		var content = ''<div style="width: 200px;">''+
 			''<a href="http://www.devbridge.com"><b>Devbridge Group</b></a> <br/>'' +
-			''1659 West Hubbard Street <br/>'' +
+			''343 W. Erie St. <br/>'' +
+			''Suite 600 <br/>'' +
 			''Chicago, IL 60622 <br/>'' +
 			''</div>'';
 		
