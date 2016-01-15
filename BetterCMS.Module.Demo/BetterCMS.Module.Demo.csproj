@@ -61,16 +61,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Autofac.3.1.5\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="BetterCms.Configuration, Version=2.0.0.173, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BetterCms.Core.2.0.0-preview1\lib\net40\BetterCms.Configuration.dll</HintPath>
+    <Reference Include="BetterCms.Configuration, Version=2.0.0.184, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BetterCms.Core.2.0.0\lib\net40\BetterCms.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="BetterCms.Core, Version=2.0.0.173, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BetterCms.Core.2.0.0-preview1\lib\net40\BetterCms.Core.dll</HintPath>
+    <Reference Include="BetterCms.Core, Version=2.0.0.184, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BetterCms.Core.2.0.0\lib\net40\BetterCms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="BetterCms.Module.Root, Version=2.0.0.173, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\BetterCms.Module.Root.2.0.0-preview1\lib\net40\BetterCms.Module.Root.dll</HintPath>
+    <Reference Include="BetterCms.Module.Root, Version=2.0.0.184, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BetterCms.Module.Root.2.0.0\lib\net40\BetterCms.Module.Root.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="BetterModules.Core, Version=1.0.0.32, Culture=neutral, processorArchitecture=MSIL">
@@ -94,7 +94,7 @@
     </Reference>
     <Reference Include="FluentMigrator.Runner, Version=1.0.6.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\BetterCms.Module.Root.2.0.0-preview1\..\FluentMigrator.Tools.1.0.6.0\tools\AnyCPU\40\FluentMigrator.Runner.dll</HintPath>
+      <HintPath>..\packages\BetterCms.Module.Root.2.0.0\..\FluentMigrator.Tools.1.0.6.0\tools\AnyCPU\40\FluentMigrator.Runner.dll</HintPath>
     </Reference>
     <Reference Include="FluentNHibernate, Version=1.3.0.733, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -144,7 +144,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\BetterCms.Core.2.0.0-preview1\lib\net40\RazorGenerator.Mvc.dll</HintPath>
+      <HintPath>..\packages\BetterCms.Core.2.0.0\lib\net40\RazorGenerator.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
